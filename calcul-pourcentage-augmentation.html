@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul Augmentation % : Calculez le taux de croissance</title>
+    <meta name="description" content="Utilisez notre outil gratuit pour calculer une augmentation ou une baisse en pourcentage entre deux valeurs. Simple, rapide et précis.">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Calculateur d'Augmentation en %",
+      "applicationCategory": "MathApplication",
+      "operatingSystem": "All",
+      "description": "Un outil pour calculer le taux d'évolution entre deux chiffres."
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">CalcPremium</a>
+            <button class="theme-toggle"><span>🌙</span></button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="calculator-container">
+            <h1>Calculateur de Pourcentage d'Augmentation</h1>
+            <p>Déterminez le taux d'évolution entre une valeur initiale et une valeur finale.</p>
+            <form class="calc-form" data-type="pct-augmentation" data-instant="true">
+                <div class="input-group">
+                    <label for="valeur_initiale">Valeur initiale (Ancienne)</label>
+                    <input type="number" id="valeur_initiale" name="valeur_initiale" placeholder="Ex: 50" required step="0.01">
+                </div>
+                <div class="input-group">
+                    <label for="valeur_finale">Valeur finale (Nouvelle)</label>
+                    <input type="number" id="valeur_finale" name="valeur_finale" placeholder="Ex: 65" required step="0.01">
+                </div>
+                <button type="submit" class="btn-primary">Calculer l'évolution</button>
+            </form>
+
+            <div class="result-area">
+                <div class="result-card">
+                    <p>Le taux d'évolution est de :</p>
+                    <div class="result-value">--</div>
+                </div>
+            </div>
+        </section>
+
+        <article class="content-area">
+            <h2>Qu'est-ce que le calcul de pourcentage d'augmentation ?</h2>
+            <p>Le calcul du pourcentage d'augmentation, ou taux d'évolution, est une mesure statistique qui permet de quantifier l'importance d'un changement entre deux points dans le temps ou entre deux grandeurs comparables. C'est un indicateur relatif, exprimé en centièmes (%), qui donne plus de sens qu'une simple différence brute. Par exemple, une augmentation de 10€ n'a pas la même signification sur un produit à 1€ que sur un produit à 1000€.</p>
+            <p>Ce calcul est omniprésent en économie, en finance et dans la vie quotidienne. Il sert à mesurer l'inflation, la croissance du chiffre d'affaires d'une entreprise, l'augmentation d'un loyer ou encore l'évolution du salaire brut d'un employé. Maîtriser cet outil permet de mettre en perspective les chiffres et de comprendre la dynamique réelle d'un phénomène chiffré.</p>
+            <p>Notre calculateur CalcPremium simplifie cette opération en appliquant la formule mathématique standard de manière instantanée et sans risque d'erreur d'arrondi.</p>
+
+            <h2>Comment fonctionne le calculateur d'augmentation ?</h2>
+            <p>Le principe de calcul est universel. Pour trouver le pourcentage de variation entre une valeur de départ (A) et une valeur d'arrivée (B), on utilise la formule suivante : <strong>((Valeur Finale - Valeur Initiale) / Valeur Initiale) * 100</strong>.</p>
+            <p>Voici les étapes suivies par l'algorithme :</p>
+            <ol>
+                <li>Soustraction pour trouver la variation absolue (B - A).</li>
+                <li>Division de cette variation par la valeur de référence initiale (A).</li>
+                <li>Multiplication du résultat par 100 pour obtenir le pourcentage.</li>
+            </ol>
+            <p>Si le résultat est positif, on parle d'augmentation. S'il est négatif, on parle d'une diminution ou d'un taux de baisse. Notre outil gère automatiquement ces deux cas de figure pour vous fournir un résultat lisible et précis, quelle que soit la grandeur des nombres manipulés.</p>
+
+            <h2>Avantages du calcul d'évolution en ligne</h2>
+            <p>Utiliser notre interface CalcPremium pour vos analyses chiffrées offre plusieurs bénéfices stratégiques :</p>
+            <ul>
+                <li><strong>Zéro Erreur :</strong> Élimine le risque classique d'oublier de diviser par la valeur de départ (erreur la plus commune).</li>
+                <li><strong>Rapidité :</strong> Très utile pour comparer plusieurs offres commerciales pendant les soldes.</li>
+                <li><strong>Analyse Rapide :</strong> Evaluez la croissance de vos économies sur vos comptes bancaires d'une année sur l'autre.</li>
+                <li><strong>Précision :</strong> Support des décimales pour des variations très fines (ex : taux d'intérêt de 1.25% à 1.30%).</li>
+            </ul>
+
+            <h2>Cas d’utilisation du pourcentage d'augmentation</h2>
+            <p>Les situations nécessitant ce calcul sont variées :</p>
+            <ul>
+                <li><strong>Shopping et Soldes :</strong> Calculer le pourcentage réel de remise si le prix barré n'est pas clair.</li>
+                <li><strong>Immobilier :</strong> Suivre l'évolution du prix au m² dans votre quartier sur les 5 dernières années.</li>
+                <li><strong>Travail :</strong> Calculer le pourcentage de votre augmentation de salaire annuelle après un entretien d'évaluation.</li>
+                <li><strong>Économie :</strong> Comprendre l'impact de la hausse du prix de l'essence ou de l'énergie sur votre budget mensuel.</li>
+                <li><strong>Gestion d'Entreprise :</strong> Mesurer le taux de marge ou la croissance des ventes d'un trimestre à l'autre.</li>
+            </ul>
+
+            <h2>Fonctionnalités de notre outil</h2>
+            <p>Le calculateur de Pourcentage d'Augmentation Premium propose :</p>
+            <ul>
+                <li>Saisie intuitive des valeurs ancienne et nouvelle.</li>
+                <li>Calcul instantané en temps réel (réactivité technologique).</li>
+                <li>Affichage clair des pourcentages positifs (hausse) ou négatifs (baisse).</li>
+                <li>Zéro publicité pour une expérience utilisateur premium.</li>
+            </ul>
+
+            <h2>Exemples de calcul</h2>
+            <p>Voici des illustrations concrètes pour mieux visualiser :</p>
+            <ul>
+                <li><strong>Salarié :</strong> Votre salaire passe de 2000€ à 2100€. Calcul : ((2100 - 2000) / 2000) * 100 = 5%. Vous avez été augmenté de 5%.</li>
+                <li><strong>Loyer :</strong> Un loyer de 600€ passe à 615€. Calcul : ((615 - 600) / 600) * 100 = 2,5%.</li>
+                <li><strong>Réduction :</strong> Un article à 100€ est vendu 80€. Calcul : ((80 - 100) / 100) * 100 = -20%. C'est une baisse de 20%.</li>
+            </ul>
+
+            <h2>FAQ sur les variations en pourcentage</h2>
+            <div class="faq-item">
+                <h4>Qu'est-ce qu'une augmentation de 100% ?</h4>
+                <p>Augmenter de 100% signifie doubler sa valeur. Si vous aviez 10€ et que vous avez une augmentation de 100%, vous avez maintenant 20€.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Peut-on dépasser 100% d'augmentation ?</h4>
+                <p>Bien sûr. Une valeur peut augmenter sans limite (300%, 1000%, etc.). En revanche, une baisse ne peut pas dépasser 100% (sauf si on atterrit dans les nombres négatifs, comme une dette).</p>
+            </div>
+            <div class="faq-item">
+                <h4>Quelle est la différence entre point de pourcentage et pourcentage ?</h4>
+                <p>Si un taux passe de 1% à 2%, c'est une hausse de 1 point, mais c'est une augmentation de 100% de la valeur initiale.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Faut-il multiplier ou diviser ?</h4>
+                <p>Pour calculer la variation relative, on divise toujours l'écart (Final - Initial) par la valeur de départ (Initial). La multiplication par 100 ne sert qu'à mettre le résultat au format "pour mille" (%).</p>
+            </div>
+            <div class="faq-item">
+                <h4>Le calculateur gère-t-il les arrondis ?</h4>
+                <p>Oui, nous affichons deux décimales après la virgule, ce qui est le standard pour les analyses financières.</p>
+            </div>
+        </article>
+
+        <section class="related-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); margin-top: 4rem;">
+            <a href="calcul-pourcentage.html" class="calc-card">Pourcentage Simple</a>
+            <a href="calcul-tva.html" class="calc-card">Calcul TVA</a>
+            <a href="calcul-salaire.html" class="calc-card">Calcul Salaire</a>
+            <a href="calcul-moyenne.html" class="calc-card">Moyenne</a>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="index.html">Retour à l'accueil</a></p>
+        <p>&copy; 2026 CalcPremium - L'évolution sous toutes ses formes.</p>
+    </footer>
+</body>
+</html>

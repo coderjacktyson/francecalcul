@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul Semaine de Grossesse : SA vs SG précisément</title>
+    <meta name="description" content="Découvrez à combien de semaines de grossesse vous en êtes. Calculez vos semaines d'aménorrhée (SA) et de grossesse réelle (SG) gratuitement.">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Calculateur de Semaines de Grossesse",
+      "applicationCategory": "HealthApplication",
+      "operatingSystem": "All",
+      "description": "Calculer le nombre de semaines d'aménorrhée et de grossesse."
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">CalcPremium</a>
+            <button class="theme-toggle"><span>🌙</span></button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="calculator-container">
+            <h1>Calculateur de Semaines de Grossesse</h1>
+            <p>Saisissez le premier jour de vos dernières règles (DDR) pour connaître votre stade actuel en SA et SG.</p>
+            <form class="calc-form" data-type="semaine-grossesse" data-instant="true">
+                <div class="input-group">
+                    <label for="ddr">Premier jour des dernières règles (DDR)</label>
+                    <input type="date" id="ddr" name="ddr" required>
+                </div>
+                <button type="submit" class="btn-primary">Calculer mon stade</button>
+            </form>
+
+            <div class="result-area">
+                <div class="result-card">
+                    <p>Vous en êtes à :</p>
+                    <div class="result-value">--</div><span></span>
+                    <p class="result-status"></p>
+                </div>
+            </div>
+        </section>
+
+        <article class="content-area">
+            <h2>Qu'est-ce que le calcul des semaines de grossesse ?</h2>
+            <p>Le suivi d'une grossesse est rythmé par le comptage des semaines, indispensable pour s'assurer du bon développement du fœtus et programmer les examens médicaux. Cependant, il existe deux manières de compter en France, ce qui peut prêter à confusion pour les futurs parents : les semaines d'aménorrhée (SA) et les semaines de grossesse (SG).</p>
+            <p>Les <strong>Semaines d'Aménorrhée (SA)</strong> correspondent au temps écoulé depuis le premier jour de vos dernières règles. C'est le compte de référence utilisé par les gynécologues, les sages-femmes et les maternités car c'est une date "fixe" et facile à mémoriser. Les <strong>Semaines de Grossesse (SG)</strong> correspondent à l'âge réel du fœtus, en comptant depuis la fécondation (généralement 2 semaines après le début des règles). Une grossesse à terme dure 41 SA, ce qui équivaut à 39 SG.</p>
+            <p>Notre calculateur CalcPremium vous épargne les calculs mentaux fastidieux en vous donnant instantanément les deux résultats à partir d'une seule date.</p>
+
+            <h2>Comment fonctionne le calculateur de semaines ?</h2>
+            <p>Le fonctionnement de notre outil est basé sur la différence entre la date du jour (aujourd'hui) et la date du premier jour des dernières règles (DDR). L'algorithme calcule le nombre total de jours écoulés, puis le divise par 7 pour obtenir les semaines.</p>
+            <p>Voici les étapes détaillées :</p>
+            <ol>
+                <li>Soustraction entre la date d'aujourd'hui et la DDR pour trouver le nombre de jours total.</li>
+                <li>Division par 7 pour obtenir le nombre de <strong>Semaines d'Aménorrhée (SA)</strong>.</li>
+                <li>Soustraction de 14 jours (2 semaines) au total pour obtenir le nombre de <strong>Semaines de Grossesse (SG)</strong> réelles.</li>
+            </ol>
+            <p>L'affichage présente le résultat sous une forme claire (ex: 12 SA + 3 jours) pour être parfaitement en phase avec les termes médicaux que vous lirez sur vos comptes-rendus d'échographies.</p>
+
+            <h2>Avantages du suivi hebdomadaire en ligne</h2>
+            <p>Utiliser notre interface Premium pour suivre l'évolution de votre grossesse apporte de nombreux bénéfices :</p>
+            <ul>
+                <li><strong>Clarté Médicale :</strong> Soyez toujours au courant du terme exact lors de vos rendez-vous prénataux.</li>
+                <li><strong>Planification :</strong> Identifiez les dates clés (fin du 1er trimestre, échographie morphologique du 2ème trimestre, etc.).</li>
+                <li><strong>Préparation :</strong> Comprenez chaque semaine les nouveaux développements de votre bébé (formation des organes, mouvements, audition).</li>
+                <li><strong>Sérénité :</strong> Évitez les erreurs de conversion entre SA et SG qui génèrent souvent de l'inquiétude inutile.</li>
+            </ul>
+
+            <h2>Cas d’utilisation du calcul de semaines de grossesse</h2>
+            <p>Le calculateur est sollicité à chaque étape de l'aventure de la maternité :</p>
+            <ul>
+                <li><strong>Dès le début :</strong> Pour estimer la date de la première échographie obligatoire (environ 12 SA).</li>
+                <li><strong>Pour les démarches administratives :</strong> Compléter la déclaration de grossesse pour la CAF et la Sécurité Sociale avant 16 SA.</li>
+                <li><strong>À chaque mi-trimestre :</strong> Pour suivre l'évolution de son ventre et les conseils alimentaires adaptés au stade actuel.</li>
+                <li><strong>Vers la fin :</strong> Pour anticiper le début du congé maternité et préparer la valise pour la maternité.</li>
+            </ul>
+
+            <h2>Fonctionnalités de notre outil</h2>
+            <p>Le calculateur de Semaines de Grossesse CalcPremium propose :</p>
+            <ul>
+                <li>Calcul automatique des SA et des SG en simultané.</li>
+                <li>Affichage des "jours restants" dans la semaine en cours.</li>
+                <li>Interface fluide adaptée à tous les types de mobiles.</li>
+                <li>Aucune demande de données nominatives : votre intimité est préservée.</li>
+            </ul>
+
+            <h2>Exemples de conversion SA / SG</h2>
+            <p>Voici les équivalences types pour vos points de repère :</p>
+            <ul>
+                <li><strong>Fin du 1er trimestre :</strong> 14 SA correspond environ à 12 SG. C'est le moment où les risques de fausse couche diminuent fortement.</li>
+                <li><strong>Milieu de grossesse :</strong> 22 SA correspond à 20 SG. Moment de la grande échographie morphologique.</li>
+                <li><strong>Seuil de viabilité :</strong> 24-25 SA correspond à environ 22 SG.</li>
+                <li><strong>Dernière ligne droite :</strong> 37 SA correspond à 35 SG. Le bébé n'est plus considéré comme prématuré s'il naît alors.</li>
+            </ul>
+
+            <h2>FAQ sur le comptage des semaines</h2>
+            <div class="faq-item">
+                <h4>Que faire si mes cycles sont irréguliers ?</h4>
+                <p>Si vos cycles ne font pas 28 jours, la date de fécondation peut être décalée. Dans ce cas, seule l'échographie de datation donnera votre terme exact.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Pourquoi mon médecin compte-t-il toujours en SA ?</h4>
+                <p>Parce que c'est la seule date objective (le début des règles) dont une femme se souvient généralement avec certitude, alors que la date d'ovulation est souvent incertaine.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Est-ce que 9 mois font exactement 39 semaines ?</h4>
+                <p>Non, c'est une approximation. Un mois calendaire fait en moyenne 4,3 semaines. C'est pourquoi le comptage en semaines est beaucoup plus précis sur le plan médical.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Puis-je calculer mes semaines si j'ai eu une FIV ?</h4>
+                <p>Oui, pour une FIV, on considère que la fécondation (2 SG) a eu lieu le jour de la ponction ovocytaire ou de la décongélation de l'embryon.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Comment savoir dans quel mois je suis ?</h4>
+                <p>Il existe des tableaux de correspondance, mais retenez qu'à 15 SA vous entrez dans votre 4ème mois de grossesse.</p>
+            </div>
+        </article>
+
+        <section class="related-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); margin-top: 4rem;">
+            <a href="calcul-grossesse.html" class="calc-card">Date Accouchement</a>
+            <a href="calcul-ovulation.html" class="calc-card">Calcul Ovulation</a>
+            <a href="calcul-imc.html" class="calc-card">Calcul IMC</a>
+            <a href="index.html" class="calc-card">Accueil</a>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="index.html">Retour à l'accueil</a></p>
+        <p>&copy; 2026 CalcPremium - Suivez votre vie, semaine après semaine.</p>
+    </footer>
+</body>
+</html>

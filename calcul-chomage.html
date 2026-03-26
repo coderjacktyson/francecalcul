@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul Chômage (ARE) : Estimez votre allocation en ligne</title>
+    <meta name="description" content="Utilisez notre calculateur de chômage gratuit pour estimer le montant de votre Aide au Retour à l'Emploi (ARE). Basé sur vos 12 derniers mois de salaire brut.">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Calculateur de Chômage",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "All",
+      "description": "Estimez vos indemnités chômage mensuelles."
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">CalcPremium</a>
+            <button class="theme-toggle"><span>🌙</span></button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="calculator-container">
+            <h1>Calculateur d'Allocations Chômage (ARE)</h1>
+            <p>Estimez le montant mensuel de votre allocation chômage à partir de votre salaire brut moyen.</p>
+            <form class="calc-form" data-type="chomage" data-instant="false">
+                <div class="input-group">
+                    <label for="salaire_moyen">Salaire Brut Mensuel Moyen (€)</label>
+                    <input type="number" id="salaire_moyen" name="salaire_moyen" placeholder="Ex: 2500" required step="1">
+                </div>
+                <button type="submit" class="btn-primary">Estimer mes indemnités</button>
+            </form>
+
+            <div class="result-area">
+                <div class="result-card">
+                    <p>Votre allocation mensuelle (ARE) estimée est de :</p>
+                    <div class="result-value">--</div><span> € / mois</span>
+                </div>
+            </div>
+        </section>
+
+        <article class="content-area">
+            <h2>Qu'est-ce que le calcul du chômage (ARE) ?</h2>
+            <p>L'Aide au Retour à l'Emploi (ARE) est le nom officiel de l'indemnisation chômage en France. Versée par France Travail (anciennement Pôle Emploi), cette allocation est un revenu de remplacement destiné à compenser la perte de salaire suite à une rupture de contrat de travail (licenciement, fin de CDD, rupture conventionnelle). Le calcul de cette aide est complexe car il repose sur le principe de solidarité et de cotisation : vous percevez une aide proportionnelle à ce que vous avez cotisé durant vos périodes d'activité.</p>
+            <p>Le calcul se base sur le Salaire Journalier de Référence (SJR), qui est établi à partir des revenus bruts perçus au cours d'une période de référence (généralement les 24 ou 36 derniers mois). Comprendre comment ce montant est calculé permet de mieux anticiper sa situation financière lors d'une transition professionnelle et de gérer sereinement son budget entre deux emplois.</p>
+            <p>Notre calculateur propose une estimation simplifiée basée sur les taux de conversion les plus fréquents pour vous donner un ordre de grandeur fiable en quelques secondes.</p>
+
+            <h2>Comment fonctionne le calculateur de chômage ?</h2>
+            <p>L'indemnisation chômage en France n'est pas un forfait fixe mais le résultat d'un choix entre deux formules avantageuses pour le demandeur d'emploi. Notre algorithme simule cette comparaison. Pour un mois complet de 30 jours, l'ARE brute est généralement le montant le plus élevé entre :</p>
+            <ul>
+                <li><strong>La formule fixe :</strong> 40,4% du Salaire Journalier de Référence (SJR) + une partie fixe (~13€ par jour).</li>
+                <li><strong>La formule proportionnelle :</strong> 57% du Salaire Journalier de Référence (SJR).</li>
+            </ul>
+            <p>Une fois ce montant brut calculé, il faut en déduire les cotisations sociales (CSG et CRDS) ainsi que la participation au financement de la retraite complémentaire pour obtenir le montant net. Notre outil effectue une déduction moyenne de 3% pour vous fournir un résultat au plus proche de la réalité bancaire.</p>
+            <p>Il est important de noter que l'allocation ne peut ni être inférieure à un minimum légal (environ 31€ par jour), ni être supérieure à un maximum (environ 75% du salaire brut de référence).</p>
+
+            <h2>Avantages de l'estimation chômage en ligne</h2>
+            <p>Utiliser notre interface CalcPremium pour vos simulations financières offre une tranquillité d'esprit immédiate :</p>
+            <ul>
+                <li><strong>Planification de Budget :</strong> Savoir exactement quelle somme vous allez percevoir pour ajuster vos dépenses fixes (loyer, crédit).</li>
+                <li><strong>Négociation de Départ :</strong> Estimer l'impact financier d'une rupture conventionnelle avant de la signer.</li>
+                <li><strong>Sérénité :</strong> Éliminer l'incertitude liée aux démarches administratives parfois longues et opaques.</li>
+                <li><strong>Zéro Papier :</strong> Aucun besoin de fiches de paie détaillées pour une simple simulation.</li>
+            </ul>
+
+            <h2>Cas d’utilisation du calcul d'indemnités</h2>
+            <p>Plusieurs moments de la vie professionnelle justifient un passage par ce calculateur :</p>
+            <ul>
+                <li><strong>Fin de Contrat CDD :</strong> Prévoir le relais de revenus entre deux missions d'intérim ou contrats courts.</li>
+                <li><strong>Licenciement Économique :</strong> Comprendre le niveau de vie maintenu pendant la période de recherche active d'emploi.</li>
+                <li><strong>Projet de Reconversion :</strong> Calculer le maintien de salaire possible si vous souhaitez entamer une formation professionnelle.</li>
+                <li><strong>Rupture Conventionnelle :</strong> Evaluer le temps que votre indemnité de rupture vous permettra de tenir (délai de carence).</li>
+            </ul>
+
+            <h2>Fonctionnalités de notre outil</h2>
+            <p>Le calculateur de Chômage Premium inclut :</p>
+            <ul>
+                <li>Saisie simplifiée du salaire mensuel brut moyen.</li>
+                <li>Calcul basé sur les formules réglementaires de France Travail 2026.</li>
+                <li>Prise en compte des prélèvements sociaux obligatoires.</li>
+                <li>Résultat exprimé en net mensuel (sur une base de 30 jours).</li>
+            </ul>
+
+            <h2>Exemples de calcul</h2>
+            <p>Voici des ordres de grandeur basés sur des salaires bruts habituels :</p>
+            <ul>
+                <li><strong>Salaire de 1800€ Brut :</strong> L'allocation ARE nette sera d'environ 1050€ par mois.</li>
+                <li><strong>Salaire de 2500€ Brut :</strong> L'indemnité mensuelle grimpe à environ 1425€ net.</li>
+                <li><strong>Salaire de 4000€ Brut :</strong> Le montant perçu sera environ de 2280€ net par mois.</li>
+            </ul>
+
+            <h2>FAQ sur le chômage et l'indemnisation</h2>
+            <div class="faq-item">
+                <h4>Quelle est la durée de mon indemnisation ?</h4>
+                <p>La durée est égale à la durée travaillée au cours de la période de référence, avec un maximum de 18 mois pour les moins de 53 ans (règle 2026).</p>
+            </div>
+            <div class="faq-item">
+                <h4>Qu'est-ce que le délai de carence ?</h4>
+                <p>C'est une période pendant laquelle vous ne percevez pas d'allocation. Elle inclut un délai fixe de 7 jours plus un délai proportionnel à vos indemnités de rupture de contrat.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Puis-je cumuler chômage et activité ?</h4>
+                <p>Oui, si vous reprenez une activité salariée ou non, vous pouvez cumuler une partie de votre allocation avec votre nouveau salaire, sous certaines limites.</p>
+            </div>
+            <div class="faq-item">
+                <h4>L'allocation est-elle imposable ?</h4>
+                <p>Oui, les allocations chômage sont soumises à l'impôt sur le revenu et entrent dans le calcul du Revenu Fiscal de Référence.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Et si j'ai démissionné ?</h4>
+                <p>En principe, la démission n'ouvre pas droit aux allocations chômage, sauf cas de "démission légitime" (suivi de conjoint, harcèlement, etc.) ou projet de reconversion validé.</p>
+            </div>
+        </article>
+
+        <section class="related-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); margin-top: 4rem;">
+            <a href="calcul-salaire.html" class="calc-card">Calcul Salaire</a>
+            <a href="calcul-tva.html" class="calc-card">Calcul TVA</a>
+            <a href="calcul-frais-kilometrique.html" class="calc-card">Frais Kilométrique</a>
+            <a href="index.html" class="calc-card">Accueil</a>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="index.html">Retour à l'accueil</a></p>
+        <p>&copy; 2026 CalcPremium - Votre transition sécurisée.</p>
+    </footer>
+</body>
+</html>

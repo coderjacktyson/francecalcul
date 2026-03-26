@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul Pourcentage : Tous vos calculs de pourcentages en ligne</title>
+    <meta name="description" content="Utilisez notre outil gratuit pour calculer un pourcentage d'une valeur, une augmentation ou une remise. Simple, rapide et précis.">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Calculateur de Pourcentage",
+      "applicationCategory": "MathApplication",
+      "operatingSystem": "All",
+      "description": "Un outil complet pour tous vos calculs de pourcentages."
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">CalcPremium</a>
+            <button class="theme-toggle"><span>🌙</span></button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="calculator-container">
+            <h1>Calculateur de Pourcentage</h1>
+            <form class="calc-form" data-type="pourcentage" data-instant="true">
+                <div class="input-group">
+                    <label for="pourcentage">Quel est le pourcentage (%)</label>
+                    <input type="number" id="pourcentage" name="pourcentage" placeholder="Ex: 20" required step="0.01">
+                </div>
+                <div class="input-group">
+                    <label for="valeur">De la valeur totale</label>
+                    <input type="number" id="valeur" name="valeur" placeholder="Ex: 1540" required step="0.01">
+                </div>
+                <button type="submit" class="btn-primary">Calculer le pourcentage</button>
+            </form>
+
+            <div class="result-area">
+                <div class="result-card">
+                    <p>Le résultat est :</p>
+                    <div class="result-value">--</div>
+                </div>
+            </div>
+        </section>
+
+        <article class="content-area">
+            <h2>Qu'est-ce que le calcul de pourcentage ?</h2>
+            <p>Le calcul de pourcentage est une opération mathématique fondamentale qui consiste à exprimer une proportion ou une fraction par rapport à 100. Le symbole "%" (pour cent) est utilisé pour indiquer cette relation. C'est l'un des outils les plus utilisés au monde, que ce soit pour exprimer des remises commerciales, des taux d'intérêt bancaires, des statistiques démographiques ou encore des concentrations chimiques.</p>
+            <p>Maîtriser les pourcentages permet de mieux comprendre les informations chiffrées qui nous entourent quotidiennement. Par exemple, savoir qu'un prix a augmenté de 10% ou qu'une remise de 30% est appliquée sur un article permet de prendre des décisions d'achat plus éclairées. Notre outil est conçu pour vous aider à réaliser ces opérations instantanément sans risque d'erreur de calcul.</p>
+
+            <h2>Comment fonctionne le calculateur de pourcentage ?</h2>
+            <p>Le fonctionnement de notre calculateur repose sur la règle de trois. Pour calculer "X % d'une valeur Y", la formule appliquée est : <strong>(X * Y) / 100</strong>. Notre interface simple et intuitive vous permet d'entrer directement les deux variables (le taux de pourcentage et la valeur de référence) pour obtenir un résultat immédiat.</p>
+            <p>L'outil gère automatiquement les nombres entiers comme les nombres décimaux. Que vous souhaitiez calculer 20% de 1540 ou 19,6% de 85,3, le calculateur vous fournira une réponse précise en temps réel. Cette réactivité est particulièrement utile lors de négociations ou de vérifications de factures complexes.</p>
+
+            <h2>Avantages du calcul de pourcentage en ligne</h2>
+            <p>Pourquoi passer par notre plateforme plutôt que d'utiliser une calculatrice classique ?</p>
+            <ul>
+                <li><strong>Fiabilité :</strong> Élimine le risque d'erreur humaine dans la saisie des parenthèses ou des virgules.</li>
+                <li><strong>Rapidité :</strong> Aucun besoin de se souvenir de la formule mathématique, l'algorithme s'en charge.</li>
+                <li><strong>Polyvalence :</strong> Vous pouvez tester plusieurs taux ou valeurs en une fraction de seconde pour comparer des offres.</li>
+                <li><strong>Gratuité :</strong> Tous nos services sont accessibles sans frais et sans publicité intrusive.</li>
+            </ul>
+
+            <h2>Cas d’utilisation du calcul de pourcentage</h2>
+            <p>Les situations nécessitant un calcul de pourcentage sont infinies :</p>
+            <ul>
+                <li><strong>Shopping :</strong> Calculer le montant exact d'une remise pendant les soldes.</li>
+                <li><strong>Finance :</strong> Estimer les intérêts d'un livret d'épargne ou le coût d'un crédit immobilier.</li>
+                <li><strong>Alimentation :</strong> Analyser les valeurs nutritionnelles par rapport aux apports journaliers recommandés.</li>
+                <li><strong>E-commerce :</strong> Calculer les taux de conversion ou de rebond d'un site web.</li>
+                <li><strong>Fiscalité :</strong> Déterminer le montant d'un impôt ou d'une taxe par rapport à un revenu.</li>
+            </ul>
+
+            <h2>Fonctionnalités de notre outil</h2>
+            <p>Notre calculateur a été pensé pour être l'outil le plus complet du web français :</p>
+            <ul>
+                <li>Calcul instantané sans rechargement de page.</li>
+                <li>Support des décimales précises.</li>
+                <li>Interface optimisée pour tous les navigateurs modernes.</li>
+                <li>Adaptation parfaite aux écrans tactiles (mobiles et tablettes).</li>
+            </ul>
+
+            <h2>Exemples de calcul</h2>
+            <p>Voici des exemples parlants :</p>
+            <ul>
+                <li><strong>Remise :</strong> Un pantalon à 80€ avec 25% de remise. Vous entrez 25 dans le champ pourcentage et 80 dans la valeur totale. Le résultat est 20€. Vous économisez donc 20€.</li>
+                <li><strong>Commissions :</strong> Un agent immobilier prend 4% de commission sur une vente de 250 000€. Résultat : 10 000€ de frais d'agence.</li>
+                <li><strong>Taxes :</strong> Vous avez un produit à 100€ HT avec une TVA à 20%. Le montant de la taxe est de 20€ (100 * 20 / 100).</li>
+            </ul>
+
+            <h2>FAQ sur le calcul de pourcentage</h2>
+            <div class="faq-item">
+                <h4>Comment calculer une augmentation de 10% ?</h4>
+                <p>Pour calculer une augmentation, vous pouvez d'abord calculer les 10% de la valeur initiale puis les ajouter à cette dernière. Ou plus simplement, multiplier la valeur initiale par 1,1.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Quelle est la différence entre un point de pourcentage et le pourcentage ?</h4>
+                <p>Si un taux d'intérêt passe de 3% à 4%, il a augmenté de 1 point de pourcentage, ce qui correspond à une augmentation relative de 33,3%.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Puis-je calculer des pourcentages négatifs ?</h4>
+                <p>Oui, cela correspond généralement à une diminution ou une baisse de valeur par rapport à un point de référence initial.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Peut-on additionner deux pourcentages ?</h4>
+                <p>Généralement non, surtout s'ils s'appliquent successivement à des bases différentes. Dans ce cas, il faut multiplier les coefficients multiplicateurs.</p>
+            </div>
+        </article>
+
+        <section class="related-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); margin-top: 4rem;">
+            <a href="calcul-tva.html" class="calc-card">Calcul TVA</a>
+            <a href="calcul-salaire.html" class="calc-card">Calcul Salaire</a>
+            <a href="calcul-pourcentage-augmentation.html" class="calc-card">Augmentation %</a>
+            <a href="calcul-imc.html" class="calc-card">Calcul IMC</a>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="index.html">Retour à l'accueil</a></p>
+        <p>&copy; 2026 CalcPremium - Outil de pourcentage efficace.</p>
+    </footer>
+</body>
+</html>

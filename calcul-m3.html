@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul m³ : Calculez le volume en mètres cubes (m3)</title>
+    <meta name="description" content="Utilisez notre calculateur de m³ gratuit pour évaluer le volume de vos espaces, piscines, conteneurs ou réservoirs. Simple, rapide et précis.">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Calculateur de m³",
+      "applicationCategory": "UtilityApplication",
+      "operatingSystem": "All",
+      "description": "Un outil simple pour transformer des dimensions en volume m³."
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">CalcPremium</a>
+            <button class="theme-toggle"><span>🌙</span></button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="calculator-container">
+            <h1>Calculateur de m³ (Mètres Cubes)</h1>
+            <p>Saisissez la longueur, la largeur et la hauteur (ou profondeur) pour obtenir le résultat en m³.</p>
+            <form class="calc-form" data-type="m3" data-instant="true">
+                <div class="input-group">
+                    <label for="longueur">Longueur (mètres)</label>
+                    <input type="number" id="longueur" name="longueur" placeholder="Ex: 10" required step="0.01">
+                </div>
+                <div class="input-group">
+                    <label for="largeur">Largeur (mètres)</label>
+                    <input type="number" id="largeur" name="largeur" placeholder="Ex: 4" required step="0.01">
+                </div>
+                <div class="input-group">
+                    <label for="hauteur">Hauteur / Profondeur (mètres)</label>
+                    <input type="number" id="hauteur" name="hauteur" placeholder="Ex: 1.5" required step="0.01">
+                </div>
+                <button type="submit" class="btn-primary">Calculer le volume</button>
+            </form>
+
+            <div class="result-area">
+                <div class="result-card">
+                    <p>Le volume total est de :</p>
+                    <div class="result-value">--</div><span> m³</span>
+                </div>
+            </div>
+        </section>
+
+        <article class="content-area">
+            <h2>Qu'est-ce que le calcul en m³ ?</h2>
+            <p>Le mètre cube (symbole : m³) est l'unité de mesure de volume du Système International. Il correspond au volume occupé par un cube dont les arêtes mesurent un mètre de côté. Contrairement au m² qui mesure une surface plane (deux dimensions), le m³ mesure l'espace tridimensionnel (trois dimensions). C'est l'unité de référence pour quantifier la capacité d'un objet, le contenu d'un réservoir ou l'espace d'une pièce.</p>
+            <p>Savoir calculer un volume en m³ est crucial dans de nombreux secteurs professionnels : logistique, bâtiment, jardinage ou encore gestion de l'eau. Que vous deviez commander du béton pour une terrasse, remplir une piscine ou louer un camion de déménagement, le m³ est la donnée chiffrée qui vous permettra de ne pas vous tromper dans vos estimations de coûts et de besoins logistiques.</p>
+            <p>Notre calculateur CalcPremium a été conçu pour simplifier cette tâche en automatisant les multiplications nécessaires à partir de vos mesures brutes prélevées sur le terrain.</p>
+
+            <h2>Comment fonctionne le calculateur de m³ ?</h2>
+            <p>Le fonctionnement de notre outil repose sur la formule géométrique fondamentale du parallélépipède rectangle : <strong>Longueur x Largeur x Hauteur</strong>. C'est l'opération la plus commune pour les formes cubiques ou rectangulaires que l'on retrouve partout dans notre environnement construit.</p>
+            <p>Voici les étapes simples pour utiliser notre calculateur :</p>
+            <ol>
+                <li>Prenez la mesure de la longueur totale de l'espace à mesurer.</li>
+                <li>Mesurez sa largeur (le côté perpendiculaire).</li>
+                <li>Mesurez enfin la hauteur ou la profondeur (du fond jusqu'au bord supérieur).</li>
+                <li>Entrez ces trois données dans les champs correspondants de notre interface.</li>
+                <li>Appuyez sur "Calculer le volume" pour obtenir le résultat instantané en m³.</li>
+            </ol>
+            <p>L'algorithme gère de manière transparente les nombres décimaux, vous permettant d'entrer des mesures précises au centimètre près (par exemple 1,25m) pour un résultat d'une fiabilité absolue.</p>
+
+            <h2>Avantages du calcul de volume en ligne</h2>
+            <p>Utiliser notre plateforme de calcul CalcPremium offre des bénéfices concrets pour vos projets complexes :</p>
+            <ul>
+                <li><strong>Fiabilité Mathématique :</strong> Élimine le risque d'erreur de multiplication ou de conversion lors de la saisie manuelle sur une calculatrice.</li>
+                <li><strong>Rapidité de Planification :</strong> Obtenez le volume de votre cargaison ou de votre réservoir en quelques secondes seulement.</li>
+                <li><strong>Économie de Matériaux :</strong> Commandez la quantité exacte de sable, de béton ou de terreau nécessaire pour vos travaux de terrassement.</li>
+                <li><strong>Optimisation Logistique :</strong> Vérifiez si le volume de vos meubles rentrera dans le camion de location que vous envisagez.</li>
+            </ul>
+
+            <h2>Cas d’utilisation du calcul m³</h2>
+            <p>Dans quels contextes est-il utile de sortir notre calculateur ?</p>
+            <ul>
+                <li><strong>Piscine :</strong> Calculer le volume d'eau en m³ nécessaire pour remplir votre bassin et doser ainsi correctement les produits d'entretien.</li>
+                <li><strong>Déménagement :</strong> Évaluer le volume global de vos cartons et meubles pour choisir la taille du camion approprié (souvent exprimé en m³).</li>
+                <li><strong>Terrassement et Béton :</strong> Commander la bonne quantité de béton prêt à l'emploi (BPE) pour réaliser une dalle ou des fondations.</li>
+                <li><strong>Isolation :</strong> Calculer le volume de combles à isoler avec de la ouate de cellulose ou de la laine pulsée en vrac.</li>
+                <li><strong>Transport de Marchandises :</strong> Optimiser le chargement de conteneurs maritimes ou de remorques de fret.</li>
+            </ul>
+
+            <h2>Fonctionnalités de notre outil</h2>
+            <p>Le calculateur de m³ CalcPremium propose :</p>
+            <ul>
+                <li>Zone de saisie intuitive pour les trois dimensions (longueur, largeur, hauteur).</li>
+                <li>Calcul instantané sans rafraîchir la page (Technologie réactive JS).</li>
+                <li>Support total des nombres décimaux pour une précision maximale.</li>
+                <li>Design élégant et moderne, optimisé pour la lecture sur écran.</li>
+            </ul>
+
+            <h2>Exemples de calcul</h2>
+            <p>Voici des simulations pratiques de l'utilisation de l'outil :</p>
+            <ul>
+                <li><strong>Petite piscine :</strong> Longueur 6m, Largeur 3m, Profondeur 1,5m. Résultat : 27 m³.</li>
+                <li><strong>Camion de location :</strong> Longueur 4,5m, Largeur 2m, Hauteur 2,2m. Résultat : 19,8 m³.</li>
+                <li><strong>Dalle de terrasse :</strong> Longueur 5m, Largeur 4m, Épaisseur (hauteur) 0,15m. Résultat : 3 m³.</li>
+                <li><strong>Un m³ d'eau :</strong> Sachez qu'un mètre cube d'eau équivaut exactement à 1000 litres.</li>
+            </ul>
+
+            <h2>FAQ sur le calcul de volume</h2>
+            <div class="faq-item">
+                <h4>Quelle est la différence entre m³ et Litres ?</h4>
+                <p>Le mètre cube est une unité de volume, tandis que le litre est une unité de capacité. 1 m³ est égal à 1000 litres d'eau. C'est le standard pour les factures d'eau municipales.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Peut-on calculer le m³ pour une forme cylindrique ?</h4>
+                <p>Oui, mais la formule est différente : Aire de la base (Pi x Rayon²) x Hauteur. Notre outil actuel est optimisé pour les rectangles. Utilisez notre page "Calcul Volume" pour ces formes spécifiques.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Faut-il prévoir du surplus pour le béton ?</h4>
+                <p>Oui, en général, on ajoute 5 à 10% de marge de sécurité au calcul théorique en m³ pour compenser les pertes lors du coulage ou les reliefs du terrain.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Le calculateur gère-t-il les arrondis ?</h4>
+                <p>Notre outil affiche deux décimales après la virgule, ce qui est suffisant pour la quasi-totalité des travaux de bricolage ou de logistique domestique.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Comment mesurer des irrégularités ?</h4>
+                <p>Pour des formes irrégulières, divisez l'espace en plusieurs blocs rectangulaires, calculez le volume de chaque bloc et faites la somme finale.</p>
+            </div>
+        </article>
+
+        <section class="related-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); margin-top: 4rem;">
+            <a href="calcul-m2.html" class="calc-card">Calcul m²</a>
+            <a href="calcul-volume.html" class="calc-card">Calcul Volume</a>
+            <a href="calcul-moyenne.html" class="calc-card">Moyenne</a>
+            <a href="index.html" class="calc-card">Accueil</a>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="index.html">Retour à l'accueil</a></p>
+        <p>&copy; 2026 CalcPremium - L'architecte de vos volumes.</p>
+    </footer>
+</body>
+</html>

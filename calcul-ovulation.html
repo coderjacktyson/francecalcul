@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul Ovulation : Déterminez votre période de fertilité</title>
+    <meta name="description" content="Utilisez notre calculateur d'ovulation gratuit pour identifier vos jours les plus fertiles. Maximisez vos chances de conception avec un suivi précis de votre cycle.">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Calculateur d'Ovulation",
+      "applicationCategory": "HealthApplication",
+      "operatingSystem": "All",
+      "description": "Suivez votre cycle menstruel et trouvez votre date d'ovulation."
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">CalcPremium</a>
+            <button class="theme-toggle"><span>🌙</span></button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="calculator-container">
+            <h1>Calculateur d'Ovulation</h1>
+            <p>Identifiez la fenêtre de fertilité de votre cycle menstruel pour optimiser vos chances de concevoir un enfant.</p>
+            <form class="calc-form" data-type="ovulation" data-instant="false">
+                <div class="input-group">
+                    <label for="ddr">Premier jour de vos dernières règles (DDR)</label>
+                    <input type="date" id="ddr" name="ddr" required>
+                </div>
+                <div class="input-group">
+                    <label for="cycle">Durée moyenne de votre cycle (jours)</label>
+                    <input type="number" id="cycle" name="cycle" value="28" min="20" max="45">
+                </div>
+                <button type="submit" class="btn-primary">Calculer ma fenêtre de fertilité</button>
+            </form>
+
+            <div class="result-area">
+                <div class="result-card">
+                    <p>Votre date d'ovulation estimée est le :</p>
+                    <div class="result-value">--</div>
+                    <p class="result-status">Fenêtre de fertilité : +/- 2 jours autour de cette date.</p>
+                </div>
+            </div>
+        </section>
+
+        <article class="content-area">
+            <h2>Qu'est-ce que le calcul d'ovulation ?</h2>
+            <p>L'ovulation est le moment du cycle menstruel où un ovule mature est libéré par l'ovaire pour être fécondé. Ce processus biologique complexe est piloté par des hormones (LH et FSH) et dure généralement moins de 24 heures. Cependant, la période de fertilité, également appelée "fenêtre de fertilité", est plus longue car les spermatozoïdes peuvent survivre jusqu'à 5 jours dans les voies génitales féminines.</p>
+            <p>Le calcul de l'ovulation consiste à anticiper ce moment clé en se basant sur la durée de la phase lutéale (la période entre l'ovulation et les prochaines règles), qui reste relativement constante (environ 14 jours) pour la majorité des femmes. En connaissant la durée de votre cycle global, vous pouvez déduire mathématiquement le jour probable de libération de l'ovule. C'est un outil indispensable pour les couples qui souhaitent concevoir un enfant naturellement et rapidement.</p>
+
+            <h2>Comment fonctionne le calculateur d'ovulation ?</h2>
+            <p>Notre algorithme utilise une méthode statistique éprouvée. À partir de la date du premier jour de vos dernières règles (DDR) et de la durée moyenne de votre cycle (par exemple 28 jours), il soustrait 14 jours (durée de la phase lutéale) de la durée totale du cycle pour trouver le jour de l'ovulation. Si votre cycle dure 30 jours, l'ovulation se produira probablement au 16ème jour du cycle (30 - 14 = 16).</p>
+            <p>Le calculateur détermine ainsi trois zones temporelles :</p>
+            <ol>
+                <li>La phase pré-ovulatoire de faible fertilité.</li>
+                <li>La fenêtre de fertilité maximale (le jour de l'ovulation et les 2-3 jours précédents).</li>
+                <li>La phase post-ovulatoire où les chances de conception chutent drastiquement.</li>
+            </ol>
+            <p>Ces calculs sont d'autant plus précis que vos cycles sont réguliers. Pour les femmes ayant des cycles variables, nous recommandons de réaliser plusieurs calculs basés sur le cycle le plus court et le plus long pour obtenir une plage de fertilité élargie.</p>
+
+            <h2>Avantages du calcul d'ovulation en ligne</h2>
+            <p>Utiliser notre interface CalcPremium pour suivre votre fertilité offre plusieurs bénéfices :</p>
+            <ul>
+                <li><strong>Simplicité de Suivi :</strong> Plus besoin de tenir des graphiques complexes de température basale chaque matin.</li>
+                <li><strong>Anticipation :</strong> Planifiez vos moments d'intimité avec votre partenaire pour maximiser les chances de succès.</li>
+                <li><strong>Compréhension du Corps :</strong> Identifiez les symptômes physiques liés à l'ovulation (douleurs pelviennes, glaire cervicale) en les corrélant aux calculs.</li>
+                <li><strong>Confidentialité Totale :</strong> Aucune donnée personnelle de santé n'est transmise ou enregistrée sur nos serveurs.</li>
+            </ul>
+
+            <h2>Cas d’utilisation du calcul d'ovulation</h2>
+            <p>Le calculateur d'ovulation est utile dans de nombreux contextes de vie :</p>
+            <ul>
+                <li><strong>Désir d'enfant :</strong> Pour les couples qui veulent accélérer le processus de conception.</li>
+                <li><strong>Suivi Gynécologique :</strong> Pour fournir des informations précises lors d'une consultation en cas de difficultés de fertilité.</li>
+                <li><strong>Gestion Hormonale :</strong> Pour les femmes qui souhaitent comprendre l'origine de certaines variations d'humeur ou de peau liées aux hormones.</li>
+                <li><strong>Éducation à la Santé :</strong> Pour les jeunes filles qui apprennent le fonctionnement rythmique de leur corps.</li>
+            </ul>
+
+            <h2>Fonctionnalités de notre outil</h2>
+            <p>Le calculateur d'Ovulation Premium propose :</p>
+            <ul>
+                <li>Interface fluide adaptée à tous les types d'écrans.</li>
+                <li>Saisie rapide de la date des règles et de la durée du cycle.</li>
+                <li>Affichage clair et immédiat de la date cible.</li>
+                <li>Zéro publicité pour une expérience sereine.</li>
+            </ul>
+
+            <h2>Exemples de calcul</h2>
+            <p>Voici l'application des formules selon différents profils :</p>
+            <ul>
+                <li><strong>Cycle Idéal (28 jours) :</strong> Dernières règles le 1er du mois. Ovulation prévue le 14 du mois.</li>
+                <li><strong>Cycle Long (32 jours) :</strong> Dernières règles le 1er du mois. Ovulation prévue le 18 du mois (32 - 14 = 18).</li>
+                <li><strong>Cycle Court (24 jours) :</strong> Dernières règles le 1er du mois. Ovulation prévue le 10 du mois (24 - 14 = 10).</li>
+            </ul>
+
+            <h2>FAQ sur l'ovulation et la fertilité</h2>
+            <div class="faq-item">
+                <h4>Peut-on tomber enceinte en dehors de la période d'ovulation ?</h4>
+                <p>La fécondation n'est possible que si un ovule est présent. Cependant, comme les spermatozoïdes vivent 3 à 5 jours, un rapport sexuel ayant lieu avant l'ovulation peut mener à une grossesse.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Quels sont les signes physiques de l'ovulation ?</h4>
+                <p>On observe souvent une glaire cervicale plus fluide (aspect blanc d'œuf), une augmentation légère de la température corporelle au réveil, et sometimes de légères crampes d'un seul côté de l'abdomen.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Le calculateur est-il une méthode contraceptive efficace ?</h4>
+                <p>NON. Le calcul de date ne garantit pas l'absence de risque de grossesse. Pour une contraception fiable, utilisez des méthodes médicalement reconnues (préservatif, pilule, stérilet, etc.).</p>
+            </div>
+            <div class="faq-item">
+                <h4>L'alimentation influe-t-elle sur l'ovulation ?</h4>
+                <p>Oui, un poids trop bas ou trop élevé peut perturber l'ovulation. Une alimentation équilibrée riche en nutriments favorise un cycle régulier.</p>
+            </div>
+        </article>
+
+        <section class="related-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); margin-top: 4rem;">
+            <a href="calcul-grossesse.html" class="calc-card">Calcul Grossesse</a>
+            <a href="calcul-semaine-grossesse.html" class="calc-card">Semaines Grossesse</a>
+            <a href="calcul-imc.html" class="calc-card">Calcul IMC</a>
+            <a href="cycle-du-sommeil.html" class="calc-card">Sommeil</a>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="index.html">Retour à l'accueil</a></p>
+        <p>&copy; 2026 CalcPremium - Votre partenaire fertilité.</p>
+    </footer>
+</body>
+</html>

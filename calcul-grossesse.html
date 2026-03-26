@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul Grossesse : Estimez votre date d'accouchement (DPA)</title>
+    <meta name="description" content="Utilisez notre calculateur de grossesse gratuit pour déterminer votre date présumée d'accouchement (DPA) et suivre l'évolution de votre bébé semaine après semaine.">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Calculateur de Grossesse",
+      "applicationCategory": "HealthApplication",
+      "operatingSystem": "All",
+      "description": "Estimez votre date d'accouchement à partir du premier jour de vos dernières règles."
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">CalcPremium</a>
+            <button class="theme-toggle"><span>🌙</span></button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="calculator-container">
+            <h1>Calculateur de Grossesse</h1>
+            <p>Déterminez votre date d'accouchement à partir du premier jour de vos dernières règles (DDR).</p>
+            <form class="calc-form" data-type="grossesse" data-instant="false">
+                <div class="input-group">
+                    <label for="ddr">Premier jour de vos dernières règles (DDR)</label>
+                    <input type="date" id="ddr" name="ddr" required>
+                </div>
+                <div class="input-group">
+                    <label for="cycle">Durée moyenne de votre cycle (jours)</label>
+                    <input type="number" id="cycle" name="cycle" value="28" min="20" max="45">
+                </div>
+                <button type="submit" class="btn-primary">Calculer ma date d'accouchement</button>
+            </form>
+
+            <div class="result-area">
+                <div class="result-card">
+                    <p>Votre date présumée d'accouchement (DPA) est le :</p>
+                    <div class="result-value">--</div>
+                    <p class="result-status">Félicitations !</p>
+                </div>
+            </div>
+        </section>
+
+        <article class="content-area">
+            <h2>Qu'est-ce que le calcul de grossesse ?</h2>
+            <p>Le calcul de grossesse est une estimation médicale cruciale qui permet aux futurs parents et aux professionnels de santé de prévoir le déroulement de la gestation. En France, la durée totale d'une grossesse est conventionnellement fixée à 41 semaines d'aménorrhée (SA) ou 39 semaines de grossesse réelle (SG). Cette période de 9 mois est jalonnée d'étapes de développement pour le fœtus et de changements physiologiques pour la mère.</p>
+            <p>L'estimation de la date d'accouchement est fondamentale pour planifier les examens prénataux obligatoires, les échographies morphologiques et le départ en congé maternité. Bien que seuls 5% des bébés naissent exactement à la date prévue, disposer d'une date de référence permet de surveiller la croissance fœtale et de s'assurer que le bébé ne naît ni trop tôt (prématurité) ni trop tard (dépassement de terme).</p>
+            <p>Notre calculateur utilise la méthode de Naegele, une formule standard utilisée par les obstétriciens du monde entier, ajustée selon les spécificités des cycles menstruels individuels pour une précision accrue.</p>
+
+            <h2>Comment fonctionne le calculateur de grossesse ?</h2>
+            <p>Le fonctionnement de notre outil repose sur une règle simple : ajouter 280 jours (soit 40 semaines) au premier jour de vos dernières règles (DDR). Si vous avez un cycle régulier de 28 jours, cette estimation est très fiable. Si votre cycle est plus court ou plus long, l'outil ajuste automatiquement la date d'ovulation présumée pour raffiner le résultat.</p>
+            <p>Voici les étapes suivies par l'algorithme :</p>
+            <ol>
+                <li>Identification du premier jour des dernières règles.</li>
+                <li>Estimation de la date de fécondation (généralement 14 jours après le début du cycle).</li>
+                <li>Addition d'une période de gestation humaine standard.</li>
+                <li>Affichage de la Date Présumée d'Accouchement (DPA).</li>
+            </ol>
+            <p>Il est important de noter que cette date pourra être recalée lors de la première échographie (échographie de datation) effectuée entre la 11ème et la 13ème semaine d'aménorrhée, car la mesure de la longueur cranio-caudale (LCC) du fœtus est le moyen le plus précis de déterminer l'âge gestationnel réel.</p>
+
+            <h2>Avantages du calcul de grossesse en ligne</h2>
+            <p>Utiliser notre calculateur en ligne présente des bénéfices concrets pour les futurs parents :</p>
+            <ul>
+                <li><strong>Planification immédiate :</strong> Savoir instantanément dans quel mois vous allez accoucher pour préparer la chambre et les achats.</li>
+                <li><strong>Suivi hebdomadaire :</strong> Mieux comprendre les symptômes ressentis au fur et à mesure que les semaines passent.</li>
+                <li><strong>Gestion professionnelle :</strong> Estimer les dates de début et de fin de votre congé légal de maternité.</li>
+                <li><strong>Partage :</strong> Annoncer la grande nouvelle à vos proches avec une date de référence précise.</li>
+            </ul>
+
+            <h2>Cas d’utilisation du calcul de grossesse</h2>
+            <p>Le calculateur est utilisé dans diverses situations par les couples :</p>
+            <ul>
+                <li><strong>Dès le test positif :</strong> Pour confirmer les premières estimations et appeler la sage-femme ou le gynécologue.</li>
+                <li><strong>Suivi de cycle :</strong> Pour les femmes qui planifient une grossesse et veulent anticiper les dates de naissance futures.</li>
+                <li><strong>Détermination des congés :</strong> Pour organiser la passation de dossiers au travail et informer les ressources humaines.</li>
+                <li><strong>Préparation psychologique :</strong> Visualiser l'arrivée du bébé et se projeter dans la nouvelle vie de famille.</li>
+            </ul>
+
+            <h2>Fonctionnalités de notre outil</h2>
+            <p>Notre calculateur de grossesse Premium offre :</p>
+            <ul>
+                <li>Interface intuitive adaptée aux mobiles.</li>
+                <li>Calcul basé sur le premier jour des dernières règles (DDR).</li>
+                <li>Option d'ajustement selon la durée du cycle menstruel.</li>
+                <li>Affichage clair de la Date Présumée d'Accouchement (DPA).</li>
+                <li>Zéro enregistrement de données personnelles ou médicales.</li>
+            </ul>
+
+            <h2>Exemples de calcul détaillés</h2>
+            <p>Pour mieux comprendre la logique de datation, voici des exemples types :</p>
+            <ul>
+                <li><strong>Cycle Standard :</strong> Date des dernières règles le 1er janvier. Cycle de 28 jours. La DPA sera estimée au 8 octobre (soit 280 jours plus tard).</li>
+                <li><strong>Cycle Long :</strong> Date des dernières règles le 1er janvier. Cycle de 35 jours. L'ovulation ayant eu lieu plus tard, la DPA sera décalée d'une semaine au 15 octobre.</li>
+                <li><strong>Cycle Court :</strong> Date des dernières règles le 1er janvier. Cycle de 21 jours. L'ovulation étant précoce, la DPA sera avancée au 1er octobre.</li>
+            </ul>
+            <p>Ces calculs montrent à quel point il est important de connaître son rythme biologique pour obtenir une date d'accouchement cohérente avec la réalité physiologique de la conception.</p>
+
+            <h2>FAQ sur la grossesse et la datation</h2>
+            <div class="faq-item">
+                <h4>Quelle est la différence entre SA et SG ?</h4>
+                <p>Les SA (semaines d'aménorrhée) comptent depuis le premier jour des règles. Les SG (semaines de grossesse) comptent depuis la fécondation réelle. Il y a généralement 2 semaines d'écart.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Mon médecin me donne une date différente, pourquoi ?</h4>
+                <p>Le médecin s'appuie souvent sur les mesures échographiques de la première échographie obligatoire, qui sont plus précises que le simple calcul basé sur les règles, surtout si l'ovulation a été décalée.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Et si je ne connais pas la date de mes dernières règles ?</h4>
+                <p>Pas d'inquiétude, la majorité des femmes ont des cycles irréguliers. Dans ce cas, seule l'échographie pratiquée par votre praticien permettra de dater précisément le début de votre grossesse.</p>
+            </div>
+            <div class="faq-item">
+                <h4>La date d'accouchement change-t-elle pour des jumeaux ?</h4>
+                <p>La DPA théorique reste la même, mais statistiquement, les grossesses gémellaires durent moins longtemps (environ 37-38 SA) et les médecins programment souvent l'accouchement plus tôt.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Comment calculer si j'ai eu une FIV ?</h4>
+                <p>En cas de Fécondation In Vitro, la date de référence est celle du transfert d'embryon, à laquelle on ajoute l'âge de l'embryon au moment du transfert (J3 ou J5).</p>
+            </div>
+        </article>
+
+        <section class="related-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); margin-top: 4rem;">
+            <a href="calcul-semaine-grossesse.html" class="calc-card">Semaines Grossesse</a>
+            <a href="calcul-ovulation.html" class="calc-card">Calcul Ovulation</a>
+            <a href="calcul-imc.html" class="calc-card">Calcul IMC</a>
+            <a href="cycle-du-sommeil.html" class="calc-card">Sommeil</a>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="index.html">Retour à l'accueil</a></p>
+        <p>&copy; 2026 CalcPremium - Accompagner votre maternité.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul Biliaire : Comprendre les pierres de la vésicule</title>
+    <meta name="description" content="Informations sur les calculs biliaires. Utilisez notre outil informatif pour évaluer les facteurs de risque et le volume des lithiases biliaires.">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Calculateur Informatique Biliaire",
+      "applicationCategory": "HealthApplication",
+      "operatingSystem": "All",
+      "description": "Outil d'information sur les calculs de la vésicule biliaire."
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">CalcPremium</a>
+            <button class="theme-toggle"><span>🌙</span></button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="calculator-container">
+            <h1>Calculateur de Volume de Calcul Biliaire</h1>
+            <p style="color: #ef4444; font-weight: 700; background: rgba(239, 68, 68, 0.1); padding: 1rem; border-radius: 8px; margin-bottom: 2rem;">AVERTISSEMENT MÉDICAL : Cet outil est purement informatif. Les calculs biliaires peuvent entraîner des complications graves comme la cholécystite. Consultez votre médecin traitant pour tout diagnostic.</p>
+            <p>Estimez le volume d'une lithiase biliaire à partir de son diamètre moyen observé en échographie.</p>
+            <form class="calc-form" data-type="biliaire" data-instant="true">
+                <div class="input-group">
+                    <label for="diam_bil">Diamètre du calcul (mm)</label>
+                    <input type="number" id="diam_bil" name="diam_bil" placeholder="Ex: 8" required step="0.5">
+                </div>
+                <button type="submit" class="btn-primary">Estimer la taille</button>
+            </form>
+
+            <div class="result-area">
+                <div class="result-card">
+                    <p>Le volume estimé du calcul est de :</p>
+                    <div class="result-value">--</div><span> mm³</span>
+                    <p class="result-status">La plupart des calculs biliaires restent asymptomatiques pendant des années.</p>
+                </div>
+            </div>
+        </section>
+
+        <article class="content-area">
+            <h2>Qu'est-ce que le calcul biliaire ?</h2>
+            <p>Le calcul biliaire, ou lithiase biliaire, est une formation solide qui se crée à l'intérieur de la vésicule biliaire, un petit organe situé sous le foie. La vésicule stocke la bile, un liquide produit par le foie nécessaire à la digestion des graisses. Les calculs se forment lorsque la bile contient trop de cholestérol ou de pigments biliaires, qui finissent par cristalliser. On distingue principalement deux types : les calculs de cholestérol (les plus fréquents, environ 80%) et les calculs pigmentaires.</p>
+            <p>Environ 20% de la population adulte dans les pays occidentaux est porteuse de calculs biliaires, mais seulement une petite fraction d'entre eux développera des symptômes. La douleur caractéristique, appelée colique hépatique, survient lorsqu'un calcul se bloque temporairement dans le canal qui relie la vésicule à l'intestin, provoquant une douleur intense dans le haut de l'abdomen, souvent après un repas riche en graisses.</p>
+            <p>Comprendre la taille et le nombre de ces calculs est crucial pour le gastro-entérologue afin de décider s'il faut simplement surveiller la situation ou envisager une ablation de la vésicule (cholécystectomie).</p>
+
+            <h2>Comment fonctionne le calculateur biliaire ?</h2>
+            <p>Le fonctionnement de notre outil repose sur l'estimation de volume d'une sphère parfaite, qui est la forme la plus courante des petits calculs de cholestérol. L'algorithme prend le diamètre mesuré par le radiologue et applique la formule mathématique : <strong>Volume = (4/3) x π x (Diamètre/2)³</strong>.</p>
+            <p>Voici l'interprétation habituelle des tailles :</p>
+            <ul>
+                <li><strong>"Microlithiase" (Boue biliaire) :</strong> Inférieure à 3mm. Peut parfois passer inaperçue mais peut irriter la paroi.</li>
+                <li><strong>Petit Calcul :</strong> 5mm à 10mm. Plus susceptible de migrer et de causer une colique hépatique ou une pancréatite.</li>
+                <li><strong>Gros Calcul :</strong> Supérieur à 20mm. Moins susceptible de migrer mais peut inflamer la vésicule de manière chronique.</li>
+            </ul>
+            <p>Le calculateur convertit vos données en millimètres cubes (mm³) pour donner une vision volumétrique de la pierre présente dans votre vésicule.</p>
+
+            <h2>Avantages du calcul et de la prévention</h2>
+            <p>S'informer sur CalcPremium permet d'adopter les bons réflexes de santé digestive :</p>
+            <ul>
+                <li><strong>Décryptage de l'Échographie :</strong> Mieux comprendre les termes techniques de votre rapport de santé.</li>
+                <li><strong>Gestion de l'Alimentation :</strong> Identifier les repas qui déclenchent les crises pour mieux les éviter.</li>
+                <li><strong>Préparation Chirurgicale :</strong> Si une opération est prévue, comprendre pourquoi la taille ou le nombre de calculs justifie cette décision.</li>
+                <li><strong>Prévention des Risques :</strong> Apprendre que perdre du poids trop rapidement (Régimes Yoyo) est un facteur majeur de formation des calculs.</li>
+            </ul>
+
+            <h2>Cas d’utilisation du suivi biliaire</h2>
+            <p>Dans quel cas être particulièrement vigilant sur ses calculs ?</p>
+            <ul>
+                <li><strong>Pendant la Grossesse :</strong> Les hormones favorisent la stase biliaire, augmentant le risque de formation de pierres.</li>
+                <li><strong>Après 40 ans :</strong> Le risque augmente statistiquement, particulièrement chez les femmes (Règle des "F" : Female, Fat, Fair, Forty, Fertile).</li>
+                <li><strong>En cas de Diabète :</strong> Le risque de complications infectieuses en cas de calculs est plus élevé.</li>
+                <li><strong>Suivi Post-Crise :</strong> Pour vérifier si tous les calculs ont été identifiés avant de décider d'une suite thérapeutique.</li>
+            </ul>
+
+            <h2>Fonctionnalités de notre outil</h2>
+            <p>Le calculateur de Volume Biliaire CalcPremium propose :</p>
+            <ul>
+                <li>Saisie directe du diamètre mesuré en échographie.</li>
+                <li>Calcul instantané du volume sphérique.</li>
+                <li>Conseils de prévention alimentaires intégrés.</li>
+                <li>Zéro publicité pour une expérience calme et professionnelle.</li>
+            </ul>
+
+            <h2>Exemples de calcul</h2>
+            <p>Comparaison de volumes types :</p>
+            <ul>
+                <li><strong>Petit calcul (5mm) :</strong> Volume d'environ 65 mm³.</li>
+                <li><strong>Calcul Moyen (10mm) :</strong> Volume de 524 mm³. C'est la taille d'une bille standard.</li>
+                <li><strong>Gros calcul (25mm-30mm) :</strong> Volume pouvant dépasser les 14 000 mm³. C'est la taille d'une balle de golf.</li>
+            </ul>
+
+            <h2>FAQ sur la vésicule et les calculs</h2>
+            <div class="faq-item">
+                <h4>Peut-on dissoudre les calculs biliaires ?</h4>
+                <p>Pour certains calculs de cholestérol purement organiques, des traitements médicamenteux existent (Acide Ursodésoxycholique), mais ils sont longs (mois/années) et le risque de récidive est élevé.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Peut-on vivre sans vésicule biliaire ?</h4>
+                <p>Absolument. La vésicule n'est qu'un réservoir. Sans elle, la bile s'écoule directement du foie vers l'intestin de manière continue. Le corps s'adapte très bien en quelques semaines.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Quels sont les symptômes de l'urgence ?</h4>
+                <p>Si la douleur s'accompagne de fièvre, de frissons ou si votre peau devient jaune (jaunisse), cela indique une infection (cholécystite) ou un blocage du canal principal. Urgence immédiate.</p>
+            </div>
+            <div class="faq-item">
+                <h4>L'hérédité joue-t-elle un rôle ?</h4>
+                <p>Oui, il existe des prédispositions génétiques dans certaines familles pour la formation de calculs de cholestérol.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Quel est l'examen de référence ?</h4>
+                <p>L'échographie abdominale est l'examen le plus performant, le plus rapide et le moins coûteux pour diagnostiquer les calculs de la vésicule.</p>
+            </div>
+        </article>
+
+        <section class="related-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); margin-top: 4rem;">
+            <a href="calcul-renaux.html" class="calc-card">Calcul Rénaux</a>
+            <a href="calcul-imc.html" class="calc-card">Calcul IMC</a>
+            <a href="calcul-metabolisme-basal.html" class="calc-card">Metabolisme Basal</a>
+            <a href="index.html" class="calc-card">Accueil</a>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="index.html">Retour à l'accueil</a></p>
+        <p>&copy; 2026 CalcPremium - Comprendre pour mieux soigner.</p>
+    </footer>
+</body>
+</html>

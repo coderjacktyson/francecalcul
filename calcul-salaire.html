@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul Salaire Brut en Net : Convertisseur 2026 Gratuit</title>
+    <meta name="description" content="Passez de votre salaire brut à votre salaire net mensuel ou annuel. Estimation précise selon les cotisations sociales françaises pour 2026.">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Calculateur de Salaire Brut en Net",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "All",
+      "description": "Calculez votre salaire net à partir du montant brut en fonction de votre statut professionnel."
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">CalcPremium</a>
+            <button class="theme-toggle"><span>🌙</span></button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="calculator-container">
+            <h1>Calculateur Salaire Brut en Net</h1>
+            <form class="calc-form" data-type="salaire" data-instant="true">
+                <div class="input-group">
+                    <label for="brut">Salaire Brut (€)</label>
+                    <input type="number" id="brut" name="brut" placeholder="Ex: 3000" required step="1">
+                    <select name="periode" id="periode">
+                        <option value="mois">Par mois</option>
+                        <option value="an">Par an</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="type_salarie">Statut Professionnel</label>
+                    <select id="type_salarie" name="type_salarie" required>
+                        <option value="prive">Salarié du secteur privé (~23%)</option>
+                        <option value="public">Fonctionnaire (~15%)</option>
+                        <option value="cadre">Cadre du secteur privé (~25%)</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-primary">Calculer mon salaire net</button>
+            </form>
+
+            <div class="result-area">
+                <div class="result-card">
+                    <p>Votre salaire net estimé est de :</p>
+                    <div class="result-value">--</div><span> €</span>
+                </div>
+            </div>
+        </section>
+
+        <article class="content-area">
+            <h2>Qu'est-ce que le calcul du salaire brut en net ?</h2>
+            <p>Le passage du salaire brut au salaire net est une étape essentielle pour tout salarié en France. Le salaire brut représente la somme totale que l'employeur verse au titre de la prestation de travail, avant toute déduction. Cependant, ce montant n'est pas celui qui atterrit sur votre compte bancaire. Pour obtenir le salaire net, il faut retrancher les cotisations sociales (santé, retraite, chômage, prévoyance) ainsi que la CSG et la CRDS.</p>
+            <p>Comprendre cette différence est crucial lors d'un entretien d'embauche ou d'une renégociation salariale. Les employeurs parlent souvent en "brut annuel", tandis que les salariés raisonnent en "net mensuel" pour gérer leur budget personnel. Notre calculateur vous permet d'effectuer cette conversion instantanément pour y voir plus clair dans vos finances.</p>
+
+            <h2>Comment fonctionne le calculateur de salaire ?</h2>
+            <p>Notre outil applique des coefficients de conversion moyens basés sur les barèmes légaux du secteur privé et de la fonction publique. Bien que le montant exact dépende de votre entreprise (mutuelle spécifique, prévoyance, avantages en nature), on peut estimer que le salaire net correspond à environ 77% du brut pour un salarié du privé non-cadre, et 75% pour un cadre. Les fonctionnaires, bénéficiant de taux de cotisations différents, conservent environ 85% de leur brut.</p>
+            <p>Le calcul s'effectue en temps réel. Si vous saisissez un montant brut annuel, n'oubliez pas de diviser par 12 pour connaître votre reste à vivre mensuel. Notre formulaire vous permet d'ajuster ces paramètres avec précision pour coller au mieux à votre situation réelle.</p>
+
+            <h2>Avantages du calculateur de salaire Premium</h2>
+            <p>Pourquoi charger notre page de calcul plutôt que de naviguer sur des sites complexes ?</p>
+            <ul>
+                <li><strong>Rapidité :</strong> Aucun formulaire interminable. Les données essentielles suffisent.</li>
+                <li><strong>Mise à jour 2026 :</strong> Adaptation aux dernières réformes des cotisations sociales.</li>
+                <li><strong>Pédagogie :</strong> Apprendre la différence entre les statuts (privé, public, cadre).</li>
+                <li><strong>Mobilité :</strong> Parfaitement lisible sur smartphone pour une utilisation immédiate.</li>
+            </ul>
+
+            <h2>Cas d’utilisation du calcul salaire</h2>
+            <p>Ce calculateur est votre meilleur allié lors des moments clés de votre carrière :</p>
+            <ul>
+                <li><strong>Négociation salariale :</strong> Pour savoir quel net demander si l'on vous propose un brut spécifique.</li>
+                <li><strong>Changement de statut :</strong> Pour comparer l'impact d'un passage au statut cadre sur votre salaire net immédiat.</li>
+                <li><strong>Recherche d'emploi :</strong> Pour trier les offres d'emploi en fonction de votre besoin réel en revenus nets.</li>
+                <li><strong>Calcul d'impôts :</strong> Le salaire net est souvent la base de calcul pour l'impôt sur le revenu (PAs : Prélèvement à la source).</li>
+            </ul>
+
+            <h2>Fonctionnalités de notre outil</h2>
+            <p>Le calculateur propose les options suivantes :</p>
+            <ul>
+                <li>Conversion Brut/Net instantanée.</li>
+                <li>Calcul pour les statuts Privé, Public et Cadre.</li>
+                <li>Gestion du brut mensuel ou annuel.</li>
+                <li>Interface intuitive et sans inscription.</li>
+            </ul>
+
+            <h2>Exemples de calcul</h2>
+            <p>Voici quelques ordres de grandeur pour vous aider :</p>
+            <ul>
+                <li><strong>SMIC (Secteur Privé) :</strong> Pour un brut de 1800€, vous obtiendrez environ 1386€ net (1800 * 0.77).</li>
+                <li><strong>Secteur Public :</strong> Pour un salaire de 2500€ brut, un fonctionnaire percevra environ 2125€ net (2500 * 0.85).</li>
+                <li><strong>Cadre :</strong> Pour un haut salaire de 5000€ brut, un cadre touchera environ 3750€ net (5000 * 0.75) dû aux cotisations retraite plus élevées.</li>
+            </ul>
+
+            <h2>FAQ sur le salaire brut et net</h2>
+            <div class="faq-item">
+                <h4>Qu'est-ce que le super-brut ?</h4>
+                <p>Le super-brut (ou coût total employeur) est le montant total que paie l'employeur, incluant les cotisations patronales en plus du salaire brut.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Le net à payer est-il égal au net imposable ?</h4>
+                <p>Non, le net imposable est généralement supérieur au net payé car certaines cotisations (comme une partie de la CSG) ne sont pas déductibles de l'impôt.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Pourquoi les cadres ont-ils un net plus bas pour un même brut ?</h4>
+                <p>Les cadres cotisent davantage pour leur assurance retraite complémentaire, ce qui réduit leur net immédiat mais leur garantit une meilleure pension future.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Le calculateur prend-il en compte le prélèvement à la source ?</h4>
+                <p>Non, notre outil s'arrête au salaire net "social". L'impôt sur le revenu dépend de votre situation familiale (quotient familial) et de vos autres revenus.</p>
+            </div>
+        </article>
+
+        <section class="related-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); margin-top: 4rem;">
+            <a href="calcul-chomage.html" class="calc-card">Calcul Chômage</a>
+            <a href="calcul-tva.html" class="calc-card">Calcul TVA</a>
+            <a href="calcul-heure-travail.html" class="calc-card">Heure de Travail</a>
+            <a href="calcul-frais-kilometrique.html" class="calc-card">Frais Kilométrique</a>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="index.html">Retour à l'accueil</a></p>
+        <p>&copy; 2026 CalcPremium - Calculez votre futur salaire.</p>
+    </footer>
+</body>
+</html>

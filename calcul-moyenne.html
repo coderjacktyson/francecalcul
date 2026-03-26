@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul Moyenne : Calculez la moyenne arithmétique en ligne</title>
+    <meta name="description" content="Utilisez notre calculateur de moyenne gratuit pour vos notes, vos statistiques ou vos finances. Simple et rapide, avec support des listes de nombres.">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Calculateur de Moyenne",
+      "applicationCategory": "MathApplication",
+      "operatingSystem": "All",
+      "description": "Un outil pour calculer la moyenne d'une série de nombres."
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">CalcPremium</a>
+            <button class="theme-toggle"><span>🌙</span></button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="calculator-container">
+            <h1>Calculateur de Moyenne</h1>
+            <p>Entrez vos nombres séparés par des espaces ou des virgules pour obtenir la moyenne arithmétique.</p>
+            <form class="calc-form" data-type="moyenne" data-instant="true">
+                <div class="input-group">
+                    <label for="nombres">Liste de nombres (ex: 12, 15, 8, 20)</label>
+                    <textarea id="nombres" name="nombres" rows="4" placeholder="12, 15, 8, 20" required style="width: 100%; padding: 0.75rem; border-radius: 8px; border: 1px solid var(--border); background: var(--bg); color: var(--text);"></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Calculer la moyenne</button>
+            </form>
+
+            <div class="result-area">
+                <div class="result-card">
+                    <p>La moyenne est de :</p>
+                    <div class="result-value">--</div>
+                </div>
+            </div>
+        </section>
+
+        <article class="content-area">
+            <h2>Qu'est-ce que le calcul de moyenne ?</h2>
+            <p>Le calcul de la moyenne arithmétique est l'une des notions les plus simples et pourtant les plus puissantes des mathématiques et des statistiques. Elle représente la valeur centrale d'un ensemble de données. En d'autres termes, elle nous dit quelle serait la valeur de chaque élément si toutes les ressources étaient réparties de manière parfaitement équitable. C'est le "juste milieu" théorique d'une série numérique.</p>
+            <p>De l'écolier qui calcule sa moyenne trimestrielle à l'économiste qui analyse le revenu moyen par habitant, la moyenne est partout. Elle permet de simplifier une masse complexe d'informations en un seul chiffre représentatif. C'est l'outil de base pour comparer des groupes, suivre des performances sur la durée et prendre des décisions basées sur des tendances globales plutôt que sur des cas isolés.</p>
+
+            <h2>Comment fonctionne le calculateur de moyenne ?</h2>
+            <p>La formule mathématique de la moyenne arithmétique est d'une grande simplicité : <strong>Somme des valeurs / Nombre de valeurs</strong>. Notre calculateur automatise cette procédure en trois étapes invisibles pour l'utilisateur :</p>
+            <ol>
+                <li>Analyse de la liste saisie pour isoler chaque nombre individuellement.</li>
+                <li>Addition de tous ces nombres pour obtenir le total cumulé.</li>
+                <li>Division de ce total par le décompte total des éléments fournis.</li>
+            </ol>
+            <p>L'avantage de notre outil est sa flexibilité. Il accepte divers séparateurs (virgules, espaces, points-virgules) et ignore les caractères non numériques qui pourraient se glisser par inadvertance dans votre saisie. Il gère également les nombres décimaux avec une grande précision, ce qui est indispensable pour les moyennes budgétaires ou scientifiques.</p>
+
+            <h2>Avantages du calcul de moyenne en ligne</h2>
+            <p>Utiliser notre calculateur de moyenne Premium présente des bénéfices majeurs :</p>
+            <ul>
+                <li><strong>Rapidité d'exécution :</strong> Plus besoin d'additionner manuellement sur une petite calculatrice avec le risque d'oublier un chiffre.</li>
+                <li><strong>Capacité :</strong> Gérez des séries de dizaines de nombres sans aucune perte de concentration.</li>
+                <li><strong>Zéro Erreur :</strong> L'algorithme ne se trompe jamais dans la division finale.</li>
+                <li><strong>Pédagogie :</strong> Utile pour les étudiants qui souhaitent vérifier leurs résultats d'exercices de mathématiques.</li>
+            </ul>
+
+            <h2>Cas d’utilisation du calcul de moyenne</h2>
+            <p>Les situations nécessitant une moyenne sont quotidiennes :</p>
+            <ul>
+                <li><strong>Éducation :</strong> Calculer sa moyenne générale pour savoir si l'on aura son examen ou son diplôme.</li>
+                <li><strong>Budget :</strong> Évaluer ses dépenses mensuelles moyennes sur un an pour anticiper ses économies futures.</li>
+                <li><strong>Sport :</strong> Connaître son temps moyen au kilomètre lors de plusieurs séances de course à pied.</li>
+                <li><strong>Consommation :</strong> Estimer sa consommation moyenne de carburant ou d'électricité sur plusieurs factures.</li>
+                <li><strong>Professionnel :</strong> Calculer le panier moyen d'un commerce ou le temps moyen de réponse à un client.</li>
+            </ul>
+
+            <h2>Fonctionnalités de notre outil</h2>
+            <p>Le calculateur de moyenne CalcPremium propose :</p>
+            <ul>
+                <li>Zone de saisie libre type texte pour copier-coller des listes.</li>
+                <li>Calcul instantané sans clic (option instantanée).</li>
+                <li>Support des nombres entiers et des décimales (points ou virgules).</li>
+                <li>Design épuré propice à la concentration.</li>
+            </ul>
+
+            <h2>Exemples de calcul</h2>
+            <p>Voici des exemples pour mieux visualiser :</p>
+            <ul>
+                <li><strong>Notes d'un élève :</strong> 12, 14, 18, 10. Somme = 54. Nombre de notes = 4. Moyenne = 54 / 4 = 13,5.</li>
+                <li><strong>Dépenses courses :</strong> 45,60€, 32,10€, 54,90€. Somme = 132,60€. Nombre = 3. Moyenne = 44,20€.</li>
+                <li><strong>Températures :</strong> 20, 22, 18, 19, 21. Somme = 100. Nombre = 5. Moyenne = 20 degrés.</li>
+            </ul>
+
+            <h2>FAQ sur la moyenne</h2>
+            <div class="faq-item">
+                <h4>Quelle est la différence entre moyenne et médiane ?</h4>
+                <p>La moyenne est influencée par les valeurs extrêmes (très hautes ou très basses). La médiane, elle, est la valeur qui sépare la série en deux parties égales. Elle est parfois plus représentative d'un groupe.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Peut-on pondérer les moyennes ?</h4>
+                <p>Notre outil calcule la moyenne simple. Pour une moyenne pondérée (où certains chiffres comptent plus que d'autres, comme des coefficients scolaires), il faut multiplier chaque note par son coefficient avant de diviser par la somme des commissions.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Gérez-vous les nombres négatifs ?</h4>
+                <p>Oui, le calculateur traite les valeurs négatives, ce qui est utile pour les moyennes de températures ou de variations boursières.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Y a-t-il une limite de nombres à saisir ?</h4>
+                <p>Pratiquement aucune. Vous pouvez saisir plusieurs centaines de nombres tant que la capacité de mémoire de votre navigateur le permet.</p>
+            </div>
+        </article>
+
+        <section class="related-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); margin-top: 4rem;">
+            <a href="calcul-pourcentage.html" class="calc-card">Pourcentage</a>
+            <a href="calcul-litteral.html" class="calc-card">Calcul Littéral</a>
+            <a href="calcul-m2.html" class="calc-card">Calcul m²</a>
+            <a href="index.html" class="calc-card">Accueil</a>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="index.html">Retour à l'accueil</a></p>
+        <p>&copy; 2026 CalcPremium - L'équilibre par les chiffres.</p>
+    </footer>
+</body>
+</html>

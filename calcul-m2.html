@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul m² : Calculez la surface en mètres carrés (m2)</title>
+    <meta name="description" content="Utilisez notre calculateur de m² gratuit pour évaluer la surface de vos pièces, terrains ou murs. Idéal pour vos travaux de rénovation ou d'aménagement.">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Calculateur de m²",
+      "applicationCategory": "UtilityApplication",
+      "operatingSystem": "All",
+      "description": "Un outil simple pour transformer des dimensions en surface m²."
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">CalcPremium</a>
+            <button class="theme-toggle"><span>🌙</span></button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="calculator-container">
+            <h1>Calculateur de m² (Mètres Carrés)</h1>
+            <p>Saisissez la longueur et la largeur de votre surface pour obtenir le résultat en m².</p>
+            <form class="calc-form" data-type="m2" data-instant="true">
+                <div class="input-group">
+                    <label for="longueur">Longueur (mètres)</label>
+                    <input type="number" id="longueur" name="longueur" placeholder="Ex: 5.5" required step="0.01">
+                </div>
+                <div class="input-group">
+                    <label for="largeur">Largeur (mètres)</label>
+                    <input type="number" id="largeur" name="largeur" placeholder="Ex: 4.2" required step="0.01">
+                </div>
+                <button type="submit" class="btn-primary">Calculer la surface</button>
+            </form>
+
+            <div class="result-area">
+                <div class="result-card">
+                    <p>La surface totale est de :</p>
+                    <div class="result-value">--</div><span> m²</span>
+                </div>
+            </div>
+        </section>
+
+        <article class="content-area">
+            <h2>Qu'est-ce que le calcul en m² ?</h2>
+            <p>Le mètre carré (symbole : m²) est l'unité de mesure de surface du Système International (SI). Il correspond à l'aire d'un carré dont les côtés mesurent exactement un mètre. Que l'on parle d'un appartement, d'un jardin, d'un mur à repeindre ou d'un sol à paver, le m² est l'unité reine qui permet de quantifier une étendue plane. Savoir calculer une surface en m² est une compétence pratique indispensable pour de nombreux projets du quotidien.</p>
+            <p>Le calcul de surface est la base de toute planification spatiale. Il permet de traduire des dimensions linéaires (longueur et largeur) en une mesure d'aire bidimensionnelle. Cette étape est cruciale car la plupart des matériaux de construction (carrelage, parquet, peinture, isolant) ainsi que les prix de l'immobilier sont exprimés en fonction du mètre carré.</p>
+            <p>Notre outil CalcPremium simplifie cette conversion en appliquant la formule géométrique de base de manière instantanée, vous évitant ainsi des erreurs d'inattention lors de vos relevés de mesures.</p>
+
+            <h2>Comment fonctionne le calculateur de m² ?</h2>
+            <p>Le fonctionnement de notre calculateur repose sur la formule mathématique du rectangle : <strong>Longueur x Largeur</strong>. Il s'agit de l'opération la plus courante en architecture et en bricolage. Si votre pièce a une forme rectangulaire parfaite, vous n'avez besoin que de deux mesures pour obtenir sa surface totale.</p>
+            <p>Voici les étapes pour une mesure réussie :</p>
+            <ol>
+                <li>Mesurez la longueur de la pièce (le côté le plus grand) à l'aide d'un mètre ruban ou d'un télémètre laser.</li>
+                <li>Mesurez la largeur de la pièce (le côté perpendiculaire).</li>
+                <li>Reportez ces deux valeurs dans les champs prévus à cet effet sur notre interface.</li>
+                <li>L'algorithme multiplie ces deux chiffres pour vous donner le résultat final en m².</li>
+            </ol>
+            <p>Si votre pièce n'est pas un rectangle parfait (forme en L par exemple), nous vous suggérons de la diviser mentalement en plusieurs rectangles, de calculer la surface de chacun, puis de les additionner pour obtenir le total.</p>
+
+            <h2>Avantages du calcul de surface en ligne</h2>
+            <p>Passer par notre plateforme CalcPremium offre plusieurs bénéfices concrets pour vos projets :</p>
+            <ul>
+                <li><strong>Zéro Erreur :</strong> Ne craignez plus les erreurs de multiplication ou de placement de virgule.</li>
+                <li><strong>Rapidité :</strong> Obtenez le résultat pendant que vous êtes encore dans votre magasin de bricolage ou sur votre chantier.</li>
+                <li><strong>Économie :</strong> En connaissant la surface exacte, vous achetez uniquement la quantité de matériaux nécessaire, évitant ainsi le gaspillage.</li>
+                <li><strong>Précision :</strong> Gérez les nombres décimaux (ex: 4,75m) avec une précision chirurgicale.</li>
+            </ul>
+
+            <h2>Cas d’utilisation du calcul m²</h2>
+            <p>Dans quels contextes est-il utile de sortir notre calculateur ?</p>
+            <ul>
+                <li><strong>Rénovation Intérieure :</strong> Pour savoir combien de pots de peinture acheter pour repeindre vos murs ou combien de paquets de parquet sont nécessaires pour votre salon.</li>
+                <li><strong>Immobilier :</strong> Vérifier la surface "Loi Carrez" annoncée par une agence immobilière lors d'une visite.</li>
+                <li><strong>Jardinage :</strong> Calculer la surface de votre pelouse pour déterminer la quantité de semences ou d'engrais à épandre.</li>
+                <li><strong>Ameublement :</strong> S'assurer qu'un nouveau tapis ou un grand canapé rentrera sans encombre dans votre espace de vie.</li>
+                <li><strong>Fiscalité :</strong> Remplir vos déclarations de taxe foncière ou de taxe d'habitation avec des éléments factuels.</li>
+            </ul>
+
+            <h2>Fonctionnalités de notre outil</h2>
+            <p>Le calculateur de m² CalcPremium propose :</p>
+            <ul>
+                <li>Saisie simple et directe des dimensions.</li>
+                <li>Calcul instantané en temps réel (technologie réactive).</li>
+                <li>Compatibilité totale avec les nombres décimaux (utilisation du point ou de la virgule).</li>
+                <li>Interface optimisée pour être utilisée d'une seule main sur smartphone.</li>
+            </ul>
+
+            <h2>Exemples de calcul</h2>
+            <p>Voici des illustrations pratiques de l'utilisation de l'outil :</p>
+            <ul>
+                <li><strong>Chambre rectangulaire :</strong> Longueur de 4m, largeur de 3m. Résultat : 12 m².</li>
+                <li><strong>Grand Salon :</strong> Longueur de 6,5m, largeur de 4,2m. Résultat : 27,3 m².</li>
+                <li><strong>Petit Balcon :</strong> Longueur de 2m, largeur de 1,2m. Résultat : 2,4 m².</li>
+                <li><strong>Grand Terrain :</strong> Longueur de 30m, largeur de 20m. Résultat : 600 m².</li>
+            </ul>
+
+            <h2>FAQ sur le calcul de surface</h2>
+            <div class="faq-item">
+                <h4>Comment calculer le m² d'un mur ?</h4>
+                <p>C'est exactement la même formule. La longueur du mur devient l'horizontale, et la largeur devient la hauteur verticale (du sol au plafond). Multipliez la longueur par la hauteur pour avoir la surface murale.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Faut-il déduire les portes et fenêtres ?</h4>
+                <p>Oui, si vous calculez pour de la peinture, calculez la surface totale du mur puis soustrayez la surface de chaque ouverture (porte ou fenêtre) calculée elle aussi en m².</p>
+            </div>
+            <div class="faq-item">
+                <h4>Quelle est la différence entre m² et m³ ?</h4>
+                <p>Le m² mesure une surface (2 dimensions), tandis que le m³ mesure un volume (3 dimensions : longueur, largeur et hauteur). On utilise le m³ pour le remplissage (eau, béton, isolation combles).</p>
+            </div>
+            <div class="faq-item">
+                <h4>Le calculateur gère-t-il les arrondis ?</h4>
+                <p>Notre outil affiche deux décimales après la virgule, ce qui est suffisant pour la quasi-totalité des travaux de bricolage domestique.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Comment calculer si la pièce est triangulaire ?</h4>
+                <p>Pour un triangle, la formule est : (Base x Hauteur) / 2. Notre calculateur actuel est optimisé pour les rectangles. Nous recommandons de doubler l'entrée de base si vous avez un triangle rectangle pour avoir le m² d'un rectangle complet puis diviser par deux.</p>
+            </div>
+        </article>
+
+        <section class="related-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); margin-top: 4rem;">
+            <a href="calcul-m3.html" class="calc-card">Calcul m³</a>
+            <a href="calcul-volume.html" class="calc-card">Calcul Volume</a>
+            <a href="calcul-moyenne.html" class="calc-card">Moyenne</a>
+            <a href="calcul-pourcentage.html" class="calc-card">Pourcentage</a>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="index.html">Retour à l'accueil</a></p>
+        <p>&copy; 2026 CalcPremium - L'arpenteur de vos projets.</p>
+    </footer>
+</body>
+</html>

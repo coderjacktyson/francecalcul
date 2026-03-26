@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul IMC : Calculez votre Indice de Masse Corporelle gratuitement</title>
+    <meta name="description" content="Utilisez notre calculateur d'IMC gratuit pour évaluer votre corpulence. Découvrez si vous êtes en sous-poids, poids normal, surpoids ou obésité selon l'OMS.">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Calculateur IMC",
+      "applicationCategory": "HealthApplication",
+      "operatingSystem": "All",
+      "description": "Calculez votre IMC en fonction de votre taille et de votre poids."
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">CalcPremium</a>
+            <button class="theme-toggle"><span>🌙</span></button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="calculator-container">
+            <h1>Calculateur d'IMC (Indice de Masse Corporelle)</h1>
+            <form class="calc-form" data-type="imc" data-instant="true">
+                <div class="input-group">
+                    <label for="poids">Poids (kg)</label>
+                    <input type="number" id="poids" name="poids" placeholder="Ex: 70" required step="0.1">
+                </div>
+                <div class="input-group">
+                    <label for="taille">Taille (cm)</label>
+                    <input type="number" id="taille" name="taille" placeholder="Ex: 175" required>
+                </div>
+                <button type="submit" class="btn-primary">Calculer mon IMC</button>
+            </form>
+
+            <div class="result-area">
+                <div class="result-card">
+                    <p>Votre IMC est de :</p>
+                    <div class="result-value">--</div>
+                    <p class="result-status"></p>
+                </div>
+            </div>
+        </section>
+
+        <article class="content-area">
+            <h2>Qu'est-ce que le calcul IMC ?</h2>
+            <p>L'Indice de Masse Corporelle (IMC), ou BMI en anglais (Body Mass Index), est un indicateur de santé universellement reconnu par l'Organisation Mondiale de la Santé (OMS). Il permet d'estimer la corpulence d'une personne en fonction de son poids et de sa taille. Inventé au XIXe siècle par Adolphe Quetelet, cet indice est aujourd'hui l'outil de référence pour détecter les risques liés au surpoids ou à la maigreur excessive.</p>
+            <p>Le calcul IMC ne mesure pas directement la graisse corporelle, mais il offre une corrélation fiable avec les mesures directes de la masse graisseuse dans la plupart des populations. C'est un outil de dépistage rapide qui permet aux professionnels de santé et aux particuliers d'avoir une première évaluation de l'état nutritionnel et des risques métaboliques associés.</p>
+
+            <h2>Comment fonctionne le calculateur d'IMC ?</h2>
+            <p>Le fonctionnement de notre calculateur est extrêmement simple. Il repose sur la formule mathématique standard : <strong>Poids (kg) / Taille² (m)</strong>. Pour obtenir votre résultat, il vous suffit de renseigner votre poids en kilogrammes et votre taille en centimètres. Le système convertit automatiquement votre taille en mètres pour effectuer la division au carré.</p>
+            <p>Une fois le calcul effectué, le résultat est instantanément comparé aux seuils définis par les autorités de santé internationales. Ces seuils permettent de classer le résultat dans des catégories allant de l'insuffisance pondérale à l'obésité massive.</p>
+
+            <h2>Avantages du calcul IMC</h2>
+            <p>Utiliser un calculateur d'IMC présente plusieurs avantages majeurs :</p>
+            <ul>
+                <li><strong>Rapidité :</strong> Vous obtenez une réponse en quelques secondes sans calcul complexe.</li>
+                <li><strong>Accessibilité :</strong> C'est un outil gratuit qui ne nécessite que deux données simples.</li>
+                <li><strong>Prévention :</strong> Il permet d'identifier précocement des tendances de poids qui pourraient nuire à votre santé à long terme.</li>
+                <li><strong>Standardisation :</strong> C'est une mesure comprise par tous les médecins à travers le monde.</li>
+            </ul>
+
+            <h2>Cas d’utilisation du calcul IMC</h2>
+            <p>Le calcul de l'IMC est utilisé dans divers contextes. Les médecins l'utilisent lors des examens de routine pour suivre l'évolution pondérale de leurs patients. Les nutritionnistes s'en servent comme base pour établir des plans alimentaires adaptés. C'est également un critère souvent utilisé dans les études épidémiologiques pour analyser la santé des populations à grande échelle.</p>
+            <p>Cependant, il est important de noter que l'IMC a ses limites. Il ne distingue pas la masse musculaire de la masse grasse. Ainsi, un athlète très musclé peut avoir un IMC élevé sans être en mauvaise santé. De même, les personnes âgées peuvent avoir un IMC "normal" tout en ayant une masse musculaire insuffisante (sarcopénie).</p>
+
+            <h2>Fonctionnalités de notre outil</h2>
+            <p>Notre calculateur d'IMC a été optimisé pour vous offrir la meilleure expérience utilisateur possible :</p>
+            <ul>
+                <li>Calcul en temps réel dès la saisie des données.</li>
+                <li>Interprétation automatique du résultat (Classification OMS).</li>
+                <li>Interface adaptative (Responsive Design) pour une utilisation fluide sur smartphone.</li>
+                <li>Respect total de votre vie privée : aucune donnée n'est enregistrée sur nos serveurs.</li>
+            </ul>
+
+            <h2>Exemples de calcul</h2>
+            <p>Voici quelques exemples concrets pour mieux comprendre les résultats :</p>
+            <ul>
+                <li><strong>Exemple 1 :</strong> Une personne mesurant 1m70 et pesant 65 kg. Le calcul est 65 / (1.70 * 1.70) = 22.5. L'IMC est de 22.5, ce qui correspond à une corpulence normale.</li>
+                <li><strong>Exemple 2 :</strong> Une personne mesurant 1m80 et pesant 95 kg. Le calcul est 95 / (1.80 * 1.80) = 29.3. L'IMC est de 29.3, ce qui indique un surpoids.</li>
+                <li><strong>Exemple 3 :</strong> Une personne mesurant 1m60 et pesant 45 kg. Le calcul est 45 / (1.60 * 1.60) = 17.6. L'IMC est de 17.6, signe d'une insuffisance pondérale.</li>
+            </ul>
+
+            <h2>FAQ sur le calcul IMC</h2>
+            <div class="faq-item">
+                <h4>L'IMC est-il fiable pour les enfants ?</h4>
+                <p>Pour les enfants et adolescents, on utilise des courbes de croissance spécifiques car leur corps change rapidement. L'IMC brut ne suffit pas, il faut se référer aux percentiles.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Quelle est la différence entre l'IMC et l'IMG ?</h4>
+                <p>L'IMC mesure la corpulence globale, tandis que l'IMG (Indice de Masse Grasse) estime le pourcentage réel de graisse dans le corps en utilisant d'autres paramètres comme l'âge et le sexe.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Un IMC élevé signifie-t-il forcément que je suis en mauvaise santé ?</h4>
+                <p>Pas nécessairement. L'IMC est un indicateur statistique. Seul un médecin peut évaluer votre état de santé réel en prenant en compte d'autres facteurs comme le tour de taille ou le bilan sanguin.</p>
+            </div>
+            <div class="faq-item">
+                <h4>À quelle fréquence dois-je calculer mon IMC ?</h4>
+                <p>Un calcul tous les 3 à 6 mois est suffisant pour suivre votre évolution, à moins que vous ne suiviez un programme spécifique de perte ou de prise de poids.</p>
+            </div>
+        </article>
+
+        <section class="related-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); margin-top: 4rem;">
+            <a href="calcul-metabolisme-basal.html" class="calc-card">Metabolisme Basal</a>
+            <a href="calcul-pourcentage.html" class="calc-card">Pourcentage</a>
+            <a href="calcul-tva.html" class="calc-card">Calcul TVA</a>
+            <a href="calcul-salaire.html" class="calc-card">Calcul Salaire</a>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="index.html">Retour à l'accueil</a></p>
+        <p>&copy; 2026 CalcPremium - Calcul IMC précis.</p>
+    </footer>
+</body>
+</html>

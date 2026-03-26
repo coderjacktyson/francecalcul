@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul Signe Lunaire : Découvrez la position de la Lune à votre naissance</title>
+    <meta name="description" content="Découvrez votre signe lunaire gratuit. Quel était l'impact de la Lune sur votre personnalité à la minute de votre naissance ? Bélier, Cancer, Verseau...">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Calculateur d'Astrologie Lunaire",
+      "applicationCategory": "EntertainmentApplication",
+      "operatingSystem": "All",
+      "description": "Trouvez votre signe lunaire à partir de votre date de naissance."
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">CalcPremium</a>
+            <button class="theme-toggle"><span>🌙</span></button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="calculator-container">
+            <h1>Calculateur de Signe Lunaire</h1>
+            <p>Découvrez dans quel signe du zodiaque se trouvait la Lune au moment de votre naissance pour mieux comprendre votre monde émotionnel.</p>
+            <form class="calc-form" data-type="signe-lunaire" data-instant="false">
+                <div class="input-group">
+                    <label for="date_naissance">Date de naissance</label>
+                    <input type="date" id="date_naissance" name="date_naissance" required>
+                </div>
+                <button type="submit" class="btn-primary">Découvrir ma Lune</button>
+            </form>
+
+            <div class="result-area">
+                <div class="result-card">
+                    <p>Votre signe lunaire est :</p>
+                    <div class="result-value">--</div>
+                    <p class="result-status">La Lune représente vos émotions, votre intuition et votre inconscient.</p>
+                </div>
+            </div>
+        </section>
+
+        <article class="content-area">
+            <h2>Qu'est-ce que le signe lunaire ?</h2>
+            <p>En astrologie, si votre signe solaire (votre signe du zodiaque classique) représente votre personnalité publique, votre ego et votre volonté, votre <strong>signe lunaire</strong> représente votre moi profond, votre jardin secret et vos réactions émotionnelles instinctives. La Lune, par sa vitesse de déplacement rapide autour de la Terre (elle change de signe tous les 2,5 jours environ), apporte une nuance fondamentale à votre thème astral.</p>
+            <p>Connaître sa Lune, c'est comprendre comment on gère le stress, comment on exprime son affection et de quoi on a besoin pour se sentir en sécurité sur le plan affectif. C'est l'astre de la maternité, de la mémoire et de l'imagination. De nombreux astrologues considèrent que le signe lunaire est plus important que le signe solaire pour comprendre l'intimité d'une personne et ses besoins de confort intérieur.</p>
+            <p>Notre calculateur CalcPremium utilise des algorithmes astronomiques simplifiés pour estimer la position de l'astre nocturne à la date de votre naissance, vous offrant ainsi une porte d'entrée vers une meilleure connaissance de votre psyché.</p>
+
+            <h2>Comment fonctionne le calculateur lunaire ?</h2>
+            <p>Le calcul du signe lunaire est beaucoup plus complexe que celui du signe solaire. En effet, alors que le Soleil met un an pour faire le tour du zodiaque, la Lune le parcourt en seulement 27,3 jours (mois sidéral). Pour trouver sa position, l'outil doit calculer le nombre de jours écoulés depuis un point de référence astronomique connu (une "époque") et tenir compte de la vitesse angulaire moyenne de la Lune.</p>
+            <p>Voici les étapes de notre calcul :</p>
+            <ol>
+                <li>Détermination de l'intervalle de temps entre votre naissance et le point de référence.</li>
+                <li>Calcul de la position moyenne de la Lune sur le cercle du zodiaque (en degrés).</li>
+                <li>Attribution du signe correspondant aux 30 degrés de l'arc de cercle occupé par la Lune à cet instant précis.</li>
+            </ol>
+            <p>Pour une précision absolue, l'heure de naissance est normalement requise car la Lune peut changer de signe au cours d'une même journée. Notre outil vous donne une tendance forte basée sur la position médiane du jour dit.</p>
+
+            <h2>Avantages de connaître son signe lunaire</h2>
+            <p>Explorer sa dimension lunaire apporte des bénéfices significatifs pour le développement personnel :</p>
+            <ul>
+                <li><strong>Auto-Compassion :</strong> Comprendre pourquoi on réagit de telle manière face à une émotion forte ou un conflit.</li>
+                <li><strong>Relations Harmonieuses :</strong> Identifier ses "langages de l'amour" et ses besoins de sécurité pour mieux communiquer avec son partenaire.</li>
+                <li><strong>Gestion du Stress :</strong> Découvrir les activités (sport, lecture, méditation) qui apaisent réellement votre signe lunaire spécifique.</li>
+                <li><strong>Lien avec le Passé :</strong> Explorer sa relation à l'enfance et à la figure maternelle, domaines régis par la Lune.</li>
+            </ul>
+
+            <h2>Cas d’utilisation du thème astral lunaire</h2>
+            <p>Quand est-il intéressant de consulter ce calculateur ?</p>
+            <ul>
+                <li><strong>Lors d'un Bilan Personnel :</strong> Si vous ne vous reconnaissez pas totalement dans votre signe solaire (ex: un Lion qui se sent très timide a peut-être une Lune en Vierge ou en Poissons).</li>
+                <li><strong>En Début de Relation :</strong> Pour tester la compatibilité émotionnelle (la synapse lunaire) entre deux personnes.</li>
+                <li><strong>Pour le Choix d'un Loisir :</strong> Un signe lunaire en signe d'Eau cherchera des activités créatives ou aquatiques, alors qu'une Lune en Air aura besoin de lecture et de communication.</li>
+            </ul>
+
+            <h2>Fonctionnalités de notre outil</h2>
+            <p>Le calculateur de Signe Lunaire CalcPremium propose :</p>
+            <ul>
+                <li>Interface simple ne nécessitant que la date de naissance.</li>
+                <li>Identification des 12 signes du zodiaque lunaire.</li>
+                <li>Explications sur l'influence symbolique de l'astre.</li>
+                <li>Design nocturne élégant favorisant l'introspection.</li>
+            </ul>
+
+            <h2>Exemples de tempéraments lunaires</h2>
+            <p>Voici comment la Lune influence votre caractère :</p>
+            <ul>
+                <li><strong>Lune en Bélier :</strong> Réactions vives, besoin d'action immédiate, enthousiasme contagieux mais impatience marquée.</li>
+                <li><strong>Lune en Cancer :</strong> Très grande sensibilité, besoin d'un "foyer douillet", intuition protectrice et grande empathie.</li>
+                <li><strong>Lune en Capricorne :</strong> Émotions contenues, besoin de structure et de réussite, grande fidélité et sérieux à toute épreuve.</li>
+                <li><strong>Lune en Verseau :</strong> Besoin d'indépendance, émotions teintées d'idéalisme, amitiés précieuses et vision originale du monde.</li>
+            </ul>
+
+            <h2>FAQ sur la Lune et le Zodiaque</h2>
+            <div class="faq-item">
+                <h4>L'heure de naissance est-elle indispensable ?</h4>
+                <p>Pour la Lune, oui, car elle bouge très vite (environ 13 degrés par jour). Si vous êtes né à la charnière entre deux signes, l'heure précise fera toute la différence.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Peut-on avoir le même signe solaire et lunaire ?</h4>
+                <p>Oui, cela arrive si vous êtes né lors d'une Nouvelle Lune. On dit alors que vous êtes un "pur" représentant de ce signe (ex: double Scorpion).</p>
+            </div>
+            <div class="faq-item">
+                <h4>La Lune influe-t-elle sur le sommeil ?</h4>
+                <p>De nombreuses études suggèrent que les phases de la Lune (Pleine Lune notamment) peuvent impacter la qualité et la durée de notre sommeil paradoxal.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Quel est le lien entre la Lune et les marées ?</h4>
+                <p>L'attraction gravitationnelle de la Lune crée les marées océaniques. Comme le corps humain est composé à 70% d'eau, certains y voient une explication physique de l'influence lunaire sur nos humeurs.</p>
+            </div>
+        </article>
+
+        <section class="related-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); margin-top: 4rem;">
+            <a href="calcul-ascendant.html" class="calc-card">Ascendant</a>
+            <a href="signe-chinois.html" class="calc-card">Signe Chinois</a>
+            <a href="cycle-du-sommeil.html" class="calc-card">Sommeil</a>
+            <a href="index.html" class="calc-card">Accueil</a>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="index.html">Retour à l'accueil</a></p>
+        <p>&copy; 2026 CalcPremium - La lumière de votre inconscient.</p>
+    </footer>
+</body>
+</html>

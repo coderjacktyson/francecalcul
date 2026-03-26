@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul Volume : Calculez la capacité de vos formes géométriques</title>
+    <meta name="description" content="Utilisez notre calculateur de volume gratuit pour évaluer la capacité de cylindres, de sphères ou de cubes. Idéal pour vos besoins industriels ou domestiques.">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Calculateur de Volume",
+      "applicationCategory": "MathApplication",
+      "operatingSystem": "All",
+      "description": "Un outil complet pour calculer le volume de différentes formes géométriques."
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">CalcPremium</a>
+            <button class="theme-toggle"><span>🌙</span></button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="calculator-container">
+            <h1>Calculateur de Volume (Litres / m³)</h1>
+            <p>Choisissez votre forme et entrez les dimensions pour obtenir le volume total.</p>
+            <form class="calc-form" data-type="volume" data-instant="false">
+                <div class="input-group">
+                    <label for="forme">Forme géométrique</label>
+                    <select id="forme" name="forme" onchange="updateVolumeInputs()">
+                        <option value="cube">Cube / Parallélépipède</option>
+                        <option value="cylindre">Cylindre (ex: cuve ronde)</option>
+                        <option value="sphere">Sphère (ex: ballon)</option>
+                    </select>
+                </div>
+                <div id="volume-inputs">
+                    <!-- Dynamic inputs based on shape -->
+                    <div class="input-group">
+                        <label for="v_longueur">Longueur (m)</label>
+                        <input type="number" id="v_longueur" name="v_longueur" step="0.01" required>
+                    </div>
+                </div>
+                <button type="submit" class="btn-primary">Calculer le volume</button>
+            </form>
+
+            <div class="result-area">
+                <div class="result-card">
+                    <p>Le volume estimé est de :</p>
+                    <div class="result-value">--</div><span> m³</span>
+                </div>
+            </div>
+        </section>
+
+        <article class="content-area">
+            <h2>Qu'est-ce que le calcul de volume ?</h2>
+            <p>Le calcul de volume est une branche de la géométrie tridimensionnelle qui consiste à mesurer l'espace occupé par un objet solide dans les trois dimensions de l'univers : la longueur, la largeur et la hauteur. Contrairement à une surface (mesurée en m²), le volume nous donne une indication sur la capacité de stockage ou de remplissage d'un contenant. C'est une donnée physique fondamentale qui s'exprime généralement en mètres cubes (m³) ou en litres (L) dans le système métrique.</p>
+            <p>Que ce soit pour quantifier l'air circulant dans un bâtiment, l'eau d'un réservoir industriel ou la contenance d'un emballage de produit de consommation, le volume est omniprésent dans les sciences et l'industrie. Maîtriser ces calculs permet d'optimiser le transport, de gérer les stocks avec précision et de respecter les contraintes de sécurité liées au poids et à la pression des fluides.</p>
+            <p>Notre calculateur CalcPremium est un outil polyvalent qui regroupe les formules de base pour les formes géométriques les plus courantes, vous épargnant ainsi le rappel fastidieux des constantes mathématiques comme le nombre Pi (π).</p>
+
+            <h2>Comment fonctionne le calculateur de volume ?</h2>
+            <p>Notre interface s'adapte à la forme que vous choisissez. Chaque forme dispose de sa propre logique de calcul :</p>
+            <ul>
+                <li><strong>Cube ou Parallélépipède :</strong> La formule est <em>Longueur x Largeur x Hauteur</em>. C'est le volume le plus simple à appréhender.</li>
+                <li><strong>Cylindre :</strong> Essentiel pour les silos, les cuves et les tuyaux. La formule est <em>π x Rayon² x Hauteur</em>.</li>
+                <li><strong>Sphère :</strong> Utilisée pour les ballons de stockage sous pression. La formule est <em>(4/3) x π x Rayon³</em>.</li>
+            </ul>
+            <p>L'algorithme de CalcPremium convertit instantanément vos entrées en mètres cubes. Une fois le résultat obtenu, vous pouvez facilement le transformer en litres en multipliant par 1000 (1 m³ = 1000 Litres). Cette souplesse d'utilisation fait de notre outil une référence pour les ingénieurs, les logisticiens et les étudiants en sciences.</p>
+
+            <h2>Avantages du calcul de volume en ligne</h2>
+            <p>Passer par notre plateforme CalcPremium offre plusieurs bénéfices substantiels pour vos estimations techniques :</p>
+            <ul>
+                <li><strong>Rapidité de Conversion :</strong> Obtenez le volume de formes complexes (sphères, cylindres) en quelques secondes.</li>
+                <li><strong>Zéro Erreur :</strong> Ne craignez plus d'oublier de diviser par 3 ou d'élever au carré ; le moteur JS s'en charge pour vous.</li>
+                <li><strong>Précision Scientifique :</strong> Utilise une valeur de Pi précise pour garantir des résultats conformes aux besoins industriels.</li>
+                <li><strong>Optimisation de l'Espace :</strong> Calculez exactement combien de produits peuvent entrer dans un bac de stockage donné.</li>
+            </ul>
+
+            <h2>Cas d’utilisation du calcul volume</h2>
+            <p>Plusieurs secteurs d'activité utilisent quotidiennement notre calculateur de volume :</p>
+            <ul>
+                <li><strong>Agriculture et Industrie :</strong> Calculer la contenance de silos de grains ou de citernes de stockage de carburant.</li>
+                <li><strong>Logistique de Transport :</strong> Évaluer le volume d'un colis non parallélépipédique pour calculer les frais de port volumétriques.</li>
+                <li><strong>Construction et Génie Civil :</strong> Déterminer le volume de béton nécessaire pour des poteaux cylindriques ou des dômes.</li>
+                <li><strong>Sciences Physiques :</strong> Réaliser des calculs de densité et de poussée d'Archimède lors d'expériences de laboratoire.</li>
+                <li><strong>Usage Domestique :</strong> Estimer le volume d'un vase, d'un aquarium ou d'un grand pot de fleurs circulaire.</li>
+            </ul>
+
+            <h2>Fonctionnalités de notre outil</h2>
+            <p>Le calculateur de Volume Premium propose :</p>
+            <ul>
+                <li>Sélecteur de formes géométriques dynamique.</li>
+                <li>Zone d'affichage claire avec distinction entre m³ et Litres potentiels.</li>
+                <li>Interface tactile haute performance pour une utilisation sur le terrain.</li>
+                <li>Calcul basé sur des constantes mathématiques de haute précision.</li>
+            </ul>
+
+            <h2>Exemples de calcul détaillés</h2>
+            <p>Voici des applications concrètes des différentes formules :</p>
+            <ul>
+                <li><strong>Cuve Cylindrique :</strong> Diamètre de 2m (donc rayon de 1m) et hauteur de 3m. Volume = π x 1² x 3 ≈ 9,42 m³, soit environ 9420 litres.</li>
+                <li><strong>Ballon de Stockage (Sphère) :</strong> Rayon de 0,5m. Volume = (4/3) x π x 0,5³ ≈ 0,52 m³, soit environ 523 litres.</li>
+                <li><strong>Carton de déménagement :</strong> Longueur 0,6m, Largeur 0,4m, Hauteur 0,4m. Volume = 0,6 x 0,4 x 0,4 = 0,096 m³, soit 96 litres.</li>
+            </ul>
+
+            <h2>FAQ sur les volumes et les capacités</h2>
+            <div class="faq-item">
+                <h4>Quelle est la différence entre volume et capacité ?</h4>
+                <p>Le volume mesure l'espace qu'occupe un objet, tandis que la capacité mesure la quantité de fluide (gaz ou liquide) qu'un contenant peut accueillir. Leurs unités (m³ vs Litres) sont liées mais distinctes dans leur usage habituel.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Comment calculer le volume d'un cône ?</h4>
+                <p>La formule du cône est 1/3 x Aire de la base x Hauteur. Cette forme sera ajoutée dans notre prochaine mise à jour majeure du calculateur de volume.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Comment convertir des cm³ en m³ ?</h4>
+                <p>Pour passer des cm³ aux m³, il faut diviser par 1 000 000. C'est pourquoi il est préférable de saisir directement vos dimensions en mètres dans notre outil.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Le calculateur est-il adapté pour le gaz ?</h4>
+                <p>Oui, le volume géométrique ne change pas selon l'état de la matière. Cependant, pour un gaz, n'oubliez pas que la pression et la température influent sur la masse contenue dans ce volume.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Peut-on calculer des formes irrégulières ?</h4>
+                <p>Pour des objets complexes, la méthode de déplacement d'eau (Eurêka !) est souvent plus efficace que les calculs géométriques purs.</p>
+            </div>
+        </article>
+
+        <section class="related-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); margin-top: 4rem;">
+            <a href="calcul-m3.html" class="calc-card">Calcul m³</a>
+            <a href="calcul-m2.html" class="calc-card">Calcul m²</a>
+            <a href="calcul-moyenne.html" class="calc-card">Moyenne</a>
+            <a href="index.html" class="calc-card">Accueil</a>
+        </section>
+
+        <script>
+            function updateVolumeInputs() {
+                const shape = document.getElementById('forme').value;
+                const container = document.getElementById('volume-inputs');
+                let html = '';
+                if (shape === 'cube') {
+                    html = `
+                        <div class="input-group"><label for="v_longueur">Longueur (m)</label><input type="number" id="v_longueur" name="v_longueur" step="0.01" required></div>
+                        <div class="input-group"><label for="v_largeur">Largeur (m)</label><input type="number" id="v_largeur" name="v_largeur" step="0.01" required></div>
+                        <div class="input-group"><label for="v_hauteur">Hauteur (m)</label><input type="number" id="v_hauteur" name="v_hauteur" step="0.01" required></div>`;
+                } else if (shape === 'cylindre') {
+                    html = `
+                        <div class="input-group"><label for="v_rayon">Rayon (m)</label><input type="number" id="v_rayon" name="v_rayon" step="0.01" required></div>
+                        <div class="input-group"><label for="v_hauteur">Hauteur (m)</label><input type="number" id="v_hauteur" name="v_hauteur" step="0.01" required></div>`;
+                } else if (shape === 'sphere') {
+                    html = `
+                        <div class="input-group"><label for="v_rayon">Rayon (m)</label><input type="number" id="v_rayon" name="v_rayon" step="0.01" required></div>`;
+                }
+                container.innerHTML = html;
+            }
+            // Initial call
+            window.onload = updateVolumeInputs;
+        </script>
+    </main>
+
+    <footer>
+        <p><a href="index.html">Retour à l'accueil</a></p>
+        <p>&copy; 2026 CalcPremium - La mesure de précision.</p>
+    </footer>
+</body>
+</html>

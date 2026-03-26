@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul Signe Chinois : Découvrez votre animal du zodiaque</title>
+    <meta name="description" content="Découvrez votre signe astrologique chinois et ses caractéristiques. Calculez votre animal totem selon votre année de naissance. Rat, Dragon, Tigre et bien plus.">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Calculateur de Signe Chinois",
+      "applicationCategory": "EntertainmentApplication",
+      "operatingSystem": "All",
+      "description": "Trouvez votre signe astrologique chinois."
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">CalcPremium</a>
+            <button class="theme-toggle"><span>🌙</span></button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="calculator-container">
+            <h1>Calculateur de Signe Chinois</h1>
+            <p>Saisissez votre année de naissance pour découvrir votre animal du zodiaque chinois.</p>
+            <form class="calc-form" data-type="signe-chinois" data-instant="false">
+                <div class="input-group">
+                    <label for="annee">Année de naissance</label>
+                    <input type="number" id="annee" name="annee" placeholder="Ex: 1988" required min="1900" max="2100">
+                </div>
+                <button type="submit" class="btn-primary">Découvrir mon signe</button>
+            </form>
+
+            <div class="result-area">
+                <div class="result-card">
+                    <p>Votre signe chinois est :</p>
+                    <div class="result-value">--</div>
+                    <p class="result-status">Découvrez votre élément et vos traits associés.</p>
+                </div>
+            </div>
+        </section>
+
+        <article class="content-area">
+            <h2>Qu'est-ce que le calcul du signe chinois ?</h2>
+            <p>L'astrologie chinoise, vieille de plusieurs millénaires, repose sur un cycle cosmologique de 12 ans, où chaque année est représentée par un animal emblématique. Contrairement au zodiaque occidental basé sur les constellations et les mois, le zodiaque chinois suit le calendrier lunaire. Les 12 animaux sont, dans l'ordre : le Rat, le Bœuf, le Tigre, le Lapin, le Dragon, le Serpent, le Cheval, la Chèvre, le Singe, le Coq, le Chien et le Cochon.</p>
+            <p>Chaque animal possède des traits de caractère spécifiques qui, selon la tradition, influencent la personnalité, le destin et la compatibilité amoureuse ou professionnelle des personnes nées sous son influence. En plus de l'animal, le cycle intègre également cinq éléments de la cosmologie chinoise (Bois, Feu, Terre, Métal, Eau) qui s'alternent tous les deux ans, créant un cycle complet de 60 ans très riche en symboliques.</p>
+            <p>Notre calculateur CalcPremium permet d'identifier instantanément votre animal de naissance en se basant sur la correspondance entre les années grégoriennes et le cycle répétitif des 12 signes chinois.</p>
+
+            <h2>Comment fonctionne le calculateur de signe ?</h2>
+            <p>Le fonctionnement de notre outil repose sur une formule arithmétique simple utilisant le reste de la division (modulo 12). Puisque le cycle est immuable et se répète tous les 12 ans, chaque année de naissance correspond statistiquement à un animal précis. Par exemple, l'année du Dragon revient tous les 12 ans (...1988, 2000, 2012, 2024...).</p>
+            <p>Il est toutefois important de noter que le Nouvel An chinois ne tombe pas le 1er janvier mais entre le 21 janvier et le 20 février selon les lunaisons. Si vous êtes né au début de l'année (janvier ou début février), notre calculateur simplifié vous donne une base générale par année, mais il est recommandé de vérifier la date exacte du Nouvel An pour les cas frontières.</p>
+            <p>Notre algorithme gère les années de 1900 à 2100, vous permettant de calculer les signes pour toute votre famille, des plus anciens aux plus jeunes.</p>
+
+            <h2>Avantages de connaître son signe chinois</h2>
+            <p>S'intéresser à son animal du zodiaque offre des bénéfices ludiques et introspectifs :</p>
+            <ul>
+                <li><strong>Découverte Culturelle :</strong> Plonger dans une sagesse ancestrale et comprendre une autre vision de la personnalité humaine.</li>
+                <li><strong>Compatibilité :</strong> Identifier les signes avec lesquels vous avez le plus d'affinités selon la tradition orientale.</li>
+                <li><strong>Conseils de Vie :</strong> Lire les prévisions du Nouvel An chinois pour anticiper les énergies de l'année en cours (année de Chance, de Travail, de Changement).</li>
+                <li><strong>Lien Social :</strong> Partager un moment rigolo avec vos amis en comparant vos animaux totems respectifs.</li>
+            </ul>
+
+            <h2>Cas d’utilisation du calcul de signe</h2>
+            <p>Voici quand utiliser ce calculateur CalcPremium :</p>
+            <ul>
+                <li><strong>Célébration du Nouvel An Chinois :</strong> Savoir si l'année en cours est la vôtre (l'année de votre signe est souvent considérée comme une année de défis en Chine).</li>
+                <li><strong>Cadeaux Personnalisés :</strong> Choisir un bibelot ou une décoration à l'effigie de l'animal de naissance d'un proche.</li>
+                <li><strong>Curiosité Personnelle :</strong> Voir si les descriptions de votre animal (exemple : l'indépendance du Tigre ou la sagesse du Serpent) vous correspondent.</li>
+                <li><strong>Recherche Historique :</strong> Connaître le signe de personnages célèbres nés la même année que vous.</li>
+            </ul>
+
+            <h2>Fonctionnalités de notre outil</h2>
+            <p>Le calculateur de Signe Chinois CalcPremium propose :</p>
+            <ul>
+                <li>Saisie rapide de l'année de naissance.</li>
+                <li>Identification immédiate parmi les 12 animaux.</li>
+                <li>Icônes représentatives pour chaque animal.</li>
+                <li>Interface fluide et sans publicité pour une lecture confortable.</li>
+            </ul>
+
+            <h2>Exemples de signes et caractéristiques</h2>
+            <p>Quelques exemples célèbres pour vous guider :</p>
+            <ul>
+                <li><strong>Le Dragon (ex: 2024, 2012, 2000) :</strong> Ambitieux, passionné, confiant. Symbole de puissance et de chance suprême.</li>
+                <li><strong>Le Lapin (ex: 2023, 2011, 1999) :</strong> Doux, élégant, responsable et diplomate. Très apprécié pour son calme.</li>
+                <li><strong>Le Rat (ex: 1984, 1996, 2008, 2020) :</strong> Ingénieux, polyvalent et charmant. Très à l'aise dans les relations sociales.</li>
+                <li><strong>Le Tigre (ex: 1986, 1998, 2010, 2022) :</strong> Courageux, imprévisible et compétitif. Une personnalité magnétique.</li>
+            </ul>
+
+            <h2>FAQ sur le zodiaque chinois</h2>
+            <div class="faq-item">
+                <h4>Et si je suis né en janvier ?</h4>
+                <p>C'est le seul point de vigilance. Si vous êtes né avant le Nouvel An chinois de votre année, votre signe réel est celui de l'année précédente. Consultez un calendrier lunaire précis pour lever le doute.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Quels sont les animaux "amis" ?</h4>
+                <p>On parle souvent de "Triétés". Par exemple, le Rat, le Dragon et le Singe forment un groupe de grande harmonie. Ils s'entendent naturellement très bien.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Qu'est-ce que l'élément de naissance ?</h4>
+                <p>En plus de l'animal, vous avez un élément (ex: Dragon de Bois, Singe d'Eau). L'élément est déterminé par le dernier chiffre de votre année de naissance (ex: 0 et 1 = Métal).</p>
+            </div>
+            <div class="faq-item">
+                <h4>Le zodiaque chinois est-il prédictif ?</h4>
+                <p>Pour beaucoup de pratiquants, il donne des tendances, mais c'est surtout un outil de psychologie comportementale et de philosophie de vie.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Pourquoi n'y a-t-il pas de Chat dans le zodiaque chinois ?</h4>
+                <p>La légende raconte que le Chat a été trompé par le Rat lors de la grande course organisée par l'Empereur de Jade, arrivant trop tard pour avoir sa place parmi les 12 élus.</p>
+            </div>
+        </article>
+
+        <section class="related-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); margin-top: 4rem;">
+            <a href="signe-lunaire.html" class="calc-card">Signe Lunaire</a>
+            <a href="calcul-ascendant.html" class="calc-card">Ascendant</a>
+            <a href="calcul-entre-deux-dates.html" class="calc-card">Calcul Dates</a>
+            <a href="index.html" class="calc-card">Accueil</a>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="index.html">Retour à l'accueil</a></p>
+        <p>&copy; 2026 CalcPremium - L'âme de l'Orient dans vos calculs.</p>
+    </footer>
+</body>
+</html>

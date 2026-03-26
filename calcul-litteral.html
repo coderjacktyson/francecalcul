@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul Littéral : Simplifiez vos expressions algébriques</title>
+    <meta name="description" content="Utilisez notre calculateur de calcul littéral gratuit pour développer des identités remarquables ou simplifier des expressions. Idéal pour les élèves et étudiants.">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Calculateur de Calcul Littéral",
+      "applicationCategory": "EducationApplication",
+      "operatingSystem": "All",
+      "description": "Un outil pour développer des identités remarquables."
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">CalcPremium</a>
+            <button class="theme-toggle"><span>🌙</span></button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="calculator-container">
+            <h1>Calculateur de Calcul Littéral</h1>
+            <p>Développez instantanément vos identités remarquables (a+b)², (a-b)² et (a+b)(a-b).</p>
+            <form class="calc-form" data-type="litteral" data-instant="true">
+                <div class="input-group">
+                    <label for="type_litteral">Type d'identité</label>
+                    <select id="type_litteral" name="type_litteral">
+                        <option value="plus">(a + b)²</option>
+                        <option value="moins">(a - b)²</option>
+                        <option value="diff">(a + b)(a - b)</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="val_a">Valeur de 'a' (ex: 2x, 3)</label>
+                    <input type="text" id="val_a" name="val_a" placeholder="Ex: 3x" required>
+                </div>
+                <div class="input-group">
+                    <label for="val_b">Valeur de 'b' (ex: 5)</label>
+                    <input type="text" id="val_b" name="val_b" placeholder="Ex: 4" required>
+                </div>
+                <button type="submit" class="btn-primary">Développer l'expression</button>
+            </form>
+
+            <div class="result-area">
+                <div class="result-card">
+                    <p>L'expression développée est :</p>
+                    <div class="result-value">--</div>
+                </div>
+            </div>
+        </section>
+
+        <article class="content-area">
+            <h2>Qu'est-ce que le calcul littéral ?</h2>
+            <p>Le calcul littéral est une branche fondamentale de l'algèbre où l'on utilise des lettres (généralement x, a, b) pour représenter des nombres dont la valeur n'est pas encore fixée ou est généralisée. C'est le langage des mathématiques modernes. Contrairement à l'arithmétique pure qui manipule des chiffres, le calcul littéral permet de créer des formules, de résoudre des équations complexes et de démontrer des propriétés universelles qui s'appliquent à tous les nombres.</p>
+            <p>Maîtriser le calcul littéral est une étape clé dans le parcours scolaire (collège et lycée). Il demande de la rigueur dans l'application des priorités opératoires et des règles de développement ou de factorisation. Notre outil est conçu pour accompagner cet apprentissage en fournissant des résultats rapides pour les formes les plus courantes, appelées "identités remarquables".</p>
+
+            <h2>Comment fonctionne le calculateur littéral ?</h2>
+            <p>Notre calculateur se concentre sur les trois identités remarquables du second degré, qui sont les piliers de l'algèbre. L'algorithme prend vos expressions pour 'a' et 'b', puis applique les formules de développement classiques :</p>
+            <ol>
+                <li><strong>Le carré d'une somme :</strong> (a + b)² = a² + 2ab + b²</li>
+                <li><strong>Le carré d'une différence :</strong> (a - b)² = a² - 2ab + b²</li>
+                <li><strong>Le produit de la somme par la différence :</strong> (a + b)(a - b) = a² - b²</li>
+            </ol>
+            <p>L'outil gère intelligemment la concaténation des textes. Si vous entrez "3x" pour 'a' et "4" pour 'b', il calculera les carrés de chaque partie et les présentera sous une forme simplifiée et lisible. C'est l'aide parfaite pour vérifier ses devoirs ou pour simplifier rapidement une expression avant une résolution d'équation.</p>
+
+            <h2>Avantages du calcul littéral en ligne</h2>
+            <p>Utiliser notre interface CalcPremium pour vos exercices d'algèbre offre plusieurs bénéfices :</p>
+            <ul>
+                <li><strong>Vérification Immédiate :</strong> Confirmez vos résultats manuels en une seconde pour éviter de traîner une erreur dans la suite d'un problème.</li>
+                <li><strong>Compréhension Visuelle :</strong> Voyez comment les termes a², 2ab et b² se forment à partir de vos données initiales.</li>
+                <li><strong>Rapidité :</strong> Gain de temps précieux lors de révisions intenses ou de préparations aux examens (Brevet, Bac).</li>
+                <li><strong>Support des Variables :</strong> Capacité à taper des expressions mixtes (chiffres et lettres).</li>
+            </ul>
+
+            <h2>Cas d’utilisation du calcul algébrique</h2>
+            <p>Le calcul littéral est sollicité dans de nombreux domaines scientifiques :</p>
+            <ul>
+                <li><strong>Géométrie :</strong> Modéliser des aires ou des volumes dont les côtes sont variables.</li>
+                <li><strong>Physique-Chimie :</strong> Manipuler les formules de trajectoire, de vitesse ou de concentration molaire.</li>
+                <li><strong>Économie :</strong> Définir des fonctions de coût ou de profit en fonction d'une quantité produite 'x'.</li>
+                <li><strong>Informatique :</strong> Créer des algorithmes de calcul automatique basés sur des variables d'entrée.</li>
+            </ul>
+
+            <h2>Fonctionnalités de notre outil</h2>
+            <p>Le calculateur de Calcul Littéral Premium propose :</p>
+            <ul>
+                <li>Menu déroulant pour choisir l'identité remarquable souhaitée.</li>
+                <li>Champs de saisie flexibles acceptant lettres et chiffres.</li>
+                <li>Développement automatique en temps réel.</li>
+                <li>Formatage propre des puissances (ex: a²) pour une lecture naturelle.</li>
+            </ul>
+
+            <h2>Exemples de développement</h2>
+            <p>Voici des applications types que vous pouvez tester :</p>
+            <ul>
+                <li><strong>Exemple 1 :</strong> (x + 3)². En entrant 'x' et '3', vous obtiendrez x² + 6x + 9.</li>
+                <li><strong>Exemple 2 :</strong> (2x - 5)². En entrant '2x' et '5', l'outil affiche 4x² - 20x + 25.</li>
+                <li><strong>Exemple 3 :</strong> (3x + 4)(3x - 4). Résultat immédiat : 9x² - 16.</li>
+            </ul>
+
+            <h2>FAQ sur le calcul littéral</h2>
+            <div class="faq-item">
+                <h4>Qu'est-ce qu'un monôme ?</h4>
+                <p>Un monôme est une expression algébrique composée d'un seul terme, comme 3x ou 5y². La somme de plusieurs monômes forme un polynôme.</p>
+            </div>
+            <div class="faq-item">
+                <h4>À quoi servent les identités remarquables ?</h4>
+                <p>Elles servent à gagner du temps pour développer (passer d'un produit à une somme) ou factoriser (passer d'une somme à un produit), ce qui est crucial pour résoudre des équations du second degré.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Peut-on distribuer un signe moins ?</h4>
+                <p>Oui, c'est l'une des règles d'or : -(a + b) devient -a - b. Il faut toujours être vigilant sur le changement de signe devant une parenthèse.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Quelle est la priorité des opérations ?</h4>
+                <p>En calcul littéral comme en arithmétique, on suit la règle PEMDAS : Parenthèses, Exposants, Multiplications/Divisions, Additions/Soustractions.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Gérez-vous les identités de degré 3 (a+b)³ ?</h4>
+                <p>Pour l'instant, nous nous concentrons sur le carré (degré 2), qui représente 95% des besoins au collège et au lycée.</p>
+            </div>
+        </article>
+
+        <section class="related-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); margin-top: 4rem;">
+            <a href="calcul-moyenne.html" class="calc-card">Calcul Moyenne</a>
+            <a href="calcul-pourcentage.html" class="calc-card">Pourcentage</a>
+            <a href="calcul-m2.html" class="calc-card">Calcul m²</a>
+            <a href="index.html" class="calc-card">Accueil</a>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="index.html">Retour à l'accueil</a></p>
+        <p>&copy; 2026 CalcPremium - L'algèbre simplifiée.</p>
+    </footer>
+</body>
+</html>

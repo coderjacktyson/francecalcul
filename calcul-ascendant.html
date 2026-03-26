@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul Ascendant : Trouvez votre signe ascendant gratuitement</title>
+    <meta name="description" content="Découvrez votre ascendant astrologique selon votre heure et lieu de naissance. Un outil gratuit pour approfondir votre thème astral et votre personnalité.">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Calculateur d'Ascendant",
+      "applicationCategory": "EntertainmentApplication",
+      "operatingSystem": "All",
+      "description": "Trouvez votre ascendant astrologique à partir de votre heure de naissance."
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">CalcPremium</a>
+            <button class="theme-toggle"><span>🌙</span></button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="calculator-container">
+            <h1>Calculateur d'Ascendant Astrologique</h1>
+            <p>Déterminez votre ascendant en saisissant votre heure de naissance exacte. L'ascendant est le signe qui se levait à l'horizon Est au moment précis de votre naissance.</p>
+            <form class="calc-form" data-type="ascendant" data-instant="false">
+                <div class="input-group">
+                    <label for="heure_naissance">Heure de naissance (HH:MM)</label>
+                    <input type="time" id="heure_naissance" name="heure_naissance" required>
+                </div>
+                <div class="input-group">
+                    <label for="lieu">Lieu de naissance (Ville)</label>
+                    <input type="text" id="lieu" name="lieu" placeholder="Ex: Paris" required>
+                </div>
+                <button type="submit" class="btn-primary">Calculer mon Ascendant</button>
+            </form>
+
+            <div class="result-area">
+                <div class="result-card">
+                    <p>Votre ascendant estimé est :</p>
+                    <div class="result-value">--</div>
+                    <p class="result-status">L'ascendant influence votre apparence physique et votre comportement social.</p>
+                </div>
+            </div>
+        </section>
+
+        <article class="content-area">
+            <h2>Qu'est-ce que l'ascendant astrologique ?</h2>
+            <p>L'ascendant est l'un des piliers les plus importants de votre thème astral, aux côtés du signe solaire et lunaire. Il représente le signe du zodiaque qui se levait à l'est au moment exact de votre premier souffle. Si le signe solaire (votre zodiaque classique) est l'essence de votre être, l'ascendant est le "filtre" à travers lequel vous interagissez avec le monde extérieur. C'est la première impression que vous donnez aux autres, votre masque social, mais aussi votre constitution physique et votre rapport à la santé.</p>
+            <p>Alors que le signe solaire change tous les mois, l'ascendant change environ toutes les deux heures. C'est pour cette raison que deux personnes nées le même jour peuvent avoir des personnalités radicalement différentes. L'ascendant est l'élément qui personnalise votre thème et le rend unique. Il marque le début de la Maison I (l'Autre), point de départ de toute l'organisation de votre carte du ciel.</p>
+            <p>Notre calculateur CalcPremium utilise une méthode simplifiée basée sur le temps sidéral moyen pour vous donner une première indication de votre ascendant en fonction de votre heure de naissance.</p>
+
+            <h2>Comment fonctionne le calculateur d'ascendant ?</h2>
+            <p>Trouver l'ascendant exact nécessite des calculs trigonométriques complexes impliquant la latitude et la longitude précises du lieu de naissance, ainsi que le temps universel coordonné (UTC). La rotation de la Terre fait que les 12 signes du zodiaque se succèdent en 24 heures. Chaque signe occupe ainsi une plage d'environ deux heures à l'horizon Est.</p>
+            <p>Voici le processus suivi par l'outil :</p>
+            <ol>
+                <li>Analyse de l'heure de naissance saisie.</li>
+                <li>Estimation de la position de l'horizon Est par rapport au centre galactique.</li>
+                <li>Identification du signe zodiacal occupant cette portion du ciel.</li>
+            </ol>
+            <p>Pour plus de précision, l'outil vous demande votre ville de naissance afin de tenir compte (approximativement) de la situation géographique. Il permet de transformer une donnée brute temporelle en un trait de personnalité riche et nuancé.</p>
+
+            <h2>Avantages de connaître son ascendant</h2>
+            <p>Identifier son ascendant apporte une nouvelle dimension à la compréhension de sa propre vie :</p>
+            <ul>
+                <li><strong>Image de Soi :</strong> Mieux comprendre comment les autres vous perçoivent et pourquoi vous dégagez telle ou telle "aura" spontanée.</li>
+                <li><strong>Orientation de Carrière :</strong> L'ascendant donne souvent des indications sur les domaines professionnels où vous serez le plus à l'aise socialement.</li>
+                <li><strong>Relations Publiques :</strong> Adapter sa communication en fonction de ses forces innées de premier contact.</li>
+                <li><strong>Santé et Vitalité :</strong> De nombreux astrologues lient l'ascendant à l'énergie physique et aux points de vigilance corporels.</li>
+            </ul>
+
+            <h2>Cas d’utilisation du calcul d'ascendant</h2>
+            <p>Quand est-il recommandé d'utiliser ce calculateur CalcPremium ?</p>
+            <ul>
+                <li><strong>Construction de Thème Astral :</strong> Comme première pierre d'une analyse astrologique plus complète (incluant les planètes et les maisons).</li>
+                <li><strong>Compréhension des Paradoxes :</strong> Si vous ne vous sentez pas en accord avec votre signe solaire (ex: un Gémeaux qui se sent très introverti a peut-être un ascendant Scorpion ou Capricorne).</li>
+                <li><strong>Cadeau Spirituel :</strong> Calculer l'ascendant d'un proche pour lui offrir une lecture de personnalité sur-mesure.</li>
+                <li><strong>Moment de Vie Important :</strong> Lors d'un changement de cap, pour identifier ses ressources personnelles restées jusque-là dans l'ombre.</li>
+            </ul>
+
+            <h2>Fonctionnalités de notre outil</h2>
+            <p>Le calculateur de Calcul Ascendant Premium propose :</p>
+            <ul>
+                <li>Saisie intuitive de l'heure de naissance au format horloge.</li>
+                <li>Identification des 12 signes du zodiaque ascendant.</li>
+                <li>Zéro conservation de données personnelles pour une confidentialité totale.</li>
+                <li>Design de "carte du ciel" élégant pour une expérience immersive.</li>
+            </ul>
+
+            <h2>Exemples d'ascendants célèbres</h2>
+            <p>Voici comment l'ascendant nuance le signe principal :</p>
+            <ul>
+                <li><strong>Bélier Ascendant Poisson :</strong> L'énergie fonceuse du Bélier est adoucie par la sensibilité et l'intuition profonde du Poisson.</li>
+                <li><strong>Balance Ascendant Lion :</strong> Le goût de l'harmonie de la Balance est renforcé par une aura charismatique et un besoin de reconnaissance.</li>
+                <li><strong>Vierge Ascendant Sagittaire :</strong> Le perfectionnisme de la Vierge s'ouvre sur un besoin d'aventure, de voyages et de philosophie.</li>
+                <li><strong>Taureau Ascendant Verseau :</strong> La stabilité du Taureau s'allie à une pensée originale, moderne et parfois Rebelle.</li>
+            </ul>
+
+            <h2>FAQ sur l'ascendant et les maisons</h2>
+            <div class="faq-item">
+                <h4>Que faire si je n'ai pas mon heure de naissance ?</h4>
+                <p>Cherchez votre acte de naissance ou demandez à vos parents. Sans l'heure de naissance (à 30 minutes près), il est impossible d'avoir un ascendant fiable.</p>
+            </div>
+            <div class="faq-item">
+                <h4>L'ascendant change-t-il avec l'âge ?</h4>
+                <p>Non, l'ascendant est fixé à la naissance. Cependant, on dit souvent qu'en vieillissant (vers 30-40 ans), nous intégrons davantage les qualités de notre ascendant que celles de notre signe solaire.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Pourquoi le lieu de naissance est-il important ?</h4>
+                <p>Selon l'endroit de la Terre où vous êtes né, l'angle de vue sur l'horizon Est change. Une personne née au même instant à Paris et à New York n'aura pas le même ascendant.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Quelle est la différence entre ascendant et descendant ?</h4>
+                <p>Le descendant est le signe opposé à l'ascendant (situé à l'Ouest au moment de la naissance). Il représente votre rapport aux autres et au mariage.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Est-ce que l'heure d'été est prise en compte ?</h4>
+                <p>Notre version actuelle utilise l'heure légale transmise. Pour une précision absolue, les astrologues corrigent manuellement l'heure d'été pour revenir à "l'heure solaire", mais notre outil donne une tendance très fiable.</p>
+            </div>
+        </article>
+
+        <section class="related-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); margin-top: 4rem;">
+            <a href="signe-lunaire.html" class="calc-card">Signe Lunaire</a>
+            <a href="signe-chinois.html" class="calc-card">Signe Chinois</a>
+            <a href="calcul-dates.html" class="calc-card">Calcul Dates</a>
+            <a href="index.html" class="calc-card">Accueil</a>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="index.html">Retour à l'accueil</a></p>
+        <p>&copy; 2026 CalcPremium - L'astrologie à la portée de tous.</p>
+    </footer>
+</body>
+</html>

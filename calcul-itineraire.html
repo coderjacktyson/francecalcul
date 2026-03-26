@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul Itinéraire : Estimez vos temps de trajet et distances</title>
+    <meta name="description" content="Utilisez notre calculateur d'itinéraire gratuit pour évaluer le temps de route et la distance entre deux points. Idéal pour planifier vos voyages en voiture.">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Calculateur d'Itinéraire",
+      "applicationCategory": "TravelApplication",
+      "operatingSystem": "All",
+      "description": "Estimez le temps de trajet en fonction de la distance et de la vitesse moyenne."
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">CalcPremium</a>
+            <button class="theme-toggle"><span>🌙</span></button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="calculator-container">
+            <h1>Calculateur d'Itinéraire et de Trajet</h1>
+            <p>Estimez votre temps de route en fonction de la distance et de votre vitesse moyenne prévue.</p>
+            <form class="calc-form" data-type="itineraire" data-instant="true">
+                <div class="input-group">
+                    <label for="distance">Distance à parcourir (km)</label>
+                    <input type="number" id="distance" name="distance" placeholder="Ex: 450" required step="1">
+                </div>
+                <div class="input-group">
+                    <label for="vitesse">Vitesse moyenne estimée (km/h)</label>
+                    <input type="number" id="vitesse" name="vitesse" placeholder="Ex: 110" value="110" required step="1">
+                </div>
+                <button type="submit" class="btn-primary">Estimer la durée</button>
+            </form>
+
+            <div class="result-area">
+                <div class="result-card">
+                    <p>La durée estimée du trajet est de :</p>
+                    <div class="result-value">--</div><span></span>
+                </div>
+            </div>
+        </section>
+
+        <article class="content-area">
+            <h2>Qu'est-ce que le calcul d'itinéraire ?</h2>
+            <p>Le calcul d'itinéraire est une opération logistique qui consiste à déterminer la meilleure trajectoire, la distance totale et le temps nécessaire pour relier un point de départ à un point d'arrivée. Dans un monde de plus en plus mobile, cette planification est devenue une routine pour des millions d'automobilistes, de cyclistes et de transporteurs. Plus qu'une simple mesure géographique, c'est un outil d'aide à la décision qui permet d'optimiser ses ressources (temps et carburant).</p>
+            <p>Calculer son itinéraire à l'avance permet de réduire le stress lié aux imprévus, de mieux gérer son budget voyage et de s'assurer d'arriver à l'heure à ses rendez-vous professionnels ou personnels. Bien que la technologie GPS ait révolutionné cette pratique, comprendre les principes de base de la relation entre distance, vitesse et temps reste essentiel pour toute planification stratégique.</p>
+            <p>Notre calculateur CalcPremium offre une simulation rapide et fiable basée sur les lois fondamentales de la cinématique, vous permettant de faire des projections réalistes en quelques secondes.</p>
+
+            <h2>Comment fonctionne le calculateur de trajet ?</h2>
+            <p>Le fonctionnement de notre outil repose sur la formule physique universelle : <strong>Temps = Distance / Vitesse</strong>. L'algorithme prend en compte vos deux variables d'entrée pour produire une durée précise.</p>
+            <p>Voici les étapes du calcul interne :</p>
+            <ol>
+                <li>Division de la distance totale (km) par la vitesse moyenne (km/h).</li>
+                <li>Obtention de la durée brute en heures décimales.</li>
+                <li>Conversion des décimales en minutes réelles (multiplication par 60).</li>
+                <li>Affichage du résultat sous un format lisible (ex: 4h15min).</li>
+            </ol>
+            <p>L'avantage d'utiliser une vitesse moyenne ajustable est que vous pouvez simuler différents types de routes : autoroutes (110-130 km/h), routes départementales (80 km/h) ou zones urbaines (30-50 km/h) pour obtenir une estimation personnalisée au plus proche de votre réalité de conduite.</p>
+
+            <h2>Avantages de la planification d'itinéraire en ligne</h2>
+            <p>Anticiper vos déplacements avec notre interface Premium vous apporte plusieurs bénéfices évidents :</p>
+            <ul>
+                <li><strong>Zéro Surprise :</strong> Évitez les erreurs de jugement sur la longueur réelle d'un trajet à travers plusieurs pays ou régions.</li>
+                <li><strong>Gestion de la Fatigue :</strong> Prévoyez vos temps de pause obligatoires (toutes les 2 heures) en visualisant la durée totale.</li>
+                <li><strong>Économie de Carburant :</strong> En estimant mieux votre trajet, vous pouvez choisir des vitesses plus économiques sans risquer le retard.</li>
+                <li><strong>Planification budgétaire :</strong> En connaissant la distance, vous pouvez facilement déduire le coût du carburant et les éventuels frais kilométriques.</li>
+            </ul>
+
+            <h2>Cas d’utilisation du calcul itinéraire</h2>
+            <p>Le calculateur CalcPremium est l'allié de nombreux voyageurs :</p>
+            <ul>
+                <li><strong>Départs en Vacances :</strong> Organiser la route vers sa destination estivale avec toute la famille.</li>
+                <li><strong>Déplacements Professionnels :</strong> Préparer une tournée de clientèle pour optimiser son temps de travail sur la route.</li>
+                <li><strong>Logistique de Déménagement :</strong> Évaluer le temps nécessaire pour un aller-retour avec un camion lourd dont la vitesse est limitée.</li>
+                <li><strong>Cyclotourisme et Sorties Moto :</strong> Estimer ses étapes quotidiennes en fonction de sa propre vitesse de croisière.</li>
+            </ul>
+
+            <h2>Fonctionnalités de notre outil</h2>
+            <p>Le calculateur d'Itinéraire Premium propose :</p>
+            <ul>
+                <li>Saisie rapide de la distance totale du parcours.</li>
+                <li>Valeur de vitesse moyenne modifiable selon votre type de route.</li>
+                <li>Calcul instantané sans rechargement de page.</li>
+                <li>Interface légère et rapide, idéale pour une consultation sur le pouce.</li>
+            </ul>
+
+            <h2>Exemples de calcul</h2>
+            <p>Voici des simulations types pour vos futurs voyages :</p>
+            <ul>
+                <li><strong>Trajet Autoroutier :</strong> Paris-Lyon (460km) à 115 km/h de moyenne. Durée estimée : 4h00.</li>
+                <li><strong>Trajet Mixte :</strong> Une distance de 120km à 60 km/h de moyenne (routes secondaires et villes). Durée : 2h00.</li>
+                <li><strong>Grand Voyage :</strong> 900km à 100 km/h de moyenne (en incluant les ralentissements). Durée : 9h00.</li>
+            </ul>
+
+            <h2>FAQ sur les itinéraires et la route</h2>
+            <div class="faq-item">
+                <h4>Quelle vitesse moyenne choisir ?</h4>
+                <p>Pour un trajet 100% autoroute, comptez 110-120 km/h moyenne réelle (en incluant les péages). Pour de la route nationale, tablez sur 65-75 km/h.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Le calculateur prend-il en compte les bouchons ?</h4>
+                <p>Non, c'est un calcul théorique. Pour les conditions de circulation en temps réel, il est préférable d'utiliser des applications GPS connectées.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Faut-il ajouter le temps de pause ?</h4>
+                <p>Absolument. La sécurité routière recommande 15 à 20 min de pause toutes les 2h de conduite. Ajoutez manuellement ce temps au résultat du calculateur.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Peut-on calculer l'itinéraire d'un vélo ?</h4>
+                <p>Oui, il suffit de régler la vitesse moyenne sur environ 15 ou 20 km/h selon votre condition physique et le dénivelé.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Comment trouver la distance exacte entre deux villes ?</h4>
+                <p>De nombreux sites de cartographie (Google Maps, Waze, ViaMichelin) vous donneront la distance en km que vous pourrez ensuite injecter dans notre outil pour vos propres simulations de vitesse.</p>
+            </div>
+        </article>
+
+        <section class="related-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); margin-top: 4rem;">
+            <a href="calcul-frais-kilometrique.html" class="calc-card">Frais Kilométrique</a>
+            <a href="calcul-m2.html" class="calc-card">Calcul m²</a>
+            <a href="calcul-heure.html" class="calc-card">Calcul Heure</a>
+            <a href="index.html" class="calc-card">Accueil</a>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="index.html">Retour à l'accueil</a></p>
+        <p>&copy; 2026 CalcPremium - Tracez votre route en toute liberté.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculateur Frais Kilométriques 2026 : Barème Officiel</title>
+    <meta name="description" content="Simulez vos indemnités kilométriques selon le barème de l'administration fiscale. Calculez les remboursements pour vos déplacements professionnels en voiture.">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Calculateur de Frais Kilométriques",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "All",
+      "description": "Estimez vos indemnités de déplacement professionnel."
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">CalcPremium</a>
+            <button class="theme-toggle"><span>🌙</span></button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="calculator-container">
+            <h1>Calculateur de Frais Kilométriques</h1>
+            <p>Utilisez notre simulateur basé sur le barème fiscal pour vos déplacements professionnels.</p>
+            <form class="calc-form" data-type="frais-kilometrique" data-instant="false">
+                <div class="input-group">
+                    <label for="distance">Distance Parcourue (km)</label>
+                    <input type="number" id="distance" name="distance" placeholder="Ex: 500" required step="1">
+                </div>
+                <div class="input-group">
+                    <label for="puissance">Puissance du véhicule (CV fiscaux)</label>
+                    <select id="puissance" name="puissance">
+                        <option value="3">3 CV et moins</option>
+                        <option value="4">4 CV</option>
+                        <option value="5">5 CV</option>
+                        <option value="6">6 CV</option>
+                        <option value="7">7 CV et plus</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-primary">Calculer mes frais</button>
+            </form>
+
+            <div class="result-area">
+                <div class="result-card">
+                    <p>Le montant de votre indemnité est de :</p>
+                    <div class="result-value">--</div><span> €</span>
+                </div>
+            </div>
+        </section>
+
+        <article class="content-area">
+            <h2>Qu'est-ce que le calcul des frais kilométriques ?</h2>
+            <p>Le calcul des frais kilométriques est un dispositif légal en France qui permet aux salariés et aux dirigeants d'entreprises d'être remboursés pour les dépenses engagées lors de l'utilisation de leur véhicule personnel à des fins professionnelles. Plutôt que de comptabiliser chaque facture d'essence, d'assurance ou d'entretien, l'administration fiscale propose un "barème kilométrique" forfaitaire. Ce barème est réévalué chaque année pour coller à l'évolution du prix des carburants et des coûts de maintenance automobile.</p>
+            <p>L'utilisation de ce barème simplifie grandement la gestion comptable des notes de frais. Il couvre l'ensemble des coûts liés au véhicule : dépréciation, assurance, carburant et entretien courant. Seuls les frais de péage et de stationnement peuvent être remboursés en sus sur présentation de justificatifs. Notre calculateur automatise cette simulation pour vous permettre d'anticiper vos remboursements ou de préparer votre déclaration d'impôts.</p>
+
+            <h2>Comment fonctionne le calculateur de frais ?</h2>
+            <p>Le fonctionnement de notre outil repose sur l'application stricte du barème kilométrique officiel. Deux facteurs principaux déterminent le montant de l'indemnité : la puissance fiscale de votre véhicule (exprimée en chevaux fiscaux - CV) et la distance totale parcourue sur l'année civile.</p>
+            <p>Le barème est dégressif en fonction de la distance. Il existe trois tranches principales :</p>
+            <ol>
+                <li>Jusqu'à 5 000 km par an.</li>
+                <li>De 5 001 à 20 000 km par an.</li>
+                <li>Au-delà de 20 000 km par an.</li>
+            </ol>
+            <p>Chaque tranche possède son propre coefficient multiplicateur. Notre calculateur applique les coefficients moyens pour vous fournir une estimation instantanée. Si vous utilisez un véhicule électrique, n'oubliez pas que le montant final de l'indemnité est majoré de 20% par la loi française pour encourager la transition écologique.</p>
+
+            <h2>Avantages du calcul kilométrique en ligne</h2>
+            <p>Utiliser notre interface CalcPremium offre des bénéfices concrets pour les professionnels mobiles :</p>
+            <ul>
+                <li><strong>Simplicité :</strong> Évitez les tableaux de calcul fiscaux souvent rébarbatifs.</li>
+                <li><strong>Précision :</strong> Obtenez un montant conforme aux attentes des services comptables ou du fisc.</li>
+                <li><strong>Gain de Temps :</strong> Saisissez vos distances en fin de mois pour préparer vos notes de frais en quelques secondes.</li>
+                <li><strong>Optimisation :</strong> Evaluez s'il est plus intéressant pour vous d'utiliser votre véhicule personnel ou de demander un véhicule de fonction.</li>
+            </ul>
+
+            <h2>Cas d’utilisation des indemnités kilométriques</h2>
+            <p>Le calculateur est l'allié de nombreux profils d'utilisateurs :</p>
+            <ul>
+                <li><strong>Commerciaux et Itinérants :</strong> Pour suivre leurs nombreux déplacements hebdomadaires en clientèle.</li>
+                <li><strong>Auto-entrepreneurs :</strong> Pour intégrer leurs frais réels dans leur comptabilité simplifiée.</li>
+                <li><strong>Salariés :</strong> Pour vérifier que le remboursement proposé par leur employeur est conforme au minimum légal.</li>
+                <li><strong>Déclarants d'Impôts :</strong> Pour choisir entre l'abattement forfaitaire de 10% ou les frais réels lors de la déclaration annuelle de revenus.</li>
+            </ul>
+
+            <h2>Fonctionnalités de notre outil</h2>
+            <p>Le calculateur de Frais Kilométriques Premium propose :</p>
+            <ul>
+                <li>Saisie rapide de la distance totale.</li>
+                <li>Menu déroulant des puissances fiscales (de 3 CV à 7 CV+).</li>
+                <li>Calcul instantané sans rechargement de page.</li>
+                <li>Adaptation parfaite aux écrans mobiles pour une utilisation directe depuis sa voiture.</li>
+            </ul>
+
+            <h2>Exemples de calcul</h2>
+            <p>Voici des ordres de grandeur basés sur le barème (valeurs indicatives) :</p>
+            <ul>
+                <li><strong>Petite Voiture (3 CV) :</strong> Pour 1000 km, l'indemnité est d'environ 450€ (selon la tranche de distance).</li>
+                <li><strong>Berline (6 CV) :</strong> Pour 500 km, vous pouvez espérer un remboursement de près de 300€.</li>
+                <li><strong>Véhicule Sportif (7 CV+) :</strong> Ce sont les taux les plus élevés qui s'appliquent pour compenser la consommation plus importante.</li>
+            </ul>
+
+            <h2>FAQ sur les frais kilométriques</h2>
+            <div class="faq-item">
+                <h4>Puis-je l'utiliser pour mon trajet domicile-travail ?</h4>
+                <p>Oui, mais sous certaines conditions. En général, seuls les 40 premiers kilomètres (aller) sont déductibles si vous ne motivez pas une distance supérieure par des contraintes spécifiques.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Qu'en est-il du trajet pour les deux-roues ?</h4>
+                <p>Les motos et scooters ont leur propre barème kilométrique spécifique, distinct de celui des voitures, prenant en compte leur cylindrée.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Faut-il garder les justificatifs d'essence ?</h4>
+                <p>Si vous utilisez le barème kilométrique, vous n'avez pas besoin des factures de carburant. Cependant, vous devez pouvoir prouver la réalité de vos déplacements (agenda de rendez-vous, convocations, etc.).</p>
+            </div>
+            <div class="faq-item">
+                <h4>Le barème inclut-il le parking ?</h4>
+                <p>Non, le parking et les péages sont remboursables au réel en plus de l'indemnité kilométrique forfaitaire.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Comment faire en cas de covoiturage professionnel ?</h4>
+                <p>Seul le conducteur propriètaire du véhicule peut déclarer les frais kilométriques. Les passagers ne peuvent prétendre à aucun remboursement kilométrique.</p>
+            </div>
+        </article>
+
+        <section class="related-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); margin-top: 4rem;">
+            <a href="calcul-salaire.html" class="calc-card">Calcul Salaire</a>
+            <a href="calcul-tva.html" class="calc-card">Calcul TVA</a>
+            <a href="calcul-chomage.html" class="calc-card">Calcul Chômage</a>
+            <a href="index.html" class="calc-card">Accueil</a>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="index.html">Retour à l'accueil</a></p>
+        <p>&copy; 2026 CalcPremium - Roulez en toute conformité.</p>
+    </footer>
+</body>
+</html>

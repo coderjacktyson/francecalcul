@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculateur Cycle du Sommeil : Réveillez-vous en forme</title>
+    <meta name="description" content="Découvrez à quelle heure vous coucher ou vous réveiller pour respecter vos cycles de 90 minutes. Un outil gratuit pour améliorer la qualité de votre repos.">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Calculateur de Sommeil",
+      "applicationCategory": "HealthApplication",
+      "operatingSystem": "All",
+      "description": "Optimisez vos cycles de sommeil pour un réveil sans fatigue."
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">CalcPremium</a>
+            <button class="theme-toggle"><span>🌙</span></button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="calculator-container">
+            <h1>Calculateur de Cycle du Sommeil</h1>
+            <p>À quelle heure devez-vous vous réveiller ? Nous calculerons l'heure idéale pour vous coucher afin de respecter vos cycles.</p>
+            <form class="calc-form" data-type="cycle-du-sommeil" data-instant="false">
+                <div class="input-group">
+                    <label for="wake_time">Heure de réveil souhaitée (HH:MM)</label>
+                    <input type="time" id="wake_time" name="wake_time" required>
+                </div>
+                <button type="submit" class="btn-primary">Calculer mes cycles</button>
+            </form>
+
+            <div class="result-area">
+                <div class="result-card">
+                    <p>Heures de coucher recommandées (pour 5 ou 6 cycles) :</p>
+                    <div class="result-value">--</div>
+                    <p class="result-status">Comptez environ 14 minutes pour vous endormir.</p>
+                </div>
+            </div>
+        </section>
+
+        <article class="content-area">
+            <h2>Qu'est-ce que le calcul du cycle du sommeil ?</h2>
+            <p>Le calcul du cycle du sommeil repose sur la chronobiologie humaine. Une nuit de sommeil n'est pas un bloc monolithique mais une succession de cycles d'environ 90 minutes. Chaque cycle comprend différentes phases : le sommeil léger (stades 1 et 2), le sommeil profond (stade 3) et le sommeil paradoxal (REM - Rapid Eye Movement). Se réveiller au milieu d'un sommeil profond est ce qui provoque la sensation de "brouillard cérébral" ou d'inertie du sommeil, même si l'on a dormi longtemps.</p>
+            <p>La clé d'un réveil tonique n'est donc pas seulement la durée totale du sommeil (généralement entre 7 et 9 heures), mais le moment précis où l'alarme sonne. En alignant votre réveil sur la fin d'un cycle de 90 minutes, vous sortez naturellement d'un état de sommeil léger, ce qui facilite grandement la mise en route de votre organisme pour la journée.</p>
+
+            <h2>Comment fonctionne le calculateur de cycle ?</h2>
+            <p>Notre algorithme travaille à rebours. À partir de l'heure de réveil souhaitée, il soustrait des multiples de 90 minutes pour identifier les moments de transition entre les cycles. Typiquement, une nuit saine se compose de 5 cycles (7h30 de sommeil) ou 6 cycles (9h00 de sommeil). L'outil affiche ces deux options idéales pour vous permettre de choisir celle qui convient le mieux à votre planning.</p>
+            <p>De plus, nous intégrons un paramètre physiologique important : la latence d'endormissement. En moyenne, un être humain met 14 minutes pour passer de l'état de veille au premier stade du sommeil. Notre calculateur suggère donc des heures de coucher qui intègrent ce petit battement temporel pour que les cycles débutent au moment précis où vous sombrez dans le sommeil.</p>
+
+            <h2>Avantages de respecter les cycles du sommeil</h2>
+            <p>Adopter une routine basée sur les cycles offre des bénéfices immédiats sur la santé et la productivité :</p>
+            <ul>
+                <li><strong>Réveil sans effort :</strong> Sensation de fraîcheur et de lucidité dès le saut du lit.</li>
+                <li><strong>Meilleure Humeur :</strong> Moins d'irritabilité liée à un réveil brutal.</li>
+                <li><strong>Productivité Accrue :</strong> Un cerveau mieux reposé est plus performant sur la résolution de problèmes complexes.</li>
+                <li><strong>Santé Durable :</strong> Un sommeil de qualité favorise la régénération cellulaire et renforce le système immunitaire.</li>
+            </ul>
+
+            <h2>Cas d’utilisation du calcul de sommeil</h2>
+            <p>Notre outil est particulièrement utile dans les scénarios suivants :</p>
+            <ul>
+                <li><strong>Soirée entre amis :</strong> "Si je me couche à 2h du matin, à quelle heure dois-je me réveiller pour ne pas être épuisé ?"</li>
+                <li><strong>Préparation Sportive :</strong> Caler sa récupération après une compétition ou un entraînement intensif.</li>
+                <li><strong>Travail de nuit ou horaires décalés :</strong> Gérer ses siestes et ses périodes de repos pour compenser le manque de sommeil régulier.</li>
+                <li><strong>Voyage et Jet-Lag :</strong> Recaler son horloge interne en visant des réveils à cycle fixe.</li>
+            </ul>
+
+            <h2>Fonctionnalités de notre outil</h2>
+            <p>Le calculateur de cycle CalcPremium propose :</p>
+            <ul>
+                <li>Saisie intuitive de l'heure via une interface horlogère native.</li>
+                <li>Calcul précis basé sur les cycles de 90 minutes.</li>
+                <li>Prise en compte de la latence d'endormissement moyenne.</li>
+                <li>Interface sombre (Dark Mode) par défaut pour ne pas agresser vos yeux juste avant le coucher.</li>
+            </ul>
+
+            <h2>Exemples de calcul</h2>
+            <p>Voici des horaires types recommandés par l'algorithme :</p>
+            <ul>
+                <li><strong>Réveil à 07h00 :</strong> Couchez-vous à 23h30 (6 cycles) ou 01h00 (5 cycles) pour un réveil optimal.</li>
+                <li><strong>Réveil à 08h30 :</strong> L'heure idéale de coucher est 01h00 (6 cycles) ou 02h30 (5 cycles).</li>
+                <li><strong>Réveil à 06h00 :</strong> Couchez-vous à 22h30 (6 cycles) ou minuit (5 cycles) pour rester performant.</li>
+            </ul>
+
+            <h2>FAQ sur le sommeil et ses cycles</h2>
+            <div class="faq-item">
+                <h4>Que se passe-t-il si je dors moins de 3 cycles ?</h4>
+                <p>À moins de 4 heures de sommeil, le cerveau n'a pas le temps de réaliser les fonctions de nettoyage glymphatique essentielles. C'est une dette de sommeil dangereuse à long terme.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Peut-on changer la durée de ses cycles ?</h4>
+                <p>Non, la durée d'un cycle est dictée par votre génétique et votre âge, bien qu'elle puisse osciller légèrement entre 85 et 110 minutes selon les individus.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Comment faire si je m'endors en 5 minutes plutôt qu'en 14 ?</h4>
+                <p>Vous pouvez ajuster mentalement nos propositions. L'important est la régularité. Si vous vous endormez très vite, privilégiez le premier horaire suggéré.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Les applications de réveil intelligent sont-elles plus efficaces ?</h4>
+                <p>Ces applications utilisent des accéléromètres pour détecter vos mouvements. Elles sont complémentaires à notre calculateur qui vous donne une cible fixe et théorique pour la préparation.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Pourquoi rêve-t-on juste avant de se réveiller ?</h4>
+                <p>La fin de cycle est souvent riche en sommeil paradoxal (REM), phase où le cerveau est très actif et produit les rêves les plus complexes et mémorisables.</p>
+            </div>
+        </article>
+
+        <section class="related-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); margin-top: 4rem;">
+            <a href="calcul-metabolisme-basal.html" class="calc-card">Metabolisme Basal</a>
+            <a href="calcul-imc.html" class="calc-card">Calcul IMC</a>
+            <a href="calcul-heure.html" class="calc-card">Calcul Heure</a>
+            <a href="calcul-ovulation.html" class="calc-card">Ovulation</a>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="index.html">Retour à l'accueil</a></p>
+        <p>&copy; 2026 CalcPremium - Dormez mieux, vivez plus.</p>
+    </footer>
+</body>
+</html>

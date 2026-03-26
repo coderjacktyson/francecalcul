@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul TVA : Convertissez HT en TTC rapidement (Taux 20%, 10%, 5.5%)</title>
+    <meta name="description" content="Calculateur de TVA gratuit pour les entreprises et particuliers. Passez du prix hors taxes (HT) au prix toutes taxes comprises (TTC) selon les taux en vigueur.">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Calculateur de TVA",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "All",
+      "description": "Outil de conversion HT vers TTC avec les taux de TVA français."
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">CalcPremium</a>
+            <button class="theme-toggle"><span>🌙</span></button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="calculator-container">
+            <h1>Calculateur de TVA</h1>
+            <form class="calc-form" data-type="tva" data-instant="true">
+                <div class="input-group">
+                    <label for="montant_ht">Montant Hors Taxes (HT) en €</label>
+                    <input type="number" id="montant_ht" name="montant_ht" placeholder="Ex: 100" required step="0.01">
+                </div>
+                <div class="input-group">
+                    <label for="taux_tva">Taux de TVA (%)</label>
+                    <select id="taux_tva" name="taux_tva" required>
+                        <option value="20">20% (Taux normal)</option>
+                        <option value="10">10% (Taux réduit)</option>
+                        <option value="5.5">5.5% (Taux réduit)</option>
+                        <option value="2.1">2.1% (Taux particulier)</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-primary">Calculer le montant TTC</button>
+            </form>
+
+            <div class="result-area">
+                <div class="result-card">
+                    <p>Le montant TTC est de :</p>
+                    <div class="result-value">--</div><span> €</span>
+                </div>
+            </div>
+        </section>
+
+        <article class="content-area">
+            <h2>Qu'est-ce que le calcul de la TVA ?</h2>
+            <p>La Taxe sur la Valeur Ajoutée (TVA) est un impôt indirect sur la consommation qui s'applique à la plupart des biens et services vendus en Europe, et notamment en France. Contrairement à d'autres impôts, elle n'est pas payée directement par les entreprises mais par le consommateur final. Les entreprises jouent le rôle de collecteur : elles facturent la TVA à leurs clients (TVA collectée) et la reversent ensuite à l'État, après avoir déduit la TVA qu'elles ont elles-mêmes payée sur leurs achats professionnels (TVA déductible).</p>
+            <p>Le calcul de la TVA est une opération quotidienne pour tout entrepreneur, auto-entrepreneur ou comptable. Il permet de passer du prix "Hors Taxes" (HT) au prix "Toutes Taxes Comprises" (TTC). Notre outil simplifie cette tâche en appliquant instantanément les taux légaux français en vigueur.</p>
+
+            <h2>Comment fonctionne le calculateur de TVA ?</h2>
+            <p>Le principe mathématique est simple mais requiert une certaine rigueur. Pour calculer le prix TTC à partir du prix HT, on utilise la formule : <strong>TTC = HT * (1 + Taux/100)</strong>. Par exemple, avec un taux de 20%, on multiplie le HT par 1,20. Dans l'autre sens, pour retrouver le HT à partir du TTC, on divise le TTC par 1,20 (soit l'opération : <strong>HT = TTC / (1 + Taux/100)</strong>).</p>
+            <p>Notre calculateur prend en compte les différents taux applicables en France : le taux normal de 20%, le taux réduit de 10% (restauration, transport), le taux de 5,5% (alimentaire, énergie) et le taux super-réduit de 2,1% (médicaments remboursables, presse). Il vous suffit de sélectionner le taux correspondant à votre secteur d'activité pour obtenir un résultat précis.</p>
+
+            <h2>Avantages du calcul TVA en ligne</h2>
+            <p>Utiliser notre outil en ligne offre de nombreux bénéfices :</p>
+            <ul>
+                <li><strong>Précision :</strong> Évite les erreurs d'arrondis qui peuvent fausser une comptabilité ou une facture.</li>
+                <li><strong>Mise à jour :</strong> Les taux sont conformes à la législation actuelle.</li>
+                <li><strong>Gain de temps :</strong> Plus besoin de sortir sa calculatrice ou de créer un tableau Excel complexe.</li>
+                <li><strong>Simplicité :</strong> Interface pensée pour une utilisation mobile rapide sur le terrain (pendant un rendez-vous client par exemple).</li>
+            </ul>
+
+            <h2>Cas d’utilisation du calcul TVA</h2>
+            <p>En tant qu'entrepreneur, vous utiliserez ce calculateur dans de nombreuses situations :</p>
+            <ul>
+                <li><strong>Rédaction de devis :</strong> Pour communiquer un prix TTC clair à vos clients particuliers.</li>
+                <li><strong>Achats professionnels :</strong> Pour estimer le montant de la TVA que vous pourrez déduire.</li>
+                <li><strong>Vérification de factures :</strong> Pour s'assurer que le fournisseur a appliqué le bon taux et les bons montants.</li>
+                <li><strong>Comparaison de prix :</strong> Pour comparer des offres provenant de différents pays ou secteurs avec des taux variés.</li>
+            </ul>
+
+            <h2>Fonctionnalités de notre outil</h2>
+            <p>Le calculateur de TVA Premium propose :</p>
+            <ul>
+                <li>Saisie rapide du montant HT.</li>
+                <li>Menu déroulant avec tous les taux légaux français (20%, 10%, 5.5%, 2.1%).</li>
+                <li>Résultat immédiat sans rafraîchir la page (Technologie JS).</li>
+                <li>Design épuré et sans distraction publicitaire.</li>
+            </ul>
+
+            <h2>Exemples de calcul</h2>
+            <p>Voici des exemples pour illustrer l'application des différents taux :</p>
+            <ul>
+                <li><strong>Taux 20% (Normal) :</strong> Pour une prestation de service informatique à 1000€ HT. Le TTC sera de 1200€ (1000 * 1.20).</li>
+                <li><strong>Taux 10% (Réduit) :</strong> Pour un repas au restaurant de 50€ HT. Le TTC sera de 55€ (50 * 1.10).</li>
+                <li><strong>Taux 5.5% (Essentiel) :</strong> Pour un livre de 20€ HT. Le TTC sera de 21,10€ (20 * 1.055).</li>
+            </ul>
+
+            <h2>FAQ sur le calcul de la TVA</h2>
+            <div class="faq-item">
+                <h4>Peut-on être exonéré de TVA ?</h4>
+                <p>Oui, les auto-entrepreneurs bénéficient souvent de la " franchise en base de TVA " jusqu'à un certain plafond de chiffre d'affaires. Ils facturent alors en HT sans collecter de TVA.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Qu'est-ce que le montant de TVA collecté ?</h4>
+                <p>C'est la différence entre le prix TTC et le prix HT (TTC - HT). C'est ce montant précis que l'entreprise doit reverser au Trésor Public.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Le taux de 20% est-il le plus courant ?</h4>
+                <p>Oui, c'est le taux "par défaut" qui s'applique à l'immense majorité des ventes de biens et de prestations de services en France.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Comment calculer le HT si j'ai seulement le TTC ?</h4>
+                <p>Il faut diviser le TTC par (1 + Taux). Pour une TVA à 20%, divisez par 1,2. Pour une TVA à 5.5%, divisez par 1,055.</p>
+            </div>
+        </article>
+
+        <section class="related-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); margin-top: 4rem;">
+            <a href="calcul-salaire.html" class="calc-card">Calcul Salaire</a>
+            <a href="calcul-pourcentage.html" class="calc-card">Pourcentage</a>
+            <a href="calcul-frais-kilometrique.html" class="calc-card">Frais Kilométrique</a>
+            <a href="calcul-heure-travail.html" class="calc-card">Heure de Travail</a>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="index.html">Retour à l'accueil</a></p>
+        <p>&copy; 2026 CalcPremium - Calcul TVA simplifié.</p>
+    </footer>
+</body>
+</html>

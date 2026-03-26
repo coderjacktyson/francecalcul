@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul Metabolisme Basal (MB) : Découvrez votre BMR</title>
+    <meta name="description" content="Calculez votre métabolisme de base (BMR) gratuitement. Découvrez combien de calories votre corps brûle au repos selon votre âge, sexe et poids.">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Calculateur de Métabolisme Basal",
+      "applicationCategory": "HealthApplication",
+      "operatingSystem": "All",
+      "description": "Estimez vos besoins caloriques journaliers au repos."
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">CalcPremium</a>
+            <button class="theme-toggle"><span>🌙</span></button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="calculator-container">
+            <h1>Calculateur de Métabolisme Basal (BMR)</h1>
+            <p>Découvrez le nombre de calories que votre corps consomme pour maintenir ses fonctions vitales au repos complet.</p>
+            <form class="calc-form" data-type="metabolisme-basal" data-instant="false">
+                <div class="input-group">
+                    <label for="sexe">Sexe</label>
+                    <select id="sexe" name="sexe">
+                        <option value="homme">Homme</option>
+                        <option value="femme">Femme</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="poids">Poids (kg)</label>
+                    <input type="number" id="poids" name="poids" placeholder="Ex: 75" required step="0.1">
+                </div>
+                <div class="input-group">
+                    <label for="taille">Taille (cm)</label>
+                    <input type="number" id="taille" name="taille" placeholder="Ex: 175" required>
+                </div>
+                <div class="input-group">
+                    <label for="age">Âge (années)</label>
+                    <input type="number" id="age" name="age" placeholder="Ex: 30" required>
+                </div>
+                <button type="submit" class="btn-primary">Calculer mon métabolisme</button>
+            </form>
+
+            <div class="result-area">
+                <div class="result-card">
+                    <p>Votre métabolisme de base est de :</p>
+                    <div class="result-value">--</div><span> Calories/jour</span>
+                </div>
+            </div>
+        </section>
+
+        <article class="content-area">
+            <h2>Qu'est-ce que le métabolisme basal ?</h2>
+            <p>Le métabolisme basal, souvent abrégé MB ou BMR (Basal Metabolic Rate), correspond à l'énergie incompressible que notre corps dépense chaque jour pour assurer ses fonctions vitales au repos complet. C'est le carburant nécessaire pour que votre cœur batte, que vos poumons respirent, que votre cerveau traite des données et que vos organes régulent votre température interne, sans aucun effort physique ou mental supplémentaire.</p>
+            <p>Représentant environ 60% à 70% de la dépense énergétique totale d'une personne sédentaire, le MB est la pierre angulaire de toute stratégie de nutrition ou de perte de poids. Comprendre son propre métabolisme permet de définir précisément le nombre de calories à consommer pour maintenir son poids, en prendre ou en perdre. C'est une donnée biologique unique qui évolue avec l'âge, le poids et la composition corporelle.</p>
+            <p>Notre calculateur utilise la formule de Harris-Benedict (revisitée par Roza et Shizgal), qui reste l'un des standards les plus fiables en nutrition clinique pour estimer ces besoins vitaux.</p>
+
+            <h2>Comment fonctionne le calculateur de MB ?</h2>
+            <p>Le calcul du métabolisme basal repose sur des variables physiologiques précises. L'algorithme applique des équations différenciées selon le sexe, car la masse musculaire (plus métaboliquement active) est généralement plus élevée chez les hommes, tandis que le tissu adipeux est plus présent chez les femmes.</p>
+            <p>Voici les paramètres pris en compte :</p>
+            <ul>
+                <li><strong>Le Poids :</strong> Plus le corps est massif, plus il nécessite d'énergie pour s'entretenir.</li>
+                <li><strong>La Taille :</strong> Une stature plus grande augmente la surface corporelle et donc les besoins de régulation thermique.</li>
+                <li><strong>L'Âge :</strong> Le métabolisme a tendance à ralentir naturellement avec les années, principalement dû à la perte progressive de masse musculaire.</li>
+                <li><strong>Le Sexe :</strong> Ajustement des coefficients en fonction des différences hormonales et de composition corporelle moyennes.</li>
+            </ul>
+            <p>En combinant ces quatre facteurs, notre outil génère une estimation calorique quotidienne. Ce chiffre est votre "seuil zéro" : si vous mangez moins que ce montant sans bouger, votre corps puisera dans ses réserves.</p>
+
+            <h2>Avantages de connaître son métabolisme basal</h2>
+            <p>Maîtriser cette donnée offre des bénéfices concrets pour votre santé au quotidien :</p>
+            <ul>
+                <li><strong>Planification de Régime :</strong> Créer un déficit calorique sain et durable sans affamer votre organisme.</li>
+                <li><strong>Objectifs Sportifs :</strong> Calculer votre dépense totale en ajoutant vos activités physiques au métabolisme de base.</li>
+                <li><strong>Compréhension de Soi :</strong> Réaliser pourquoi certains perdent du poids plus vite que d'autres à effort égal.</li>
+                <li><strong>Santé Long Terme :</strong> S'assurer de ne pas descendre en dessous de ses besoins vitaux, ce qui pourrait endommager le métabolisme (mode famine).</li>
+            </ul>
+
+            <h2>Cas d’utilisation du calcul de métabolisme</h2>
+            <p>Plusieurs situations justifient un passage par notre calculateur de MB :</p>
+            <ul>
+                <li><strong>Prise de Masse Musculaire :</strong> Déterminer le surplus calorique nécessaire pour nourrir les muscles en construction.</li>
+                <li><strong>Gestion du Poids :</strong> Ajuster ses portions alimentaires en fonction de sa sédentarité ou de ses activités.</li>
+                <li><strong>Rééquilibrage Alimentaire :</strong> Établir une base solide avec un diététicien ou un coach sportif.</li>
+                <li><strong>Suivi de Santé :</strong> Observer comment votre MB évolue après une perte de poids importante pour éviter l'effet yoyo.</li>
+            </ul>
+
+            <h2>Fonctionnalités de notre outil</h2>
+            <p>Le calculateur de Métabolisme Basal CalcPremium propose :</p>
+            <ul>
+                <li>Saisie précise et guidée pour homme et femme.</li>
+                <li>Algorithme de Harris-Benedict optimisé.</li>
+                <li>Résultat immédiat exprimé en kilo-calories (kcal) par jour.</li>
+                <li>Zéro conservation de données personnelles pour une confidentialité totale.</li>
+            </ul>
+
+            <h2>Exemples de calcul</h2>
+            <p>Voici l'application des formules sur des profils types :</p>
+            <ul>
+                <li><strong>Homme de 25 ans (70kg, 1m75) :</strong> MB estimé à environ 1750 kcal/jour.</li>
+                <li><strong>Femme de 40 ans (60kg, 1m65) :</strong> MB estimé à environ 1350 kcal/jour.</li>
+                <li><strong>Homme de 60 ans (85kg, 1m80) :</strong> MB estimé à environ 1800 kcal/jour (malgré l'âge, le poids maintient un MB élevé).</li>
+            </ul>
+
+            <h2>FAQ sur le métabolisme et les calories</h2>
+            <div class="faq-item">
+                <h4>Peut-on augmenter son métabolisme basal ?</h4>
+                <p>Oui, principalement en augmentant sa masse musculaire par le sport de force. Les muscles brûlent plus de calories au repos que la graisse.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Le stress influence-t-il le MB ?</h4>
+                <p>Oui, le stress chronique libère du cortisol qui peut ralentir le métabolisme et favoriser le stockage des graisses abdominales.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Quelle est la différence entre MB et TDEE ?</h4>
+                <p>Le MB est le repos total. Le TDEE (Total Daily Energy Expenditure) est votre MB multiplié par votre niveau d'activité physique (travail, marche, sport).</p>
+            </div>
+            <div class="faq-item">
+                <h4>Faut-il manger moins que son MB pour maigrir ?</h4>
+                <p>Il n'est pas recommandé de descendre sous son MB sur de longues périodes sans suivi médical, car cela peut entraîner de graves carences et une fatigue chronique.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Le sommeil a-t-il un impact sur les calories brûlées ?</h4>
+                <p>Absolument. Un manque de sommeil perturbe les hormones de la faim (ghréline et leptine) et peut ralentir légèrement le MB.</p>
+            </div>
+        </article>
+
+        <section class="related-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); margin-top: 4rem;">
+            <a href="calcul-imc.html" class="calc-card">Calcul IMC</a>
+            <a href="cycle-du-sommeil.html" class="calc-card">Sommeil</a>
+            <a href="calcul-ovulation.html" class="calc-card">Ovulation</a>
+            <a href="index.html" class="calc-card">Accueil</a>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="index.html">Retour à l'accueil</a></p>
+        <p>&copy; 2026 CalcPremium - L'énergie de votre corps décryptée.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul Entre Deux Dates : Comptez les jours précisément</title>
+    <meta name="description" content="Calculez le nombre de jours, semaines ou mois entre deux dates avec notre outil gratuit. Idéal pour planifier des événements ou calculer des durées.">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Calculateur de Dates",
+      "applicationCategory": "UtilityApplication",
+      "operatingSystem": "All",
+      "description": "Comptez le nombre de jours entre deux dates."
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">CalcPremium</a>
+            <button class="theme-toggle"><span>🌙</span></button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="calculator-container">
+            <h1>Calculateur entre deux dates</h1>
+            <p>Déterminez la durée exacte séparant deux moments clés.</p>
+            <form class="calc-form" data-type="entre-deux-dates" data-instant="false">
+                <div class="input-group">
+                    <label for="date1">Date de début</label>
+                    <input type="date" id="date1" name="date1" required>
+                </div>
+                <div class="input-group">
+                    <label for="date2">Date de fin</label>
+                    <input type="date" id="date2" name="date2" required>
+                </div>
+                <button type="submit" class="btn-primary">Calculer la différence</button>
+            </form>
+
+            <div class="result-area">
+                <div class="result-card">
+                    <p>La différence est de :</p>
+                    <div class="result-value">--</div>
+                </div>
+            </div>
+        </section>
+
+        <article class="content-area">
+            <h2>Qu'est-ce que le calcul entre deux dates ?</h2>
+            <p>Le calcul de la durée écoulée entre deux dates est une opération fondamentale qui rythme notre vision du temps. Qu'il s'agisse de mesurer l'âge d'un individu en jours, de calculer le délai de préavis lors d'une démission, ou d'évaluer la durée d'un projet de construction, la précision est de mise. Le calendrier grégorien, avec ses mois de longueurs variables et ses années bissextiles, rend ce calcul mental particulièrement ardu.</p>
+            <p>Savoir "combien de dodos" il reste avant Noël ou un anniversaire est une question universelle. À un niveau plus professionnel, les juristes, les gestionnaires de ressources humaines et les logisticiens manipulent ces données quotidiennement pour respecter des échéances légales ou contractuelles. Notre outil élimine toute incertitude en fournissant un résultat mathématiquement exact, prenant en compte toutes les spécificités calendaires.</p>
+
+            <h2>Comment fonctionne le calculateur de dates ?</h2>
+            <p>L'algorithme de notre calculateur utilise la norme internationale de représentation du temps. Pour chaque date saisie, le système calcule le "timestamp" (le nombre de millisecondes écoulées depuis le 1er janvier 1970). La différence entre ces deux valeurs est ensuite convertie en jours en la divisant par le nombre de millisecondes contenues dans une journée entière (86 400 000 ms).</p>
+            <p>Cette méthode garantit une précision au jour près, quels que soient les mois traversés. Elle permet de gérer les sauts d'années bissextiles sans aucune intervention manuelle. Le résultat est affiché sous forme de nombre de jours, ce qui est l'unité la plus commune pour le calcul de délais administratifs ou de durées de vacances.</p>
+
+            <h2>Avantages du calcul de dates en ligne</h2>
+            <p>Utiliser notre calculateur présente des bénéfices stratégiques :</p>
+            <ul>
+                <li><strong>Fiabilité absolue :</strong> Plus d'erreurs d'oubli du 29 février ou de confusion sur la longueur du mois de juillet et d'août.</li>
+                <li><strong>Planification :</strong> Organisez vos événements futurs avec un compte à rebours précis.</li>
+                <li><strong>Aspect Légal :</strong> Calculez vos délais de rétractation ou de réponse aux administrations sans risque de dépassement.</li>
+                <li><strong>Gratuité :</strong> Accès illimité pour tous vos besoins personnels ou professionnels.</li>
+            </ul>
+
+            <h2>Cas d’utilisation du calcul entre deux dates</h2>
+            <p>Voici des exemples concrets où cet outil devient indispensable :</p>
+            <ul>
+                <li><strong>Gestion de Projet :</strong> Définir le diagramme de Gantt en connaissant le nombre exact de jours ouvrés disponibles.</li>
+                <li><strong>Maternité et Paternité :</strong> Suivre l'âge exact d'un bébé en jours pendant ses premières semaines de vie.</li>
+                <li><strong>Ventes et Marketing :</strong> Calculer la durée d'une promotion ou d'un compte à rebours de lancement.</li>
+                <li><strong>Finances :</strong> Estimer les intérêts courus sur un placement financier basé sur une durée journalière.</li>
+                <li><strong>Voyages :</strong> Savoir combien de nuitées sont nécessaires pour un séjour entre une date d'arrivée et une date de départ.</li>
+            </ul>
+
+            <h2>Fonctionnalités de notre outil</h2>
+            <p>Le calculateur de dates Premium offre :</p>
+            <ul>
+                <li>Saisie facilitée par sélecteurs de calendrier natifs.</li>
+                <li>Calcul instantané après clic sur le bouton de validation.</li>
+                <li>Gestion robuste des erreurs (si la date de fin est antérieure à la date de début).</li>
+                <li>Affichage clair et lisible sur tous les terminaux.</li>
+            </ul>
+
+            <h2>Exemples de calcul</h2>
+            <p>Pour illustrer la puissance du calcul automatique :</p>
+            <ul>
+                <li><strong>Année Bissextile :</strong> Entre le 1er février 2024 et le 1er mars 2024, l'outil comptera 29 jours, là où une année normale en compterait 28.</li>
+                <li><strong>Grande Période :</strong> Entre votre date de naissance et aujourd'hui. Par exemple, si vous avez 30 ans, vous avez vécu plus de 10 950 jours !</li>
+                <li><strong>Délais Administratifs :</strong> "J'ai reçu ce courrier le 12 mai, j'ai 60 jours pour répondre". Le calculateur vous dira que vous avez jusqu'au 11 juillet.</li>
+            </ul>
+
+            <h2>FAQ sur le calcul calendaire</h2>
+            <div class="faq-item">
+                <h4>Prenez-vous en compte les jours fériés ?</h4>
+                <p>Non, ce calculateur mesure la durée absolue en jours calendaires. Pour les jours ouvrés, il faut déduire manuellement les week-ends et jours de fêtes spécifiques à votre pays.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Quelle est la différence entre jour inclus et jour exclu ?</h4>
+                <p>Notre calcul standard donne la différence stricte (Date 2 - Date 1). Si vous voulez compter le jour de départ comme un jour complet d'activité, il faut souvent ajouter +1 au résultat.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Le résultat peut-il être négatif ?</h4>
+                <p>En informatique, oui, mais nous avons conçu l'outil pour donner une valeur absolue (durée positive) quelle que soit l'ordre de saisie des dates.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Le calculateur fonctionne-t-il pour les dates historiques ?</h4>
+                <p>Oui, il peut remonter très loin dans le passé, bien que la précision sur des siècles dépend de la stabilité du calendrier grégorien utilisé par le navigateur.</p>
+            </div>
+        </article>
+
+        <section class="related-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); margin-top: 4rem;">
+            <a href="calcul-heure.html" class="calc-card">Calcul Heure</a>
+            <a href="calcul-grossesse.html" class="calc-card">Calcul Grossesse</a>
+            <a href="calcul-heure-travail.html" class="calc-card">Heure de Travail</a>
+            <a href="index.html" class="calc-card">Accueil</a>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="index.html">Retour à l'accueil</a></p>
+        <p>&copy; 2026 CalcPremium - Gardez le temps sous contrôle.</p>
+    </footer>
+</body>
+</html>

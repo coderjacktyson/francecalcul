@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculateur de Temps : Additionnez et soustrayez des heures</title>
+    <meta name="description" content="Additionnez, soustrayez ou convertissez des heures et des minutes avec notre calculateur de temps gratuit. Parfait pour les horaires de travail ou les durées.">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Calculateur d'Heure",
+      "applicationCategory": "UtilityApplication",
+      "operatingSystem": "All",
+      "description": "Un outil simple pour additionner ou soustraire des durées."
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">CalcPremium</a>
+            <button class="theme-toggle"><span>🌙</span></button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="calculator-container">
+            <h1>Calculateur d'Heure et de Durée</h1>
+            <p>Additionnez ou soustrayez des durées facilement. Utile pour les feuilles de temps ou les voyages.</p>
+            <form class="calc-form" data-type="heure" data-instant="false">
+                <div class="input-group">
+                    <label for="h1">Durée 1 (HH:MM)</label>
+                    <input type="text" id="h1" name="h1" placeholder="Ex: 08:30" required pattern="[0-9]{1,3}:[0-5][0-9]">
+                </div>
+                <div class="input-group">
+                    <label for="op">Opération</label>
+                    <select name="op" id="op">
+                        <option value="+">Addition (+)</option>
+                        <option value="-">Soustraction (-)</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="h2">Durée 2 (HH:MM)</label>
+                    <input type="text" id="h2" name="h2" placeholder="Ex: 01:15" required pattern="[0-9]{1,3}:[0-5][0-9]">
+                </div>
+                <button type="submit" class="btn-primary">Calculer la durée totale</button>
+            </form>
+
+            <div class="result-area">
+                <div class="result-card">
+                    <p>Le résultat est :</p>
+                    <div class="result-value">--</div><span> (HH:MM)</span>
+                </div>
+            </div>
+        </section>
+
+        <article class="content-area">
+            <h2>Qu'est-ce que le calcul d'heure ?</h2>
+            <p>Le calcul d'heure, ou calcul sexagésimal, est une opération mathématique spécifique qui repose sur la base de 60 plutôt que sur la base de 10 traditionnelle. Contrairement au système décimal où 100 unités font un tout, dans le temps, 60 secondes font une minute, et 60 minutes font une heure. Cette particularité rend les additions et soustractions d'horaires complexes mentalement, car il faut sans cesse convertir les paquets de 60.</p>
+            <p>Pourtant, le temps est la ressource la plus précieuse que nous gérons chaque jour. Savoir combien de temps a duré une tâche, calculer l'heure de fin d'un trajet ou sommer les heures de travail effectuées sur une semaine sont des gestes quotidiens. Notre calculateur de temps enlève toute friction à ces opérations en gérant automatiquement les reports de minutes en heures et inversement.</p>
+
+            <h2>Comment fonctionne le calculateur d'heure ?</h2>
+            <p>Le fonctionnement de notre outil est conçu pour être transparent. Il convertit d'abord les entrées (Heures et Minutes) en un total de minutes brutes. Ensuite, il effectue l'opération choisie (addition ou soustraction). Enfin, il transforme ce total de minutes en un format lisible HH:MM en utilisant la division entière par 60 pour les heures et le reste de la division (modulo) pour les minutes.</p>
+            <p>Par exemple, pour additionner 1h45 et 2h30 :</p>
+            <ol>
+                <li>Conversion en minutes : (1 * 60 + 45) = 105 min ; (2 * 60 + 30) = 150 min.</li>
+                <li>Addition : 105 + 150 = 255 min.</li>
+                <li>Reconversion : 255 / 60 = 4h avec un reste de 15 min.</li>
+                <li>Résultat final : 4h15.</li>
+            </ol>
+            <p>L'outil gère également les soustractions complexes où la retenue des minutes est nécessaire, ce qui évite les erreurs classiques de calcul manuel.</p>
+
+            <h2>Avantages du calcul temps en ligne</h2>
+            <p>Passer par notre plateforme offre une efficacité immédiate :</p>
+            <ul>
+                <li><strong>Zéro Erreur :</strong> Fini les erreurs d'inattention lors du report des minutes en heures.</li>
+                <li><strong>Flexibilité :</strong> Permet d'additionner des centaines d'heures pour des projets à long terme.</li>
+                <li><strong>Rapidité :</strong> Très utile pour les RH, les chefs de projets ou les freelances facturant à l'heure.</li>
+                <li><strong>Gestion des Formats :</strong> Accepte les formats standards HH:MM pour une saisie naturelle.</li>
+            </ul>
+
+            <h2>Cas d’utilisation du calcul d'heure</h2>
+            <p>Dans quels contextes est-il utile de sortir notre calculateur ?</p>
+            <ul>
+                <li><strong>Gestion du Travail :</strong> Faire la somme des heures travaillées sur la semaine ou le mois.</li>
+                <li><strong>Planification de Voyage :</strong> Ajouter le temps de trajet à l'heure de départ pour connaître l'heure d'arrivée estimée.</li>
+                <li><strong>Sport et Musique :</strong> Calculer la durée totale d'un entraînement ou l'enchaînement de plusieurs morceaux de musique.</li>
+                <li><strong>Cuisine :</strong> Additionner les temps de préparation, de repos et de cuisson d'une recette complexe.</li>
+                <li><strong>Éducation :</strong> Aider les élèves à comprendre le système sexagésimal sans se décourager par les calculs ardus.</li>
+            </ul>
+
+            <h2>Fonctionnalités de notre outil</h2>
+            <p>Le calculateur d'Heure Premium propose :</p>
+            <ul>
+                <li>Saisie intuitive via champs masqués ou format texte.</li>
+                <li>Boutons rapides d'addition et de soustraction.</li>
+                <li>Résultat formaté proprement (ex: 12h05).</li>
+                <li>Performance ultra-rapide sur mobile et bureau.</li>
+            </ul>
+
+            <h2>Exemples de calcul</h2>
+            <p>Voici des situations courantes résolues par l'outil :</p>
+            <ul>
+                <li><strong>Gestion de projet :</strong> "J'ai passé 2h45 ce matin et 3h20 cet après-midi sur ce dossier". Total : 6h05.</li>
+                <li><strong>Décalage Horaire :</strong> "Il est 22h30, mon avion décolle dans 4h15". Heure de décollage : 02h45 du matin.</li>
+                <li><strong>Temps de Repos :</strong> "Je finis à 18h15 et je veux 11h de repos minimum". Reprise possible à 05h15.</li>
+                <li><strong>Retard :</strong> "Une réunion de 1h30 s'est finie avec 0h45 de retard". Durée totale mobilisée : 2h15.</li>
+            </ul>
+
+            <h2>FAQ sur le calcul d'heures et de temps</h2>
+            <div class="faq-item">
+                <h4>Comment convertir des minutes en heures décimales ?</h4>
+                <p>Pour passer de minutes en format décimal (utile pour Excel), divisez les minutes par 60. Par exemple, 30 min = 0,5 heure.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Peut-on additionner plus de 24 heures ?</h4>
+                <p>Oui, notre calculateur affiche des totaux supérieurs à 24h (ex: 45h30) car il est souvent utilisé pour des cumuls hebdomadaires ou mensuels.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Gérez-vous les secondes ?</h4>
+                <p>Pour cette version simplifiée, nous nous concentrons sur les heures et minutes, ce qui couvre 99% des besoins quotidiens des utilisateurs.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Que se passe-t-il si la soustraction est négative ?</h4>
+                <p>L'outil affichera une erreur ou une durée négative selon le contexte, car le temps ne peut pas "reculer" au-delà de zéro dans un cadre absolu.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Le format 24h ou AM/PM est-il supporté ?</h4>
+                <p>L'outil traite des durées brutes (format HH:MM), ce qui signifie qu'il fonctionne de la même manière que vous raisonniez en 24h ou non.</p>
+            </div>
+        </article>
+
+        <section class="related-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); margin-top: 4rem;">
+            <a href="calcul-entre-deux-dates.html" class="calc-card">Calcul Dates</a>
+            <a href="calcul-heure-travail.html" class="calc-card">Heure de Travail</a>
+            <a href="calcul-itineraire.html" class="calc-card">Calcul Itinéraire</a>
+            <a href="cycle-du-sommeil.html" class="calc-card">Sommeil</a>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="index.html">Retour à l'accueil</a></p>
+        <p>&copy; 2026 CalcPremium - Maîtrisez chaque minute.</p>
+    </footer>
+</body>
+</html>

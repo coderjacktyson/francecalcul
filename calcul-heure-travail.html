@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul Heure de Travail : Gérez vos horaires facilement</title>
+    <meta name="description" content="Utilisez notre calculateur d'heures de travail gratuit pour sommer vos heures journalières, hebdomadaires ou mensuelles. Suivez vos heures sup en un clin d'œil.">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Calculateur d'Heures de Travail",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "All",
+      "description": "Un outil complet pour calculer ses heures de travail quotidiennes nettes."
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">CalcPremium</a>
+            <button class="theme-toggle"><span>🌙</span></button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="calculator-container">
+            <h1>Calculateur d'Heures de Travail</h1>
+            <p>Saisissez vos horaires de début et de fin ainsi que votre temps de pause pour connaître votre temps de travail effectif.</p>
+            <form class="calc-form" data-type="heure-de-travail" data-instant="false">
+                <div class="input-group">
+                    <label for="debut">Heure de début (HH:MM)</label>
+                    <input type="time" id="debut" name="debut" required>
+                </div>
+                <div class="input-group">
+                    <label for="fin">Heure de fin (HH:MM)</label>
+                    <input type="time" id="fin" name="fin" required>
+                </div>
+                <div class="input-group">
+                    <label for="pause">Temps de pause (Minutes)</label>
+                    <input type="number" id="pause" name="pause" placeholder="Ex: 45" value="0">
+                </div>
+                <button type="submit" class="btn-primary">Calculer mon temps de travail</button>
+            </form>
+
+            <div class="result-area">
+                <div class="result-card">
+                    <p>Votre temps de travail net est de :</p>
+                    <div class="result-value">--</div><span></span>
+                </div>
+            </div>
+        </section>
+
+        <article class="content-area">
+            <h2>Qu'est-ce que le calcul d'heure de travail ?</h2>
+            <p>Le calcul des heures de travail est un aspect fondamental de la vie professionnelle. Il permet de mesurer le temps effectif passé à accomplir ses missions au-delà de la simple présence sur le lieu de travail. En France, la durée légale du travail est fixée par le Code du Travail à 35 heures par semaine, mais de nombreux statuts (cadres, forfaits heures) ou situations (heures supplémentaires) nécessitent un suivi rigoureux et quotidien.</p>
+            <p>Savoir "combien j'ai fait aujourd'hui" est la première étape pour s'assurer que sa feuille de temps est exacte et que sa rémunération sera conforme à l'effort fourni. Le calcul peut sembler simple, mais soustraire une pause de 45 minutes d'une amplitude horaire de 08:30 à 17:15 requiert une conversion sexagésimale (en base 60) qui est source d'erreurs fréquentes. Notre calculateur automatise cette tâche pour une précision sans faille.</p>
+
+            <h2>Comment fonctionne le calculateur d'heures de travail ?</h2>
+            <p>Notre outil fonctionne sur le principe de la soustraction horaire simplifiée. Il prend en compte trois variables : l'heure d'arrivée, l'heure de départ et le temps de pause global pris dans la journée (souvent la pause déjeuner). L'algorithme convertit toutes ces données en minutes, effectue la soustraction (Fin - Début - Pause), puis reconvertit le résultat en un format lisible "X heures et Y minutes".</p>
+            <p>Une attention particulière est portée à la gestion des pauses. En entrant simplement le nombre de minutes (ex: 60 pour une heure), vous déduisez proprement le temps non travaillé de votre amplitude de présence. C'est la méthode de calcul la plus utilisée par les logiciels de pointage modernes et les services de ressources humaines.</p>
+
+            <h2>Avantages du calcul d'horaires en ligne</h2>
+            <p>Utiliser notre interface de calcul d'heures Premium offre des bénéfices concrets pour les salariés comme pour les employeurs :</p>
+            <ul>
+                <li><strong>Sérénité :</strong> Ayez la preuve mathématique de vos heures effectuées avant de remplir votre compte-rendu d'activité (CRA).</li>
+                <li><strong>Gestion des Heures Sup :</strong> Identifiez rapidement si vous dépassez votre contrat journalier pour récupérer du temps libre plus tard.</li>
+                <li><strong>Simplicité :</strong> Plus besoin de poser des soustractions compliquées sur un coin de table.</li>
+                <li><strong>Respect du Droit :</strong> Vérifiez que vous respectez bien les temps de repos obligatoires (11h consécutives entre deux journées en France).</li>
+            </ul>
+
+            <h2>Cas d’utilisation du calcul d'heure de travail</h2>
+            <p>Plusieurs profils d'utilisateurs trouveront cet outil indispensable :</p>
+            <ul>
+                <li><strong>Salariés en Télétravail :</strong> Pour marquer précisément le début et la fin de leur journée sans badge physique.</li>
+                <li><strong>Indépendants et Freelances :</strong> Pour facturer leurs clients au plus juste en cumulant leurs sessions de travail.</li>
+                <li><strong>Managers d'Équipes :</strong> Pour valider les relevés d'horaires de leurs collaborateurs en un clic.</li>
+                <li><strong>Étudiants Salariés :</strong> Pour s'assurer que leur cumul d'heures n'impacte pas leurs révisions ou leurs obligations académiques.</li>
+            </ul>
+
+            <h2>Fonctionnalités de notre outil</h2>
+            <p>Le calculateur d'Heures de Travail Premium inclut :</p>
+            <ul>
+                <li>Champs de saisie au format Time (sélecteur horloge natif).</li>
+                <li>Prise en compte des pauses en minutes pour plus de finesse.</li>
+                <li>Résultat formaté en Heures et Minutes (ex : 7h45).</li>
+                <li>Stockage local optionnel pour mémoriser vos réglages habituels.</li>
+            </ul>
+
+            <h2>Exemples de calcul</h2>
+            <p>Voici des simulations types pour mieux comprendre :</p>
+            <ul>
+                <li><strong>Journée Standard :</strong> Arrivée à 09:00, départ à 18:00, avec 1 heure (60 min) de pause. Résultat : 8h00 de travail effectif.</li>
+                <li><strong>Matinée Seule :</strong> Arrivée à 08:30, départ à 12:15, sans pause. Résultat : 3h45 de travail.</li>
+                <li><strong>Grosse Journée :</strong> Arrivée à 08:00, départ à 19:30, avec 45 min de pause. Résultat : 10h45 de travail (Attention aux limites légales !).</li>
+            </ul>
+
+            <h2>FAQ sur les heures de travail</h2>
+            <div class="faq-item">
+                <h4>Qu’est-ce que le temps de travail effectif ?</h4>
+                <p>C'est le temps pendant lequel le salarié est à la disposition de l'employeur et doit se conformer à ses directives sans pouvoir vaquer librement à des occupations personnelles. La pause déjeuner n'est généralement pas du temps de travail effectif.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Est-ce que le temps de trajet compte ?</h4>
+                <p>En France, le temps de trajet habituel entre le domicile et le lieu de travail n'est pas considéré comme du temps de travail effectif, sauf cas particulier de déplacements entre deux clients.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Quelle est la durée maximale quotidienne ?</h4>
+                <p>Sauf dérogations, elle est de 10 heures de travail effectif par jour en France pour un salarié majeur.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Comment calculer mon salaire à partir de ces heures ?</h4>
+                <p>Une fois votre total d'heures obtenu, multipliez-le par votre taux horaire brut (ou net) pour obtenir une estimation de votre rémunération pour la période.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Le calculateur gère-t-il les horaires de nuit ?</h4>
+                <p>Cette version simple gère les journées classiques. Pour les horaires s'étalant sur deux jours civils (ex: 22h à 06h), il faudra effectuer deux calculs séparés ou attendre notre mise à jour "Travail de Nuit".</p>
+            </div>
+        </article>
+
+        <section class="related-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); margin-top: 4rem;">
+            <a href="calcul-salaire.html" class="calc-card">Calcul Salaire</a>
+            <a href="calcul-heure.html" class="calc-card">Calcul Heure</a>
+            <a href="calcul-frais-kilometrique.html" class="calc-card">Frais Kilométrique</a>
+            <a href="calcul-chomage.html" class="calc-card">Calcul Chômage</a>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="index.html">Retour à l'accueil</a></p>
+        <p>&copy; 2026 CalcPremium - Valorisez votre temps de travail.</p>
+    </footer>
+</body>
+</html>

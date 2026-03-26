@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul Rénaux : Information et Volume des Lithiases</title>
+    <meta name="description" content="Comprendre les calculs rénaux. Utilisez notre outil informatif pour évaluer le volume d'une lithiase et découvrez les conseils de prévention.">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Calculateur Informatique Rénaux",
+      "applicationCategory": "HealthApplication",
+      "operatingSystem": "All",
+      "description": "Outil d'information sur les calculs rénaux et estimation de volume."
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">CalcPremium</a>
+            <button class="theme-toggle"><span>🌙</span></button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="calculator-container">
+            <h1>Calculateur de Volume de Calcul Rénaux</h1>
+            <p style="color: #ef4444; font-weight: 700; background: rgba(239, 68, 68, 0.1); padding: 1rem; border-radius: 8px; margin-bottom: 2rem;">AVERTISSEMENT MÉDICAL : Cet outil est purement informatif et ne remplace en aucun cas un diagnostic médical. En cas de douleur intense (colique néphrétique), consultez immédiatement un médecin ou appelez le 15.</p>
+            <p>Estimez le volume d'une lithiase à partir de ses dimensions observées lors d'une échographie ou d'un scanner.</p>
+            <form class="calc-form" data-type="renaux" data-instant="true">
+                <div class="input-group">
+                    <label for="dim1">Dimension 1 (mm)</label>
+                    <input type="number" id="dim1" name="dim1" placeholder="Ex: 5" required step="0.1">
+                </div>
+                <div class="input-group">
+                    <label for="dim2">Dimension 2 (mm)</label>
+                    <input type="number" id="dim2" name="dim2" placeholder="Ex: 3" required step="0.1">
+                </div>
+                <button type="submit" class="btn-primary">Estimer le volume</button>
+            </form>
+
+            <div class="result-area">
+                <div class="result-card">
+                    <p>Le volume estimé est de :</p>
+                    <div class="result-value">--</div><span> mm³</span>
+                    <p class="result-status">Les calculs de plus de 5mm nécessitent souvent une prise en charge médicale spécifique.</p>
+                </div>
+            </div>
+        </section>
+
+        <article class="content-area">
+            <h2>Qu'est-ce que le calcul rénal ?</h2>
+            <p>Le calcul rénal, médicalement appelé lithiase urinaire, est une formation cristalline solide qui se développe à l'intérieur des reins ou des voies urinaires. Ces "pierres" se forment lorsque les urines deviennent trop concentrées en certains sels minéraux (calcium, oxalate, acide urique), qui finissent par précipiter et s'agglomérer. La taille d'un calcul peut varier d'un simple grain de sable à une masse de plusieurs centimètres occupant tout le bassinet rénal.</p>
+            <p>On estime qu'environ 10% de la population française souffrira de calculs rénaux au moins une fois dans sa vie. La manifestation la plus redoutée est la colique néphrétique, une douleur extrêmement vive et brutale provoquée par la mise en tension de l'uretère lorsqu'un calcul s'y bloque. Comprendre la nature et la taille de ces calculs est essentiel pour déterminer le traitement le plus approprié, qu'il s'agisse d'une expulsion naturelle ou d'une intervention chirurgicale.</p>
+
+            <h2>Comment fonctionne le calculateur de lithiase ?</h2>
+            <p>Le fonctionnement de notre outil repose sur une approximation géométrique. Dans la pratique radiologique, les calculs sont souvent modélisés comme des ellipsoïdes de révolution. L'algorithme prend les deux dimensions principales mesurées lors de l'examen d'imagerie et applique une formule de volume simplifiée pour donner une indication de la masse globale de la pierre.</p>
+            <p>Voici les seuils cliniques généralement observés :</p>
+            <ul>
+                <li><strong>Moins de 4 mm :</strong> Très fortes probabilités d'expulsion naturelle avec une hydratation massive.</li>
+                <li><strong>Entre 5 et 7 mm :</strong> Probabilité d'expulsion d'environ 50%. Un traitement médicamenteux peut être nécessaire.</li>
+                <li><strong>Plus de 8 mm :</strong> Risque élevé d'obstruction. Une intervention (lithotripsie ou urétéroscopie) est souvent envisagée par l'urologue.</li>
+            </ul>
+            <p>Notre calculateur convertit vos données en millimètres cubes (mm³) pour vous aider à visualiser l'importance de la concrétion minérale.</p>
+
+            <h2>Avantages du calcul et de l'information préventive</h2>
+            <p>S'informer via notre plateforme CalcPremium permet de mieux gérer sa santé rénale :</p>
+            <ul>
+                <li><strong>Compréhension des Résultats :</strong> Décrypter les chiffres abstraits d'un compte-rendu radiologique.</li>
+                <li><strong>Prévention :</strong> Identifier les facteurs de risque liés à l'alimentation et à l'hydratation.</li>
+                <li><strong>Aide à la Discussion :</strong> Préparer vos questions pour votre prochain rendez-vous avec un urologue ou un néphrologue.</li>
+                <li><strong>Évaluation de la Gravité :</strong> Savoir si votre calcul se situe dans une zone "d'expulsion probable" ou s'il nécessite une vigilance accrue.</li>
+            </ul>
+
+            <h2>Cas d’utilisation du suivi des calculs rénaux</h2>
+            <p>Plusieurs situations nécessitent un suivi attentif :</p>
+            <ul>
+                <li><strong>Récidives Fréquentes :</strong> Les patients "formeurs de pierres" doivent surveiller leur régime et la taille de nouvelles formations.</li>
+                <li><strong>Suivi de Grossesse :</strong> Les modifications physiologiques peuvent favoriser la formation de calculs, nécessitant une surveillance douce.</li>
+                <li><strong>Bilan de Santé :</strong> Après une première crise, pour évaluer s'il reste des fragments résiduels dans le rein.</li>
+                <li><strong>Sportifs et Travailleurs en Extérieur :</strong> Sensibilisation à la déshydratation, premier facteur de risque de lithiase.</li>
+            </ul>
+
+            <h2>Fonctionnalités de notre outil</h2>
+            <p>Le calculateur de Volume de Calcul Rénaux CalcPremium propose :</p>
+            <ul>
+                <li>Saisie en millimètres (mm) pour une précision médicale.</li>
+                <li>Disclaimer médical omniprésent pour une utilisation responsable.</li>
+                <li>Interprétation automatique des seuils de taille critiques.</li>
+                <li>Interface clean et apaisante pour les utilisateurs en situation de stress.</li>
+            </ul>
+
+            <h2>Exemples de dimensions et volumes</h2>
+            <p>Voici des comparaisons d'importance :</p>
+            <ul>
+                <li><strong>Petit calcul (3mm x 2mm) :</strong> Volume d'environ 6-8 mm³. Expulsion naturelle très probable.</li>
+                <li><strong>Calcul Moyen (6mm x 4mm) :</strong> Volume d'environ 50 mm³. Surveillance médicale active recommandée.</li>
+                <li><strong>Gros calcul (12mm x 8mm) :</strong> Volume supérieur à 400 mm³. Intervention chirurgicale souvent inévitable.</li>
+            </ul>
+
+            <h2>FAQ sur la lithiase urinaire</h2>
+            <div class="faq-item">
+                <h4>Combien de litres d'eau faut-il boire ?</h4>
+                <p>La recommandation standard est de 2 à 3 litres d'eau par jour, répartis sur toute la journée, pour maintenir des urines claires et diluées.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Quels aliments favoriser ou éviter ?</h4>
+                <p>Il faut limiter la consommation de sel, de protéines animales en excès et d'aliments riches en oxalates (chocolat, épinards, rhubarbe) selon le type de calcul.</p>
+            </div>
+            <div class="faq-item">
+                <h4>C'est quoi la lithotripsie extracorporelle (LEC) ?</h4>
+                <p>C'est une technique qui utilise des ondes de choc pour briser le calcul en petits fragments sans chirurgie, afin qu'ils puissent être évacués par les urines.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Le jus de citron aide-t-il vraiment ?</h4>
+                <p>Oui, le citrate contenu dans le citron est un inhibiteur naturel de la cristallisation du calcium dans les urines. C'est une excellente habitude préventive.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Peut-on avoir des calculs sans douleur ?</h4>
+                <p>Absolument. Tant qu'un calcul reste dans le rein et ne bloque pas l'écoulement de l'urine, il peut rester totalement asymptomatique pendant des années.</p>
+            </div>
+        </article>
+
+        <section class="related-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); margin-top: 4rem;">
+            <a href="calcul-biliaire.html" class="calc-card">Calcul Biliaire</a>
+            <a href="calcul-imc.html" class="calc-card">Calcul IMC</a>
+            <a href="calcul-volume.html" class="calc-card">Calcul Volume</a>
+            <a href="index.html" class="calc-card">Accueil</a>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="index.html">Retour à l'accueil</a></p>
+        <p>&copy; 2026 CalcPremium - L'information au service de votre santé.</p>
+    </footer>
+</body>
+</html>
